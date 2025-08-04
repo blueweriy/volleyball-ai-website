@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import Home      from './pages/Home';
 import Analysis  from './pages/Analysis';
@@ -20,39 +20,37 @@ import Dig     from './pages/skillpages/Dig';
 
 export default function App() {
   return (
-    <Router>
-      <div className="bg-gray-900 text-white min-h-screen">
-        <nav className="bg-black bg-opacity-80 p-4 flex flex-wrap gap-4">
-          <Link to="/"         className="hover:text-yellow-400">Home</Link>
-          <Link to="/analysis" className="hover:text-yellow-400">Analysis</Link>
-          <Link to="/rules"    className="hover:text-yellow-400">Rules</Link>
-          <Link to="/callouts" className="hover:text-yellow-400">Callouts</Link>
-          <Link to="/workouts" className="hover:text-yellow-400">Workouts</Link>
-          <Link to="/purchases"className="hover:text-yellow-400">Purchases</Link>
-          <Link to="/skills"   className="hover:text-yellow-400">Skills</Link>
-        </nav>
+    <div className="bg-gray-900 text-white min-h-screen">
+      <nav className="bg-black bg-opacity-80 p-4 flex flex-wrap gap-4">
+        <Link to="/"         className="hover:text-yellow-400">Home</Link>
+        <Link to="/analysis" className="hover:text-yellow-400">Analysis</Link>
+        <Link to="/rules"    className="hover:text-yellow-400">Rules</Link>
+        <Link to="/callouts" className="hover:text-yellow-400">Callouts</Link>
+        <Link to="/workouts" className="hover:text-yellow-400">Workouts</Link>
+        <Link to="/purchases"className="hover:text-yellow-400">Purchases</Link>
+        <Link to="/skills"   className="hover:text-yellow-400">Skills</Link>
+      </nav>
 
-        <Routes>
-          <Route path="/"          element={<Home      />} />
-          <Route path="/analysis"  element={<Analysis  />} />
-          <Route path="/rules"     element={<Rules     />} />
-          <Route path="/callouts"  element={<Callouts  />} />
-          <Route path="/workouts"  element={<Workout   />} />
-          <Route path="/purchases" element={<Purchases />} />
-          <Route path="/skills"    element={<Skills    />} />
+      <Routes>
+        <Route path="/"          element={<Home      />} />
+        <Route path="/analysis"  element={<Analysis  />} />
+        <Route path="/rules"     element={<Rules     />} />
+        <Route path="/callouts"  element={<Callouts  />} />
+        <Route path="/workouts"  element={<Workout   />} />
+        <Route path="/purchases" element={<Purchases />} />
+        <Route path="/skills"    element={<Skills    />} />
 
-          {/* skill sub-routes */}
-          <Route path="/skills/serve"   element={<Serve   />} />
-          <Route path="/skills/spike"   element={<Spike   />} />
-          <Route path="/skills/set"     element={<Set     />} />
-          <Route path="/skills/receive" element={<Receive />} />
-          <Route path="/skills/block"   element={<Block   />} />
-          <Route path="/skills/dig"     element={<Dig     />} />
+        {/* skill sub-routes */}
+        <Route path="/skills/serve"   element={<Serve   />} />
+        <Route path="/skills/spike"   element={<Spike   />} />
+        <Route path="/skills/set"     element={<Set     />} />
+        <Route path="/skills/receive" element={<Receive />} />
+        <Route path="/skills/block"   element={<Block   />} />
+        <Route path="/skills/dig"     element={<Dig     />} />
 
-          {/* catch-all */}
-          <Route path="*" element={<div className="p-8 text-center">Page not found</div>} />
-        </Routes>
-      </div>
-    </Router>
+        {/* catch-all */}
+        <Route path="*" element={<div className="p-8 text-center">Page not found</div>} />
+      </Routes>
+    </div>
   );
 }
