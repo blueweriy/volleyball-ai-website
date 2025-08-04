@@ -1,63 +1,42 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
-import Home from './pages/Home';
+// src/App.jsx
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-// Placeholder empty pages (to avoid errors)
-const Rules = () => <div className="p-8">Rules Page</div>;
-const Callouts = () => <div className="p-8">Callouts Page</div>;
-const Skills = () => <div className="p-8">Skills Page</div>;
-const Workout = () => <div className="p-8">Workout Page</div>;
-const Purchases = () => <div className="p-8">Purchases Page</div>;
+import Home      from './pages/Home';
+import Analysis  from './pages/Analysis';
+import Rules     from './pages/Rules';
+import Callouts  from './pages/Callouts';
+import Workout   from './pages/Workout';
+import Purchases from './pages/Purchases';
+import Skills    from './pages/Skills';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <header className="bg-white shadow fixed w-full top-0 left-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          {/* "AVC" clickable title */}
-          <NavLink to="/" className="text-3xl font-extrabold text-gray-900">
-            AVC
-          </NavLink>
+    <BrowserRouter>
+      {/* 全体をダークバックに */}
+      <div className="bg-gray-900 text-white min-h-screen">
+        {/* NavBar */}
+        <nav className="bg-black bg-opacity-80 p-4 flex flex-wrap gap-4">
+          <Link to="/"         className="hover:text-yellow-400">Home</Link>
+          <Link to="/analysis" className="hover:text-yellow-400">Analysis</Link>
+          <Link to="/rules"    className="hover:text-yellow-400">Rules</Link>
+          <Link to="/callouts" className="hover:text-yellow-400">Callouts</Link>
+          <Link to="/workout"  className="hover:text-yellow-400">Workout</Link>
+          <Link to="/purchases"className="hover:text-yellow-400">Purchases</Link>
+          <Link to="/skills"   className="hover:text-yellow-400">Skills</Link>
+        </nav>
 
-          {/* Navigation buttons */}
-          <nav className="flex space-x-6">
-            {[
-              { to: '/rules', label: 'Rules' },
-              { to: '/callouts', label: 'Callouts' },
-              { to: '/skills', label: 'Skills' },
-              { to: '/workout', label: 'Workout' },
-              { to: '/purchases', label: 'Purchases' },
-            ].map(({ to, label }) => (
-              <NavLink
-                key={to}
-                to={to}
-                className={({ isActive }) =>
-                  `px-4 py-2 rounded-lg font-semibold transition ${
-                    isActive
-                      ? 'bg-yellow-400 text-white'
-                      : 'text-gray-700 hover:bg-yellow-300 hover:text-white'
-                  }`
-                }
-              >
-                {label}
-              </NavLink>
-            ))}
-          </nav>
-        </div>
-      </header>
-
-      {/* Main content area with padding top so header doesn't overlap */}
-      <main className="pt-20 max-w-6xl mx-auto px-6 pb-12 bg-white min-h-screen text-gray-900 font-sans">
+        {/* ページコンテンツ */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/rules" element={<Rules />} />
-          <Route path="/callouts" element={<Callouts />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/workout" element={<Workout />} />
+          <Route path="/"          element={<Home      />} />
+          <Route path="/analysis"  element={<Analysis  />} />
+          <Route path="/rules"     element={<Rules     />} />
+          <Route path="/callouts"  element={<Callouts  />} />
+          <Route path="/workout"   element={<Workout   />} />
           <Route path="/purchases" element={<Purchases />} />
+          <Route path="/skills"    element={<Skills    />} />
         </Routes>
-      </main>
-    </Router>
+      </div>
+    </BrowserRouter>
   );
 }
-
-export default App;
