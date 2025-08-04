@@ -1,4 +1,3 @@
-// src/pages/Receive.jsx
 import React from 'react';
 
 export default function Receive() {
@@ -7,11 +6,11 @@ export default function Receive() {
       <h1 className="text-4xl font-bold mb-4">Receiving & Passing</h1>
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Platform Technique</h2>
-        <p>Lock arms, angle shoulders, and move feet to position under the ball.</p>
+        <p>Lock your arms and angle your platform to guide the ball accurately.</p>
       </section>
       <section>
         <h2 className="text-2xl font-semibold mb-2">Footwork Drills</h2>
-        <p>Shuffle and split-step exercises to improve reaction time and balance.</p>
+        <p>Use shuffle and split-step drills to improve reaction and coverage.</p>
       </section>
     </div>
   );
