@@ -1,4 +1,3 @@
-// src/pages/Block.jsx
 import React from 'react';
 
 export default function Block() {
@@ -11,7 +10,7 @@ export default function Block() {
       </section>
       <section>
         <h2 className="text-2xl font-semibold mb-2">Footwork Patterns</h2>
-        <p>Practice side-steps and hop patterns to cover quick attacks and slides.</p>
+        <p>Practice side steps and hop patterns to cover quick attacks.</p>
       </section>
     </div>
   );
