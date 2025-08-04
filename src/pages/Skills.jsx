@@ -6,33 +6,33 @@ const skills = [
   {
     title: 'Serve',
     to: '/skills/serve',
-    description: 'Learn different serve techniques with videos and tips.'
+    description: 'Learn different serve techniques with videos and tips.',
   },
   {
     title: 'Spiking',
     to: '/skills/spike',
-    description: 'Analyze your spiking form and improve vertical jump.'
+    description: 'Analyze your spiking form and improve vertical jump.',
   },
   {
     title: 'Setting',
     to: '/skills/set',
-    description: 'Master the art of accurate and consistent sets.'
+    description: 'Master the art of accurate and consistent sets.',
   },
   {
     title: 'Receiving',
     to: '/skills/receive',
-    description: 'Develop a solid passing platform and footwork.'
+    description: 'Develop a solid passing platform and footwork.',
   },
   {
     title: 'Blocking',
     to: '/skills/block',
-    description: 'Learn blocking footwork and timing strategies.'
+    description: 'Learn blocking footwork and timing strategies.',
   },
   {
     title: 'Digging',
     to: '/skills/dig',
-    description: 'Improve defensive digs with form analysis.'
-  }
+    description: 'Improve defensive digs with form analysis.',
+  },
 ];
 
 export default function Skills() {
