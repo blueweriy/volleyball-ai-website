@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Home      from './pages/Home';
 import Analysis  from './pages/Analysis';
@@ -10,7 +10,7 @@ import Workout   from './pages/Workout';
 import Purchases from './pages/Purchases';
 import Skills    from './pages/Skills';
 
-// import your skill pages from the skillpages folder
+// skill pages
 import Serve   from './pages/skillpages/Serve';
 import Spike   from './pages/skillpages/Spike';
 import Set     from './pages/skillpages/Set';
@@ -20,7 +20,7 @@ import Dig     from './pages/skillpages/Dig';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="bg-gray-900 text-white min-h-screen">
         <nav className="bg-black bg-opacity-80 p-4 flex flex-wrap gap-4">
           <Link to="/"         className="hover:text-yellow-400">Home</Link>
@@ -49,10 +49,10 @@ export default function App() {
           <Route path="/skills/block"   element={<Block   />} />
           <Route path="/skills/dig"     element={<Dig     />} />
 
-          {/* catch-all for unknown paths (optional) */}
+          {/* catch-all */}
           <Route path="*" element={<div className="p-8 text-center">Page not found</div>} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
