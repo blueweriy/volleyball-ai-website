@@ -6,7 +6,7 @@ import Home     from "./Home.jsx";
 import Analysis from "./Analysis.jsx";
 import Callouts from "./Callouts.jsx";
 import Rules    from "./Rules.jsx";
-// …and any other pages you have, e.g.
+// …add other pages here, e.g:
 // import Purchases from "./Purchases.jsx";
 // import Skills    from "./Skills.jsx";
 
