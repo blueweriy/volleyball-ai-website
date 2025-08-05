@@ -21,42 +21,42 @@ import Dig     from './pages/skillpages/Dig';
 export default function App() {
   return (
     <Router>
-      {/* Non-fixed top navigation */}
+      {/* Top navigation */}
       <header className="bg-white border-b">
         <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
           <div className="text-2xl font-bold">vaw</div>
           <nav className="flex space-x-6 text-sm font-medium">
-            <Link to="/"         className="hover:text-gray-800">Home</Link>
-            <Link to="/rules"    className="hover:text-gray-800">Rules</Link>
-            <Link to="/callouts" className="hover:text-gray-800">Callouts</Link>
-            <Link to="/skills"   className="hover:text-gray-800">Skills</Link>
-            <Link to="/analysis" className="hover:text-gray-800">Analysis</Link>
-            <Link to="/workouts" className="hover:text-gray-800">Workouts</Link>
-            <Link to="/purchases"className="hover:text-gray-800">Purchases</Link>
+            <Link to="/">Home</Link>
+            <Link to="/rules">Rules</Link>
+            <Link to="/callouts">Callouts</Link>
+            <Link to="/skills">Skills</Link>
+            <Link to="/analysis">Analysis</Link>
+            <Link to="/workouts">Workouts</Link>
+            <Link to="/purchases">Purchases</Link>
           </nav>
         </div>
       </header>
 
-      {/* Main Routes */}
-      <div className="bg-gray-50 text-gray-900 font-sans">
+      {/* Main content */}
+      <div>
         <Routes>
-          <Route path="/"          element={<Home      />} />
-          <Route path="/rules"     element={<Rules     />} />
-          <Route path="/callouts"  element={<Callouts  />} />
-          <Route path="/skills"    element={<Skills    />} />
-          <Route path="/analysis"  element={<Analysis  />} />
-          <Route path="/workouts"  element={<Workout   />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/rules" element={<Rules />} />
+          <Route path="/callouts" element={<Callouts />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/analysis" element={<Analysis />} />
+          <Route path="/workouts" element={<Workout />} />
           <Route path="/purchases" element={<Purchases />} />
 
-          {/* Skill sub-pages */}
-          <Route path="/skills/serve"   element={<Serve   />} />
-          <Route path="/skills/spike"   element={<Spike   />} />
-          <Route path="/skills/set"     element={<Set     />} />
+          {/* Skill pages */}
+          <Route path="/skills/serve" element={<Serve />} />
+          <Route path="/skills/spike" element={<Spike />} />
+          <Route path="/skills/set" element={<Set />} />
           <Route path="/skills/receive" element={<Receive />} />
-          <Route path="/skills/block"   element={<Block   />} />
-          <Route path="/skills/dig"     element={<Dig     />} />
+          <Route path="/skills/block" element={<Block />} />
+          <Route path="/skills/dig" element={<Dig />} />
 
-          {/* Fallback */}
+          {/* 404 fallback */}
           <Route path="*" element={<div className="p-8 text-center">Page not found</div>} />
         </Routes>
       </div>
