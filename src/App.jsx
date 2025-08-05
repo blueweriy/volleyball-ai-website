@@ -1,26 +1,33 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./Home";
-import Analysis from "./Analysis";
-import Callouts from "./Callouts";
-import Rules from "./Rules";
-// … import other page components
+ // src/App.jsx
+ import React from "react";
+ import { Routes, Route } from "react-router-dom";
 
-export default function App() {
-  return (
-    <>
-      <Navbar />
+-import Navbar from "./components/Navbar";
+-import Home from "./Home";
+-import Analysis from "./Analysis";
+-import Callouts from "./Callouts";
+-import Rules from "./Rules";
++import Navbar from "./components/Navbar";
++import Home from "./Home.jsx";
++import Analysis from "./Analysis.jsx";
++import Callouts from "./Callouts.jsx";
++import Rules from "./Rules.jsx";
+ // …and so on for Purchases.jsx, Skills.jsx, etc.
 
-      <main className="bg-white min-h-screen">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/analysis" element={<Analysis />} />
-          <Route path="/callouts" element={<Callouts />} />
-          <Route path="/rules" element={<Rules />} />
-          {/* …other routes */}
-        </Routes>
-      </main>
-    </>
-  );
-}
+ export default function App() {
+   return (
+     <>
+       <Navbar />
+       <main className="bg-white min-h-screen">
+         <Routes>
+-          <Route path="/" element={<Home />} />
++          <Route path="/" element={<Home />} />
+           <Route path="/analysis" element={<Analysis />} />
+           <Route path="/callouts" element={<Callouts />} />
+           <Route path="/rules" element={<Rules />} />
+           {/* …other routes */}
+         </Routes>
+       </main>
+     </>
+   );
+ }
