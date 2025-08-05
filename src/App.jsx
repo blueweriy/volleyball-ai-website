@@ -21,15 +21,13 @@ import Dig     from './pages/skillpages/Dig';
 export default function App() {
   return (
     <Router>
-      {/* Global wrapper with light background */}
       <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
-
         {/* Apple-style top navigation */}
-        <header className="flex items-center justify-center py-4 border-b bg-white">
+        <header className="relative flex items-center justify-center bg-white py-4 border-b">
           {/* Logo */}
           <div className="absolute left-8 text-2xl font-bold">vaw</div>
 
-          {/* Centered nav links */}
+          {/* Centered nav */}
           <nav className="flex space-x-8 text-sm font-medium">
             <Link to="/"         className="hover:text-gray-800">Home</Link>
             <Link to="/rules"    className="hover:text-gray-800">Rules</Link>
@@ -39,12 +37,9 @@ export default function App() {
             <Link to="/workouts" className="hover:text-gray-800">Workouts</Link>
             <Link to="/purchases"className="hover:text-gray-800">Purchases</Link>
           </nav>
-
-          {/* Placeholder right side */}
-          <div className="absolute right-8 w-24" />
         </header>
 
-        {/* Main content routes */}
+        {/* Main routes content */}
         <Routes>
           <Route path="/"          element={<Home      />} />
           <Route path="/rules"     element={<Rules     />} />
@@ -62,7 +57,7 @@ export default function App() {
           <Route path="/skills/block"   element={<Block   />} />
           <Route path="/skills/dig"     element={<Dig     />} />
 
-          {/* 404 fallback */}
+          {/* Fallback */}
           <Route path="*" element={<div className="p-8 text-center">Page not found</div>} />
         </Routes>
       </div>
