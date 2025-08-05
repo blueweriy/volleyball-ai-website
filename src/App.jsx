@@ -23,7 +23,7 @@ export default function App() {
     <Router>
       <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
         {/* Apple-style top navigation */}
-        <header className="fixed top-0 left-0 right-0 bg-white border-b z-10">
+        <header className="bg-white border-b">
           <div className="max-w-6xl mx-auto flex items-center justify-center py-4 relative">
             {/* Logo */}
             <div className="absolute left-4 text-2xl font-bold">vaw</div>
