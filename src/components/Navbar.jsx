@@ -13,7 +13,7 @@ export default function Navbar() {
         </Link>
 
         {/* Center nav links */}
-        <ul className="hidden md:flex space-x-8">
+        <ul className="flex space-x-8">
           {[
             ["Home", "/"],
             ["Analysis", "/analysis"],
