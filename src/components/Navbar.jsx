@@ -12,28 +12,66 @@ export default function Navbar() {
           VolleyballAI
         </Link>
 
-        {/* Now the links sit right next to it */}
+        {/* Navigation links */}
         <ul className="flex space-x-8">
-          {[
-            ["Home", "/"],
-            ["Analysis", "/analysis"],
-            ["Callouts", "/callouts"],
-            ["Purchases", "/purchases"],
-            ["Rules", "/rules"],
-            ["Skills", "/skills"],
-            ["Workout", "/workout"],
-          ].map(([label, to]) => (
-            <li key={to}>
-              <Link
-                to={to}
-                className="text-sm font-medium text-gray-900 hover:text-gray-700 no-underline"
-              >
-                {label}
-              </Link>
-            </li>
-          ))}
+          <li>
+            <Link
+              to="/"
+              className="text-sm font-medium text-gray-900 hover:text-gray-700 no-underline"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/analysis"
+              className="text-sm font-medium text-gray-900 hover:text-gray-700 no-underline"
+            >
+              Analysis
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/callouts"
+              className="text-sm font-medium text-gray-900 hover:text-gray-700 no-underline"
+            >
+              Callouts
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/purchases"
+              className="text-sm font-medium text-gray-900 hover:text-gray-700 no-underline"
+            >
+              Purchases
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/rules"
+              className="text-sm font-medium text-gray-900 hover:text-gray-700 no-underline"
+            >
+              Rules
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/skills"
+              className="text-sm font-medium text-gray-900 hover:text-gray-700 no-underline"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/workout"
+              className="text-sm font-medium text-gray-900 hover:text-gray-700 no-underline"
+            >
+              Workout
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
-  );
+);
 }
