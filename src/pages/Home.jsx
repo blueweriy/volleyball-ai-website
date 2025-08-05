@@ -1,7 +1,6 @@
 // src/pages/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
 
 export default function Home() {
   return (
@@ -21,11 +20,7 @@ export default function Home() {
           <Link to="/purchases" className="hover:text-gray-800">Purchases</Link>
         </nav>
         {/* Icons */}
-        <div className="flex items-center space-x-4">
-          <FiSearch className="w-5 h-5 hover:text-gray-800 cursor-pointer" />
-          <FiShoppingCart className="w-5 h-5 hover:text-gray-800 cursor-pointer" />
-          <FiUser className="w-5 h-5 hover:text-gray-800 cursor-pointer" />
-        </div>
+        
       </header>
 
       {/* Hero Section styled like Apple promo */}
