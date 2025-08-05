@@ -21,14 +21,14 @@ import Dig     from './pages/skillpages/Dig';
 export default function App() {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
-      <nav className="bg-black bg-opacity-80 p-4 flex flex-wrap gap-4">
+      <nav className="bg-gray-900 text-white p-4 flex flex-wrap gap-4">
         <Link to="/"         className="hover:text-yellow-400">Home</Link>
-        <Link to="/analysis" className="hover:text-yellow-400">Analysis</Link>
         <Link to="/rules"    className="hover:text-yellow-400">Rules</Link>
         <Link to="/callouts" className="hover:text-yellow-400">Callouts</Link>
+        <Link to="/skills"   className="hover:text-yellow-400">Skills</Link>
+        <Link to="/analysis" className="hover:text-yellow-400">Analysis</Link>
         <Link to="/workouts" className="hover:text-yellow-400">Workouts</Link>
         <Link to="/purchases"className="hover:text-yellow-400">Purchases</Link>
-        <Link to="/skills"   className="hover:text-yellow-400">Skills</Link>
       </nav>
 
       <Routes>
