@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 
 import Home      from './pages/Home';
 import Rules     from './pages/Rules';
@@ -20,9 +20,9 @@ import Dig     from './pages/skillpages/Dig';
 
 export default function App() {
   return (
-    <Router>
-      {/* Top navigation */}
-      <header className="bg-white border-b">
+    <Router basename="/">
+      {/* Header */}
+      <header className="bg-white border-b sticky top-0 z-50">
         <div className="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
           <div className="text-2xl font-bold">vaw</div>
           <nav className="flex space-x-6 text-sm font-medium">
@@ -37,29 +37,26 @@ export default function App() {
         </div>
       </header>
 
-      {/* Main content */}
-      <div>
+      {/* Content */}
+      <main className="bg-gray-50 min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rules" element={<Rules />} />
           <Route path="/callouts" element={<Callouts />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/analysis" element={<Analysis />} />
-          <Route path="/workouts" element={<Workout />} />
-          <Route path="/purchases" element={<Purchases />} />
-
-          {/* Skill pages */}
           <Route path="/skills/serve" element={<Serve />} />
           <Route path="/skills/spike" element={<Spike />} />
           <Route path="/skills/set" element={<Set />} />
           <Route path="/skills/receive" element={<Receive />} />
           <Route path="/skills/block" element={<Block />} />
           <Route path="/skills/dig" element={<Dig />} />
-
-          {/* 404 fallback */}
-          <Route path="*" element={<div className="p-8 text-center">Page not found</div>} />
+          <Route path="/analysis" element={<Analysis />} />
+          <Route path="/workouts" element={<Workout />} />
+          <Route path="/purchases" element={<Purchases />} />
+          {/* Redirect unknown to home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
-      </div>
+      </main>
     </Router>
   );
 }
