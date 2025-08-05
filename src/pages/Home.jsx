@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
         </p>
         <Link
           to="/analysis"
-          className="inline-block px-6 py-3 border border-gray-900 rounded-full text-sm font-medium text-gray-900 hover:bg-gray-100"
+          className="inline-block px-6 py-3 border border-gray-900 rounded-full text-sm font-medium text-gray-900 hover:bg-gray-100 no-underline"
         >
           Get Started
         </Link>
