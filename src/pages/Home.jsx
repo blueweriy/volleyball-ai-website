@@ -1,47 +1,48 @@
 // src/pages/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-black font-sans">
-      {/* Top Bar styled after Samsung */}
-      <header className="flex items-center justify-between px-8 py-4">
-        {/* Logo / Branding */}
-        <div className="text-3xl font-bold">vaw</div>
-        {/* Navigation links */}
-        <nav className="flex space-x-8 text-lg font-medium">
-          <Link to="/"         className="hover:text-gray-700">Home</Link>
-          <Link to="/rules"    className="hover:text-gray-700">Rules</Link>
-          <Link to="/callouts" className="hover:text-gray-700">Callouts</Link>
-          <Link to="/skills"   className="hover:text-gray-700">Skills</Link>
-          <Link to="/analysis" className="hover:text-gray-700">Analysis</Link>
-          <Link to="/workouts" className="hover:text-gray-700">Workouts</Link>
-          <Link to="/purchases"className="hover:text-gray-700">Purchases</Link>
+      {/* Top Bar styled after Apple */}
+      <header className="flex items-center justify-center space-x-12 py-4 border-b">
+        {/* Logo */}
+        <div className="text-2xl font-bold">vaw</div>
+        {/* Nav Links */}
+        <nav className="flex space-x-6 text-sm font-medium">
+          <Link to="/" className="hover:text-gray-800">Home</Link>
+          <Link to="/rules" className="hover:text-gray-800">Rules</Link>
+          <Link to="/callouts" className="hover:text-gray-800">Callouts</Link>
+          <Link to="/skills" className="hover:text-gray-800">Skills</Link>
+          <Link to="/analysis" className="hover:text-gray-800">Analysis</Link>
+          <Link to="/workouts" className="hover:text-gray-800">Workouts</Link>
+          <Link to="/purchases" className="hover:text-gray-800">Purchases</Link>
         </nav>
-        {/* Placeholder to balance spacing */}
-        <div className="w-24"></div>
+        {/* Icons */}
+        <div className="flex items-center space-x-4">
+          <FiSearch className="w-5 h-5 hover:text-gray-800 cursor-pointer" />
+          <FiShoppingCart className="w-5 h-5 hover:text-gray-800 cursor-pointer" />
+          <FiUser className="w-5 h-5 hover:text-gray-800 cursor-pointer" />
+        </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative h-[600px] overflow-hidden">
+      {/* Hero Section styled like Apple promo */}
+      <section className="relative h-screen overflow-hidden">
         <img
-          src="https://source.unsplash.com/random/1600x900?volleyball"
-          alt="Hero"
+          src="https://source.unsplash.com/1600x900/?volleyball-court"
+          alt="Volleyball Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black opacity-30" />
-        <div className="relative z-10 flex flex-col justify-center items-start h-full px-16">
-          <h1 className="text-7xl font-extrabold text-white mb-4">vaw</h1>
-          <p className="text-2xl text-white mb-6 max-w-xl">
-            Elevate your game with AI-driven volleyball insights.
-          </p>
-          <Link
-            to="/analysis"
-            className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
-          >
+        <div className="absolute inset-0 bg-white opacity-60" />
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-4">
+          <div className="bg-blue-600 text-white text-5xl font-bold px-8 py-4 rounded-3xl text-center">
+            Elevate Your Game
+          </div>
+          <div className="mt-4 bg-white text-black text-xl px-6 py-3 rounded-full border border-gray-300 hover:bg-gray-100 cursor-pointer">
             Get Started
-          </Link>
+          </div>
         </div>
       </section>
     </div>
