@@ -10,15 +10,16 @@ export default function Home() {
         {/* Logo / Branding */}
         <div className="text-3xl font-bold">vaw</div>
         {/* Navigation links */}
-        <nav className="flex space-x-6 text-lg font-medium">
-          <Link to="/rules" className="hover:text-gray-700">Rules</Link>
+        <nav className="flex space-x-8 text-lg font-medium">
+          <Link to="/"         className="hover:text-gray-700">Home</Link>
+          <Link to="/rules"    className="hover:text-gray-700">Rules</Link>
           <Link to="/callouts" className="hover:text-gray-700">Callouts</Link>
-          <Link to="/skills" className="hover:text-gray-700">Skills</Link>
+          <Link to="/skills"   className="hover:text-gray-700">Skills</Link>
           <Link to="/analysis" className="hover:text-gray-700">Analysis</Link>
           <Link to="/workouts" className="hover:text-gray-700">Workouts</Link>
-          <Link to="/purchases" className="hover:text-gray-700">Purchases</Link>
+          <Link to="/purchases"className="hover:text-gray-700">Purchases</Link>
         </nav>
-        {/* Empty right side to balance */}
+        {/* Placeholder to balance spacing */}
         <div className="w-24"></div>
       </header>
 
