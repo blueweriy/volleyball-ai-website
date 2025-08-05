@@ -3,12 +3,12 @@ import React from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Home      from './pages/Home';
-import Analysis  from './pages/Analysis';
 import Rules     from './pages/Rules';
 import Callouts  from './pages/Callouts';
+import Skills    from './pages/Skills';
+import Analysis  from './pages/Analysis';
 import Workout   from './pages/Workout';
 import Purchases from './pages/Purchases';
-import Skills    from './pages/Skills';
 
 // skill pages
 import Serve   from './pages/skillpages/Serve';
@@ -23,23 +23,28 @@ export default function App() {
     <Router>
       <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
         {/* Apple-style top navigation */}
-        <header className="relative flex items-center justify-center bg-white py-4 border-b">
-          {/* Logo */}
-          <div className="absolute left-8 text-2xl font-bold">vaw</div>
+        <header className="fixed top-0 left-0 right-0 bg-white border-b z-10">
+          <div className="max-w-6xl mx-auto flex items-center justify-center py-4 relative">
+            {/* Logo */}
+            <div className="absolute left-4 text-2xl font-bold">vaw</div>
 
-          {/* Centered nav */}
-          <nav className="flex space-x-8 text-sm font-medium">
-            <Link to="/"         className="hover:text-gray-800">Home</Link>
-            <Link to="/rules"    className="hover:text-gray-800">Rules</Link>
-            <Link to="/callouts" className="hover:text-gray-800">Callouts</Link>
-            <Link to="/skills"   className="hover:text-gray-800">Skills</Link>
-            <Link to="/analysis" className="hover:text-gray-800">Analysis</Link>
-            <Link to="/workouts" className="hover:text-gray-800">Workouts</Link>
-            <Link to="/purchases"className="hover:text-gray-800">Purchases</Link>
-          </nav>
+            {/* Centered nav links */}
+            <nav className="flex space-x-8 text-sm font-medium">
+              <Link to="/"         className="hover:text-gray-800">Home</Link>
+              <Link to="/rules"    className="hover:text-gray-800">Rules</Link>
+              <Link to="/callouts" className="hover:text-gray-800">Callouts</Link>
+              <Link to="/skills"   className="hover:text-gray-800">Skills</Link>
+              <Link to="/analysis" className="hover:text-gray-800">Analysis</Link>
+              <Link to="/workouts" className="hover:text-gray-800">Workouts</Link>
+              <Link to="/purchases"className="hover:text-gray-800">Purchases</Link>
+            </nav>
+          </div>
         </header>
 
-        {/* Main routes content */}
+        {/* Spacer for fixed header */}
+        <div className="h-16"></div>
+
+        {/* Main content routes */}
         <Routes>
           <Route path="/"          element={<Home      />} />
           <Route path="/rules"     element={<Rules     />} />
