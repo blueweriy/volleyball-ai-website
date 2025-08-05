@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Home      from './pages/Home';
 import Rules     from './pages/Rules';
@@ -41,30 +41,29 @@ export default function App() {
           </div>
         </header>
 
-        {/* Spacer for fixed header */}
-        <div className="h-16"></div>
-
         {/* Main content routes */}
-        <Routes>
-          <Route path="/"          element={<Home      />} />
-          <Route path="/rules"     element={<Rules     />} />
-          <Route path="/callouts"  element={<Callouts  />} />
-          <Route path="/skills"    element={<Skills    />} />
-          <Route path="/analysis"  element={<Analysis  />} />
-          <Route path="/workouts"  element={<Workout   />} />
-          <Route path="/purchases" element={<Purchases />} />
+        <div className="mt-0">
+          <Routes>
+            <Route path="/"          element={<Home      />} />
+            <Route path="/rules"     element={<Rules     />} />
+            <Route path="/callouts"  element={<Callouts  />} />
+            <Route path="/skills"    element={<Skills    />} />
+            <Route path="/analysis"  element={<Analysis  />} />
+            <Route path="/workouts"  element={<Workout   />} />
+            <Route path="/purchases" element={<Purchases />} />
 
-          {/* Skill sub-pages */}
-          <Route path="/skills/serve"   element={<Serve   />} />
-          <Route path="/skills/spike"   element={<Spike   />} />
-          <Route path="/skills/set"     element={<Set     />} />
-          <Route path="/skills/receive" element={<Receive />} />
-          <Route path="/skills/block"   element={<Block   />} />
-          <Route path="/skills/dig"     element={<Dig     />} />
+            {/* Skill sub-pages */}
+            <Route path="/skills/serve"   element={<Serve   />} />
+            <Route path="/skills/spike"   element={<Spike   />} />
+            <Route path="/skills/set"     element={<Set     />} />
+            <Route path="/skills/receive" element={<Receive />} />
+            <Route path="/skills/block"   element={<Block   />} />
+            <Route path="/skills/dig"     element={<Dig     />} />
 
-          {/* Fallback */}
-          <Route path="*" element={<div className="p-8 text-center">Page not found</div>} />
-        </Routes>
+            {/* Fallback */}
+            <Route path="*" element={<div className="p-8 text-center">Page not found</div>} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
