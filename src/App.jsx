@@ -1,4 +1,4 @@
-// src/App.jsx (Layout)
+// this is your Layout component
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ export default function Layout() {
         </div>
       </header>
 
-      {/* Content via Outlet */}
+      {/* Page content */}
       <main className="flex-grow pt-4">
         <Outlet />
       </main>
