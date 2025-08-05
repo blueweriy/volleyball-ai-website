@@ -4,24 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-black font-sans">
-      {/* Top Bar styled after Apple */}
-      <header className="flex items-center justify-center space-x-12 py-4 border-b">
-        {/* Logo */}
-        <div className="text-2xl font-bold">vaw</div>
-        {/* Nav Links */}
-        <nav className="flex space-x-6 text-sm font-medium">
-          <Link to="/" className="hover:text-gray-800">Home</Link>
-          <Link to="/rules" className="hover:text-gray-800">Rules</Link>
-          <Link to="/callouts" className="hover:text-gray-800">Callouts</Link>
-          <Link to="/skills" className="hover:text-gray-800">Skills</Link>
-          <Link to="/analysis" className="hover:text-gray-800">Analysis</Link>
-          <Link to="/workouts" className="hover:text-gray-800">Workouts</Link>
-          <Link to="/purchases" className="hover:text-gray-800">Purchases</Link>
-        </nav>
-        {/* Icons */}
-        
-      </header>
+    <div className="min-h-screen bg-gray-50 text-black font-sans">
 
       {/* Hero Section styled like Apple promo */}
       <section className="relative h-screen overflow-hidden">
