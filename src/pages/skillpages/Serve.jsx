@@ -28,7 +28,7 @@ export default function Serve() {
       <section className="mb-12">
         <h2 className="font-serif text-2xl font-semibold mb-4">Serve Setup Diagram</h2>
         <img
-          src="/assets/serve_setup.png"
+          src="/serve_setup.png"
           alt="Serve stance and toss diagram"
           className="w-full rounded-lg shadow-md mb-4"
         />
@@ -42,14 +42,14 @@ export default function Serve() {
         <h2 className="font-serif text-2xl font-semibold mb-4">Watch & Learn</h2>
         <div className="aspect-w-16 aspect-h-9 mb-4">
           <iframe
-            src="https://www.youtube.com/embed/rn5OKVKXvLc"
+            src="https://www.youtube.com/embed/3dRRsHkSX8E"
             title="Volleyball Serving Tutorial"
             allowFullScreen
             className="w-full h-full rounded-lg shadow-md"
           />
         </div>
         <p className="text-center text-gray-600 italic text-sm">
-          Source: Basic volleyball serve breakdown.
+          Source: Volleyball Serving Tutorial by AllThingsVolleyball
         </p>
       </section>
 
@@ -71,7 +71,7 @@ export default function Serve() {
           description: "Power serve with overhand toss and wrist snap.",
           steps: [
             "Toss ball 1–2 ft above hitting shoulder, slightly forward.",
-            "Cock elbow high, hand open behind head.",
+            "Cock elbow high, hand shaped in a “C” behind head.",
             "Step forward with opposite foot as you swing arm over top.",
             "Contact center of ball with palm, driving through net.",
             "Follow-through across body; land balanced.",
@@ -82,7 +82,7 @@ export default function Serve() {
           description: "No-spin serve that “floats” unpredictably.",
           steps: [
             "Use overhand toss and arm path.",
-            "Contact ball squarely in center with stiff wrist; avoid spin.",
+            "Contact ball squarely in center with stiff wrist—no spin.",
             "Aim for a seam to disturb airflow and enhance float.",
             "Keep follow-through minimal to prevent spin.",
           ],
