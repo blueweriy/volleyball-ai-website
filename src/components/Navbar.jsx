@@ -16,14 +16,16 @@ export default function Navbar() {
     height: "4rem",
   };
   const linkStyle = {
-    margin: "0 2rem",       // even spacing
-    fontSize: "2rem",       // twice normal size
-    color: "#000",          // solid black
-    textDecoration: "none", // no underline
+    margin: "0 2rem",        // even spacing
+    fontSize: "1.5rem",      // a bit smaller
+    fontWeight: 700,         // thicker
+    color: "#000",           // solid black
+    textDecoration: "none",  // no underline
   };
 
-  // Reordered list of [label, path]
+  // Final ordered list
   const items = [
+    ["VAC", "/"],
     ["Rules", "/rules"],
     ["Callouts", "/callouts"],
     ["Skills", "/skills"],
