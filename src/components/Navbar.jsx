@@ -1,23 +1,42 @@
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
+  // Inline styles
+  const headerStyle = {
+    position: "sticky",
+    top: 0,
+    backgroundColor: "#fff",
+    borderBottom: "1px solid #e5e7eb",
+    zIndex: 50,
+  };
+  const navStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "4rem",
+  };
+  const linkStyle = {
+    margin: "0 2rem",       // even spacing
+    fontSize: "2rem",       // twice normal size
+    color: "#000",          // solid black
+    textDecoration: "none", // no underline
+  };
+
+  // Reordered list of [label, path]
+  const items = [
+    ["Rules", "/rules"],
+    ["Callouts", "/callouts"],
+    ["Skills", "/skills"],
+    ["Analysis", "/analysis"],
+    ["Workout", "/workout"],
+    ["Purchases", "/purchases"],
+  ];
+
   return (
-    <header className="sticky top-0 bg-white border-b border-gray-200 z-50">
-      <nav className="max-w-6xl mx-auto h-16 flex items-center justify-center space-x-16 px-4">
-        {[
-          ["VAC", "/"],
-          ["Analysis", "/analysis"],
-          ["Callouts", "/callouts"],
-          ["Purchases", "/purchases"],
-          ["Rules", "/rules"],
-          ["Skills", "/skills"],
-          ["Workout", "/workout"],
-        ].map(([label, to]) => (
-          <Link
-            key={to}
-            to={to}
-            className="text-2xl font-medium text-black hover:text-gray-700 no-underline"
-          >
+    <header style={headerStyle}>
+      <nav style={navStyle}>
+        {items.map(([label, to]) => (
+          <Link key={to} to={to} style={linkStyle}>
             {label}
           </Link>
         ))}
