@@ -28,7 +28,7 @@ export default function Serve() {
       <section className="mb-12">
         <h2 className="font-serif text-2xl font-semibold mb-4">Serve Setup Diagram</h2>
         <img
-          src="/serve_setup.png"
+          src="/assets/serve_setup.png"
           alt="Serve stance and toss diagram"
           className="w-full rounded-lg shadow-md mb-4"
         />
@@ -42,14 +42,14 @@ export default function Serve() {
         <h2 className="font-serif text-2xl font-semibold mb-4">Watch & Learn</h2>
         <div className="aspect-w-16 aspect-h-9 mb-4">
           <iframe
-            src="https://www.youtube.com/embed/MWVdZ3M6B0I"
-            title="Volleyball Serve Tutorial"
+            src="https://www.youtube.com/embed/rn5OKVKXvLc"
+            title="Volleyball Serving Tutorial"
             allowFullScreen
             className="w-full h-full rounded-lg shadow-md"
           />
         </div>
         <p className="text-center text-gray-600 italic text-sm">
-          Source: Essential volleyball serve technique.
+          Source: Basic volleyball serve breakdown.
         </p>
       </section>
 
@@ -57,49 +57,45 @@ export default function Serve() {
       {[
         {
           title: "Underhand Serve",
-          description:
-            "Ideal for beginners or precise ball placement.",
+          description: "Ideal for beginners or precise ball placement.",
           steps: [
-            "Hold the ball in non-dominant hand at waist height, palm up.",
-            "Stance: feet shoulder-width apart; non-dominant foot forward.",
-            "Swing dominant arm in a pendulum motion; contact with heel of hand.",
-            "Hit lower half of ball, brushing forward to generate lift.",
-            "Follow through arm upward; step forward slightly.",
+            "Hold the ball in non-dominant hand at waist height, palm facing up.",
+            "Stand with feet shoulder-width apart; non-dominant foot forward.",
+            "Swing dominant arm in a pendulum motion; contact ball with heel of hand.",
+            "Strike lower half of ball, brushing forward to generate lift.",
+            "Follow-through arm upward and step forward slightly.",
           ],
         },
         {
           title: "Overhand Serve",
-          description:
-            "Standard power serve with overhand toss and wrist snap.",
+          description: "Power serve with overhand toss and wrist snap.",
           steps: [
-            "Toss ball 1–2 ft above hitting shoulder, slightly in front.",
-            "Elbow high, hand cocked back in a “C” shape.",
-            "Step forward with opposite foot as you swing arm over.",
+            "Toss ball 1–2 ft above hitting shoulder, slightly forward.",
+            "Cock elbow high, hand open behind head.",
+            "Step forward with opposite foot as you swing arm over top.",
             "Contact center of ball with palm, driving through net.",
-            "Follow through across body; land balanced.",
+            "Follow-through across body; land balanced.",
           ],
         },
         {
           title: "Float Serve",
-          description:
-            "No-spin serve that moves unpredictably in flight.",
+          description: "No-spin serve that “floats” unpredictably.",
           steps: [
             "Use overhand toss and arm path.",
-            "Contact ball squarely in center with stiff wrist—no spin.",
+            "Contact ball squarely in center with stiff wrist; avoid spin.",
             "Aim for a seam to disturb airflow and enhance float.",
-            "Minimal follow-through to avoid imparting spin.",
+            "Keep follow-through minimal to prevent spin.",
           ],
         },
         {
           title: "Jump Serve",
-          description:
-            "High-powered serve combining jump and topspin/float.",
+          description: "High-powered serve combining jump with topspin or float.",
           steps: [
-            "Take a 2–3 step approach to build momentum.",
+            "Use a 2–3 step approach to build momentum.",
             "Toss ball 2–3 ft above reach, slightly forward.",
-            "Jump explosively, eyes on ball.",
+            "Jump explosively; eyes locked on ball.",
             "Swing arm over top; snap for topspin or stiffen for float.",
-            "Land inside end line in defensive ready position.",
+            "Land inside end line ready to defend.",
           ],
         },
       ].map(({ title, description, steps }) => (
