@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   // Inline styles
   const headerStyle = {
-    position: "sticky",
-    top: 0,
     backgroundColor: "#fff",
     borderBottom: "1px solid #e5e7eb",
-    zIndex: 50,
+    // position: "sticky",   ← removed
+    // top: 0,               ← removed
+    // zIndex: 50,           ← removed
   };
   const navStyle = {
     display: "flex",
@@ -16,11 +16,11 @@ export default function Navbar() {
     height: "4rem",
   };
   const linkStyle = {
-    margin: "0 2rem",        // even spacing
-    fontSize: "1.5rem",      // a bit smaller
-    fontWeight: 700,         // thicker
-    color: "#000",           // solid black
-    textDecoration: "none",  // no underline
+    margin: "0 2rem",
+    fontSize: "1.5rem",
+    fontWeight: 700,
+    color: "#000",
+    textDecoration: "none",
   };
 
   // Final ordered list
