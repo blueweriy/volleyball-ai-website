@@ -4,16 +4,16 @@ import React from "react";
 export default function Rules() {
   return (
     <div className="bg-white text-gray-900 px-6 py-12 max-w-4xl mx-auto">
-      {/* Enable smooth scrolling via CSS */}
+      {/* Smooth scrolling */}
       <style>{`html { scroll-behavior: smooth; }`}</style>
 
       {/* Page Title */}
-      <h1 className="text-4xl font-bold mb-6">Volleyball Rules</h1>
+      <h1 className="text-4xl font-bold mb-8">Volleyball Rules</h1>
 
       {/* Table of Contents */}
       <nav className="mb-12 border-b pb-4">
         <h2 className="text-2xl font-semibold mb-2">Contents</h2>
-        <ul className="list-disc list-inside space-y-1">
+        <ul className="list-disc list-inside space-y-2">
           <li><a href="#how-to-play" className="text-blue-600 hover:underline">How to Play</a></li>
           <li><a href="#court-dimensions" className="text-blue-600 hover:underline">Court Dimensions</a></li>
           <li><a href="#basic-rules" className="text-blue-600 hover:underline">Basic Rules</a></li>
@@ -26,64 +26,130 @@ export default function Rules() {
       {/* Sections */}
       <section id="how-to-play" className="mb-12">
         <h2 className="text-3xl font-semibold mb-4">How to Play</h2>
-        <p className="mb-4">
-          Volleyball is played by two teams of six players each on a rectangular court divided by a net.
-          The goal is to send the ball over the net and ground it on the opponent’s court, while preventing
-          the same effort by the other team.
-        </p>
-        <ul className="list-disc list-inside space-y-2">
-          <li>Each team has up to three touches to return the ball over the net.</li>
-          <li>Players rotate clockwise each time they win the serve back from the opponent.</li>
-          <li>Matches are typically best-of-five sets; the first four sets go to 25 points, the fifth to 15.</li>
-        </ul>
+        <div className="leading-loose mb-4">
+          <p>
+            Volleyball is a fast-paced, team sport in which two teams of six players each
+            are separated by a net and compete to ground the ball on the opponent’s court.  
+          </p>
+          <p>
+            The ball is served from behind the end line, over the net into the opponent’s
+            court. Each team is allowed up to three successive contacts (passes, sets, spikes)
+            to return the ball.  
+          </p>
+          <p>
+            Players rotate clockwise to new positions each time they win back the serve,
+            ensuring every member participates both in front‐row attacks and back‐row defense.  
+          </p>
+          <ul className="list-disc list-inside space-y-2 mt-4">
+            <li>Serve: Underhand or overhand, must clear the net and land in bounds.</li>
+            <li>Pass: First contact, usually a forearm “bump” to control the serve.</li>
+            <li>Set: Second contact, overhead pass to position for an attack.</li>
+            <li>Attack (Spike): Third contact, a forceful downward hit.</li>
+            <li>Block: Front‐row defensive jump to stop an opponent’s attack.</li>
+          </ul>
+        </div>
       </section>
 
       <section id="court-dimensions" className="mb-12">
         <h2 className="text-3xl font-semibold mb-4">Court Dimensions</h2>
-        <ul className="list-disc list-inside space-y-2">
-          <li>Court size: 18 m long × 9 m wide (59 ft × 29½ ft).</li>
-          <li>Attack line (3 m from the net) separates front‐row and back‐row play.</li>
-          <li>Net height: 2.43 m for men’s, 2.24 m for women’s competitions.</li>
-        </ul>
+        <div className="leading-loose mb-4">
+          <p>
+            A standard volleyball court measures 18 m long by 9 m wide (59 ft × 29½ ft), divided
+            in half by a central net. Boundaries are marked on the floor, and any part of the ball
+            touching the line is considered in play.  
+          </p>
+          <ul className="list-disc list-inside space-y-2 mt-4">
+            <li>Center line: Directly beneath the net, dividing the two halves.</li>
+            <li>Attack line: 3 m (9 ft 10 in) from the net on both sides, marking front‐row vs. back‐row.</li>
+            <li>Service area: 3 m behind the end line; server may move laterally along this line.</li>
+            <li>Free zone: Minimum 3 m around the court for player movement.</li>
+            <li>Net height: 2.43 m (7 ft 11⅝ in) for men, 2.24 m (7 ft 4⅛ in) for women.</li>
+          </ul>
+        </div>
       </section>
 
       <section id="basic-rules" className="mb-12">
         <h2 className="text-3xl font-semibold mb-4">Basic Rules</h2>
-        <ul className="list-disc list-inside space-y-2">
-          <li>The ball may touch any part of the body, but a player must not hold or throw it.</li>
-          <li>A block touch counts as one of the team’s three allowable contacts.</li>
-          <li>Players may not touch the net or cross under it during play.</li>
-        </ul>
+        <div className="leading-loose mb-4">
+          <p>
+            Play begins with a serve and continues until the ball touches the ground, a fault
+            occurs, or the ball is played out of bounds.  
+          </p>
+          <ul className="list-disc list-inside space-y-2 mt-4">
+            <li>The ball may be played with any part of the body but must not be held or thrown.</li>
+            <li>Players cannot touch the net or step over the center line during play.</li>
+            <li>A block or simultaneous contact at the net counts as one team contact.</li>
+            <li>Back‐row players cannot attack the ball above the net from in front of the attack line.</li>
+            <li>On the serve, the ball must be cleanly hit, not caught or thrown.</li>
+          </ul>
+        </div>
       </section>
 
       <section id="rule-violations" className="mb-12">
         <h2 className="text-3xl font-semibold mb-4">Rule Violations</h2>
-        <ul className="list-disc list-inside space-y-2">
-          <li><strong>Double contact:</strong> a player contacts the ball twice in succession.</li>
-          <li><strong>Four hits:</strong> the team makes more than three contacts before returning.</li>
-          <li><strong>Net touch:</strong> a player’s clothing or body touches the net.</li>
-          <li><strong>Foot fault:</strong> serving player steps on or over the end line.</li>
-        </ul>
+        <div className="leading-loose mb-4">
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <strong>Double contact:</strong> A single player contacts the ball twice in succession
+              (except on a first hard-driven serve or attack).
+            </li>
+            <li>
+              <strong>Four hits:</strong> The team makes more than three consecutive contacts.
+            </li>
+            <li>
+              <strong>Net touch:</strong> Any part of the player’s body or uniform touches the net while the ball is in play.
+            </li>
+            <li>
+              <strong>Foot fault:</strong> The server steps on or over the end line before contacting the ball.
+            </li>
+            <li>
+              <strong>Back‐row attack:</strong> A back‐row player jumps and contacts the ball above the net
+              from in front of the attack line.
+            </li>
+            <li>
+              <strong>Lift/Catch:</strong> The ball comes to rest momentarily in the hands.  
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="scoring" className="mb-12">
         <h2 className="text-3xl font-semibold mb-4">Scoring System</h2>
-        <p className="mb-4">
-          Rally scoring is used: a point is awarded on every rally, regardless of which team served.
-        </p>
-        <ul className="list-disc list-inside space-y-2">
-          <li>Sets 1–4 go to 25 points (win by 2 points).</li>
-          <li>5th set (tiebreak) goes to 15 points (win by 2 points).</li>
-        </ul>
+        <div className="leading-loose mb-4">
+          <p>
+            Modern volleyball uses rally scoring: every rally results in a point, regardless of which team served.
+            Matches are typically best‐of‐five sets.  
+          </p>
+          <ul className="list-disc list-inside space-y-2 mt-4">
+            <li>Sets 1–4 are played to 25 points (must win by 2 points).</li>
+            <li>If tied 24–24, play continues until one team leads by 2.</li>
+            <li>5th set (tiebreak) is played to 15 points (must win by 2).</li>
+            <li>Technical timeouts occur at 8 and 16 points in each set 1–4.</li>
+          </ul>
+        </div>
       </section>
 
       <section id="game-formats">
         <h2 className="text-3xl font-semibold mb-4">Game Formats</h2>
-        <ul className="list-disc list-inside space-y-2">
-          <li><strong>Indoor:</strong> 6 vs. 6 format on hard court.</li>
-          <li><strong>Beach:</strong> 2 vs. 2 on sand, smaller court.</li>
-          <li><strong>Sitting:</strong> Paralympic format with lower net.</li>
-        </ul>
+        <div className="leading-loose mb-4">
+          <p>
+            Volleyball has several variations played worldwide, each with unique rules and team sizes.
+          </p>
+          <ul className="list-disc list-inside space-y-2 mt-4">
+            <li>
+              <strong>Indoor (6 vs. 6):</strong> Standard format on a hard court with specialized positions.
+            </li>
+            <li>
+              <strong>Beach (2 vs. 2):</strong> Smaller court on sand; fewer players increases all‐round skill demands.
+            </li>
+            <li>
+              <strong>Sitting Volleyball:</strong> Paralympic discipline; players remain seated and the net is lower.
+            </li>
+            <li>
+              <strong>Mini Volleyball:</strong> Youth version on a smaller court, lower net, fewer players.
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   );
