@@ -3,106 +3,123 @@ import React from "react";
 
 export default function Callouts() {
   return (
-    <div className="bg-white text-gray-900 px-6 py-12 max-w-4xl mx-auto">
+    <div className="bg-white text-gray-900 px-6 py-12 max-w-5xl mx-auto">
       {/* Smooth scrolling */}
       <style>{`html { scroll-behavior: smooth; }`}</style>
 
-      <h1 className="text-4xl font-bold mb-6">Volleyball Call-Outs & Glossary</h1>
+      <h1 className="text-4xl font-bold mb-8">Court Call-Outs & Glossary</h1>
 
-      {/* Contents */}
+      {/* Table of Contents */}
       <nav className="mb-8 border-b pb-4">
         <h2 className="text-2xl font-semibold mb-2">Contents</h2>
-        <ul className="list-decimal list-inside space-y-1">
-          <li><a href="#basic" className="text-blue-600 hover:underline">Basic Call-Outs</a></li>
-          <li><a href="#numeric" className="text-blue-600 hover:underline">Numerical Call-Outs Diagram</a></li>
-          <li><a href="#glossary" className="text-blue-600 hover:underline">Volleyball Glossary</a></li>
+        <ul className="list-decimal list-inside space-y-2">
+          <li>
+            <a href="#basic" className="text-blue-600 hover:underline">
+              Basic Call-Outs
+            </a>
+          </li>
+          <li>
+            <a href="#advanced" className="text-blue-600 hover:underline">
+              Advanced Call-Outs
+            </a>
+          </li>
+          <li>
+            <a href="#glossary" className="text-blue-600 hover:underline">
+              Volleyball Glossary
+            </a>
+          </li>
         </ul>
       </nav>
 
-      {/* Basic Call-Outs */}
+      {/* 1. Basic Call-Outs */}
       <section id="basic" className="mb-12">
         <h2 className="text-3xl font-semibold mb-4">1. Basic Call-Outs</h2>
-        <ul className="list-disc list-inside space-y-2 leading-loose">
-          <li><strong>Mine!</strong> – I’ve got this ball. No need to dive.</li>
-          <li><strong>Yours!</strong> – I defer to you; you take it.</li>
-          <li><strong>Up!</strong> – Ready for a set; I’m under the ball.</li>
-          <li><strong>Ball!</strong> – Alert teammates to a loose ball.</li>
-          <li><strong>Switch!</strong> – We need to rotate coverage on a long rally.</li>
-          <li><strong>Late!</strong> – I’ll be late to cover that area.</li>
+        <ul className="list-disc list-inside space-y-3 leading-relaxed">
+          <li>
+            <strong>Mine!</strong> – I’ve got this ball, don’t dive.
+          </li>
+          <li>
+            <strong>Yours!</strong> – I defer to you; please take it.
+          </li>
+          <li>
+            <strong>Up!</strong> – I’m under it and ready to set.
+          </li>
+          <li>
+            <strong>Ball!</strong> – Heads-up: loose ball on the floor.
+          </li>
+          <li>
+            <strong>Switch!</strong> – Rotate coverage; adjust positions.
+          </li>
+          <li>
+            <strong>Late!</strong> – I’ll be late getting there.
+          </li>
         </ul>
       </section>
 
-      {/* Numerical Call-Outs Diagram */}
-      <section id="numeric" className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">2. Numerical Call-Outs</h2>
-        <p className="mb-6 leading-loose">
-          Each court position is numbered to streamline communication during serve-receive and defense:
-        </p>
-        <img
-          src="/numerical_callouts.png"
-          alt="Numerical Call-Out Positions Diagram"
-          className="w-full max-w-md mx-auto mb-4"
-        />
-        <p className="text-center text-gray-700 italic mb-6">
-          Diagram: P1 right back → P2 right front → P3 middle front → P4 left front → P5 left back → P6 middle back
-        </p>
+      {/* 2. Advanced Call-Outs */}
+      <section id="advanced" className="mb-12">
+        <h2 className="text-3xl font-semibold mb-4">2. Advanced Call-Outs</h2>
+        <ul className="list-disc list-inside space-y-3 leading-relaxed">
+          <li>
+            <strong>Pipe!</strong> – Back-row attacker ready for a middle hit.
+          </li>
+          <li>
+            <strong>Line!</strong> – Direct me for a line shot coverage.
+          </li>
+          <li>
+            <strong>Roll!</strong> – Watch for a roll shot off the block.
+          </li>
+          <li>
+            <strong>Short!</strong> – Cover drop shots near the net.
+          </li>
+          <li>
+            <strong>Off!</strong> – Ball is out of bounds; reset.
+          </li>
+          <li>
+            <strong>Blocking!</strong> – Front row, form up for a block.
+          </li>
+          <li>
+            <strong>Seam!</strong> – Jam the seam between blockers.
+          </li>
+          <li>
+            <strong>Tool!</strong> – Expect an off-block tool attack.
+          </li>
+        </ul>
       </section>
 
-      {/* Glossary */}
+      {/* 3. Glossary */}
       <section id="glossary">
-        <h2 className="text-3xl font-semibold mb-4">3. Volleyball Glossary (A–Z)</h2>
-        <dl className="leading-loose">
-          <dt className="font-semibold">Area Block</dt>
-          <dd className="ml-4 mb-2">Two front‐row players block side by side to cover a wide hitting angle.</dd>
-
-          <dt className="font-semibold">Back-Row Attack</dt>
-          <dd className="ml-4 mb-2">An attack by a back‐row player jumping from behind the attack line.</dd>
-
-          <dt className="font-semibold">Block</dt>
-          <dd className="ml-4 mb-2">Defensive play at the net to stop an opponent’s attack.</dd>
-
-          <dt className="font-semibold">Dig</dt>
-          <dd className="ml-4 mb-2">A forearm or overhead defensive pass to keep the ball in play after an attack.</dd>
-
-          <dt className="font-semibold">Dump</dt>
-          <dd className="ml-4 mb-2">Setter’s surprise attack on the second contact, tipping the ball over the net.</dd>
-
-          <dt className="font-semibold">Free Ball</dt>
-          <dd className="ml-4 mb-2">An opponent’s non‐attack hit over the net, usually easy to pass.</dd>
-
-          <dt className="font-semibold">Kill</dt>
-          <dd className="ml-4 mb-2">An attack that results directly in a point.</dd>
-
-          <dt className="font-semibold">Libero</dt>
-          <dd className="ml-4 mb-2">Specialized back‐row defensive player, wears a different jersey, cannot attack above net height.</dd>
-
-          <dt className="font-semibold">Overpass</dt>
-          <dd className="ml-4 mb-2">When the ball comes off the blocker’s hands and goes over to the opponent’s court.</dd>
-
-          <dt className="font-semibold">Pipe Attack</dt>
-          <dd className="ml-4 mb-2">A back‐row attack from Position 6, typically down the middle.</dd>
-
-          <dt className="font-semibold">Quick Set (1)</dt>
-          <dd className="ml-4 mb-2">A fast, low set to the middle hitter, executed immediately off the pass.</dd>
-
-          <dt className="font-semibold">Seam Block</dt>
-          <dd className="ml-4 mb-2">Blocker targets the seam between two opposing hitters to exploit coverage gaps.</dd>
-
-          <dt className="font-semibold">Setter</dt>
-          <dd className="ml-4 mb-2">Player who orchestrates the offense, distributing sets to hitters.</dd>
-
-          <dt className="font-semibold">Slide</dt>
-          <dd className="ml-4 mb-2">One-footed attack by a middle blocker moving laterally along the net.</dd>
-
-          <dt className="font-semibold">Stuff Block</dt>
-          <dd className="ml-4 mb-2">A block that deflects the ball straight down to the attacker’s side for an immediate point.</dd>
-
-          <dt className="font-semibold">Tool</dt>
-          <dd className="ml-4 mb-2">Attack directed off the blocker’s hands, out of bounds on the opponent’s side.</dd>
-
-          <dt className="font-semibold">Underhand Serve</dt>
-          <dd className="ml-4 mb-2">Serve executed with an underhand swing, typically used by beginners.</dd>
-        </dl>
+        <h2 className="text-3xl font-semibold mb-6">3. Volleyball Glossary (A–Z)</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {[
+            ["Area Block", "Two front-row players block side by side to cover a wide hitting angle."],
+            ["Back-Row Attack", "An attack by a back-row player jumping from behind the attack line."],
+            ["Block", "Defensive play at the net to stop or deflect an opponent’s attack."],
+            ["Dig", "A forearm or overhead defensive pass to keep the ball off the floor."],
+            ["Dump", "Setter’s surprise tip over the net on the second contact."],
+            ["Free Ball", "An opponent’s non-attack hit over the net, usually easy to pass."],
+            ["Kill", "An attack that results directly in a point."],
+            ["Libero", "Specialized back-row defensive player; cannot attack above net height."],
+            ["Overpass", "When the ball comes off the blocker’s hands and crosses to opponent’s side."],
+            ["Pipe Attack", "A back-row attack from center court (Position 6)."],
+            ["Quick Set (1)", "A fast, low set to the middle hitter immediately off the pass."],
+            ["Roll Shot", "An off-speed attack with topspin to drop the ball just over the net."],
+            ["Seam Block", "Blocker targets the gap (seam) between two hitters."],
+            ["Setter", "Player who orchestrates offense by setting the ball for attackers."],
+            ["Slide", "One-footed attack by a middle blocker moving along the net."],
+            ["Stuff Block", "A block that deflects the ball straight down for a point."],
+            ["Tool", "Attack directed off the blocker’s hands out of bounds."],
+            ["Underhand Serve", "Serve executed with an underhand swing."],
+          ].map(([term, desc]) => (
+            <div
+              key={term}
+              className="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition"
+            >
+              <dt className="font-semibold text-lg">{term}</dt>
+              <dd className="mt-1 text-gray-700">{desc}</dd>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
