@@ -4,7 +4,7 @@ import React from "react";
 export default function Serve() {
   return (
     <div className="bg-white text-gray-900 py-16 px-8 md:px-16 lg:px-32 max-w-4xl mx-auto leading-relaxed">
-      {/* Smooth scrolling */}
+      {/* Enable smooth scrolling */}
       <style>{`html { scroll-behavior: smooth; }`}</style>
 
       {/* Page Title */}
@@ -14,19 +14,38 @@ export default function Serve() {
 
       {/* Official Serving Rules */}
       <section className="mb-12">
-        <h2 className="font-serif text-2xl font-semibold mb-4">Official Serving Rules</h2>
+        <h2 className="font-serif text-2xl font-semibold mb-4">
+          Official Serving Rules
+        </h2>
         <ul className="list-disc list-inside space-y-3 text-lg">
-          <li><strong>Service Zone:</strong> Serve from behind the end line, inside sidelines.</li>
-          <li><strong>Foot Fault:</strong> Do not step on or over the end line until after contact.</li>
-          <li><strong>Clean Hit:</strong> Must strike the ball—no catching or throwing.</li>
-          <li><strong>In Bounds:</strong> Ball must clear the net and land inside opponent’s court (line counts).</li>
-          <li><strong>Rotation Order:</strong> Serve in correct rotation—out-of-turn is a fault.</li>
+          <li>
+            <strong>Service Zone:</strong> Serve from behind the end line,
+            inside sidelines.
+          </li>
+          <li>
+            <strong>Foot Fault:</strong> Do not step on or over the end line
+            until after contact.
+          </li>
+          <li>
+            <strong>Clean Hit:</strong> Must strike the ball—no catching or
+            throwing.
+          </li>
+          <li>
+            <strong>In Bounds:</strong> Ball must clear the net and land inside
+            opponent’s court (line counts).
+          </li>
+          <li>
+            <strong>Rotation Order:</strong> Serve in correct rotation—out-of-turn
+            is a fault.
+          </li>
         </ul>
       </section>
 
       {/* Serve Setup Diagram */}
       <section className="mb-12">
-        <h2 className="font-serif text-2xl font-semibold mb-4">Serve Setup Diagram</h2>
+        <h2 className="font-serif text-2xl font-semibold mb-4">
+          Serve Setup Diagram
+        </h2>
         <img
           src="/serve_setup.png"
           alt="Serve stance and toss diagram"
@@ -39,10 +58,12 @@ export default function Serve() {
 
       {/* Video Tutorial */}
       <section className="mb-12">
-        <h2 className="font-serif text-2xl font-semibold mb-4">Watch & Learn</h2>
+        <h2 className="font-serif text-2xl font-semibold mb-4">
+          Watch & Learn
+        </h2>
         <div className="aspect-w-16 aspect-h-9 mb-4">
           <iframe
-            src="https://www.youtube.com/embed/3dRRsHkSX8E"
+            src="https://www.youtube.com/embed/Oppb6Qf3voU"
             title="Volleyball Serving Tutorial"
             allowFullScreen
             className="w-full h-full rounded-lg shadow-md"
@@ -89,7 +110,8 @@ export default function Serve() {
         },
         {
           title: "Jump Serve",
-          description: "High-powered serve combining jump with topspin or float.",
+          description:
+            "High-powered serve combining jump with topspin or float.",
           steps: [
             "Use a 2–3 step approach to build momentum.",
             "Toss ball 2–3 ft above reach, slightly forward.",
