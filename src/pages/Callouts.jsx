@@ -88,40 +88,67 @@ export default function Callouts() {
       </section>
 
       {/* 3. Glossary */}
-      <section id="glossary" className="mb-8">
-        <h2 className="text-3xl font-semibold mb-6 text-center">3. Volleyball Glossary</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            ["Area Block", "Two front-row players block side-by-side to cover a wide angle."],
-            ["Back-Row Attack", "An attack by a back-row player jumping from behind the attack line."],
-            ["Block", "Defensive play at the net to stop or deflect an opponent’s attack."],
-            ["Dig", "A forearm or overhead defensive pass to keep the ball off the floor."],
-            ["Dump", "Setter’s surprise tip over the net on the second contact."],
-            ["Free Ball", "An opponent’s non-attack hit over the net, usually easy to pass."],
-            ["Jump Float Serve", "Serve with minimal spin, causing unpredictable trajectory."],
-            ["Kill", "An attack that results directly in a point."],
-            ["Libero", "Specialized back-row defensive player; cannot attack above net height."],
-            ["Pipe Attack", "A back-row attack from Position 6, typically down the middle."],
-            ["Quick Set (1)", "A fast, low set to the middle hitter immediately off the pass."],
-            ["Roll Shot", "An off-speed attack with topspin to drop the ball just over the net."],
-            ["Seam Block", "Blocker targets the gap (seam) between two opposing hitters."],
-            ["Setter", "Player who orchestrates offense by setting the ball for attackers."],
-            ["Slide", "One-footed attack by a middle blocker moving laterally along the net."],
-            ["Stuff Block", "A block that deflects the ball straight down for an immediate point."],
-            ["Tool", "Attack directed off the blocker’s hands out of bounds on opponent’s side."],
-            ["Toss-Serve", "Underhand serve where ball is tossed slightly before contact."],
-            ["Three-Hit Train", "Quick succession of bump/set/spike within one play."],
-            ["Wipe", "Off-speed hit off the blocker’s hands to redirect the ball."],
-          ].map(([term, desc]) => (
-            <div
-              key={term}
-              className="bg-gray-50 rounded-lg p-5 hover:shadow-md transition-shadow"
-            >
-              <dt className="font-bold text-lg text-indigo-600 uppercase">{term}</dt>
-              <dd className="mt-2 text-gray-700 leading-relaxed">{desc}</dd>
-            </div>
-          ))}
-        </div>
+      <section id="glossary">
+        <h2 className="text-3xl font-semibold mb-4">3. Volleyball Glossary</h2>
+        <ul className="list-disc list-inside space-y-2 leading-relaxed">
+          <li>
+            <strong>Area Block</strong> – Two front-row players block side by side to cover a wide angle.
+          </li>
+          <li>
+            <strong>Back-Row Attack</strong> – An attack by a back-row player jumping from behind the attack line.
+          </li>
+          <li>
+            <strong>Block</strong> – Defensive play at the net to stop or deflect an opponent’s attack.
+          </li>
+          <li>
+            <strong>Dig</strong> – A forearm or overhead defensive pass to keep the ball off the floor.
+          </li>
+          <li>
+            <strong>Dump</strong> – Setter’s surprise tip over the net on the second contact.
+          </li>
+          <li>
+            <strong>Free Ball</strong> – An opponent’s non-attack hit over the net, usually easy to pass.
+          </li>
+          <li>
+            <strong>Jump Float Serve</strong> – Serve with minimal spin, causing an unpredictable trajectory.
+          </li>
+          <li>
+            <strong>Kill</strong> – An attack that results directly in a point.
+          </li>
+          <li>
+            <strong>Libero</strong> – Specialized back-row defensive player; cannot attack above net height.
+          </li>
+          <li>
+            <strong>Overpass</strong> – When the ball comes off the blocker’s hands and crosses to opponent’s side.
+          </li>
+          <li>
+            <strong>Pipe Attack</strong> – A back-row attack from Position 6, typically down the middle.
+          </li>
+          <li>
+            <strong>Quick Set (1)</strong> – A fast, low set to the middle hitter immediately off the pass.
+          </li>
+          <li>
+            <strong>Roll Shot</strong> – An off-speed attack with topspin to drop the ball just over the net.
+          </li>
+          <li>
+            <strong>Seam Block</strong> – Blocker targets the gap (seam) between two opposing hitters.
+          </li>
+          <li>
+            <strong>Setter</strong> – Player who orchestrates offense by setting the ball for attackers.
+          </li>
+          <li>
+            <strong>Slide</strong> – One-footed attack by a middle blocker moving laterally along the net.
+          </li>
+          <li>
+            <strong>Stuff Block</strong> – A block that deflects the ball straight down for an immediate point.
+          </li>
+          <li>
+            <strong>Tool</strong> – Attack directed off the blocker’s hands out of bounds on opponent’s side.
+          </li>
+          <li>
+            <strong>Underhand Serve</strong> – Serve executed with an underhand swing.
+          </li>
+        </ul>
       </section>
     </div>
   );
