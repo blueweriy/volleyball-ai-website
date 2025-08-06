@@ -3,115 +3,126 @@ import React from "react";
 
 export default function Serve() {
   return (
-    <div className="bg-white text-gray-900 py-16 px-8 lg:px-20 max-w-4xl mx-auto">
+    <div className="bg-white text-gray-900 py-16 px-8 md:px-16 lg:px-32 max-w-4xl mx-auto leading-relaxed">
       {/* Smooth scrolling */}
       <style>{`html { scroll-behavior: smooth; }`}</style>
 
       {/* Page Title */}
-      <h1 className="text-4xl font-serif font-bold mb-6 text-center">
+      <h1 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-center">
         Serving: Rules & Techniques
       </h1>
 
-      {/* Serving Rules */}
+      {/* Rules */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-3">Official Serving Rules</h2>
-        <ul className="list-disc list-inside space-y-2 leading-relaxed">
+        <h2 className="font-serif text-2xl font-semibold mb-4">Official Serving Rules</h2>
+        <ul className="list-disc list-inside space-y-3 text-lg">
           <li>
-            <strong>Service Zone:</strong> Serve from behind the end line, within sidelines.
+            <strong>Service Zone:</strong> Serve from behind the end line, inside the sidelines.
           </li>
           <li>
             <strong>Foot Fault:</strong> Do not step on or over the end line until after contact.
           </li>
           <li>
-            <strong>Clean Hit:</strong> Ball must be struck—not caught or thrown.
+            <strong>Clean Hit:</strong> You must strike the ball; catching or throwing is a fault.
           </li>
           <li>
-            <strong>In Bounds:</strong> Ball must clear the net and land inside opponent’s court (touching line counts).
+            <strong>In Bounds:</strong> The ball must clear the net and land inside opponent’s court (touching the line counts as in).
           </li>
           <li>
-            <strong>Rotation:</strong> Serve order follows rotation—out-of-turn serve is a fault.
+            <strong>Rotation Order:</strong> You must serve in the correct rotation—out-of-turn serves are faults.
           </li>
         </ul>
       </section>
 
-      {/* Underhand Serve */}
+      {/* Serve Diagram */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-3">Underhand Serve</h2>
-        <p className="mb-4 leading-relaxed">
-          Ideal for beginners or when you need precise placement.
+        <h2 className="font-serif text-2xl font-semibold mb-4">Serve Setup Diagram</h2>
+        <img
+          src="/assets/serve_setup.png"  
+          alt="Serve stance and toss diagram"
+          className="w-full rounded-lg shadow-md mb-4"
+        />
+        <p className="text-center text-gray-600 italic text-sm">
+          Figure: Proper stance, toss point, and contact area.
         </p>
-        <ol className="list-decimal list-inside space-y-2 leading-relaxed">
-          <li>
-            <strong>Grip:</strong> Hold ball in non-dominant hand at waist height, palm up.
-          </li>
-          <li>
-            <strong>Stance:</strong> Feet shoulder-width, non-dominant foot forward.
-          </li>
-          <li>
-            <strong>Swing:</strong> Pendulum swing with dominant arm, contact with heel of hand or fist.
-          </li>
-          <li>
-            <strong>Contact:</strong> Hit lower half of ball, forward brushing motion to lift.
-          </li>
-          <li>
-            <strong>Follow Through:</strong> Continue swing upward; step forward as you strike.
-          </li>
-        </ol>
       </section>
 
-      {/* Overhand Serve */}
+      {/* Video Tutorial */}
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-3">Overhand Serve</h2>
-        <p className="mb-4 leading-relaxed">
-          The most common power serve—use for aggressive play.
+        <h2 className="font-serif text-2xl font-semibold mb-4">Watch & Learn</h2>
+        <div className="aspect-w-16 aspect-h-9 mb-4">
+          <iframe
+            src="https://www.youtube.com/embed/qZr_7Cnlb_c"
+            title="Underhand & Overhand Volleyball Serve Tutorial"
+            allowFullScreen
+            className="w-full h-full rounded-lg shadow-md"
+          />
+        </div>
+        <p className="text-center text-gray-600 italic text-sm">
+          Source: Coach’s volleyball serve breakdown.
         </p>
-        <ol className="list-decimal list-inside space-y-2 leading-relaxed">
-          <li>
-            <strong>Toss:</strong> Toss ball 1–2 ft above hitting shoulder, slightly forward.
-          </li>
-          <li>
-            <strong>Arm Cock:</strong> Elbow high, hand open behind head.
-          </li>
-          <li>
-            <strong>Step & Swing:</strong> Step with opposite foot, swing arm forward, snap wrist.
-          </li>
-          <li>
-            <strong>Contact:</strong> Strike center of ball with palm, drive through net.
-          </li>
-          <li>
-            <strong>Finish:</strong> Follow through across body, land balanced.
-          </li>
-        </ol>
       </section>
 
-      {/* Float Serve */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-3">Float Serve</h2>
-        <p className="mb-4 leading-relaxed">
-          A no-spin serve that “floats” unpredictably.
-        </p>
-        <ol className="list-decimal list-inside space-y-2 leading-relaxed">
-          <li>Use overhand toss and arm path.</li>
-          <li>Contact ball squarely in center, stiff wrist, no brush.</li>
-          <li>Aim for seams—this disrupts airflow for maximum float.</li>
-          <li>Follow through is minimal to avoid imparting spin.</li>
-        </ol>
-      </section>
-
-      {/* Jump Serve */}
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold mb-3">Jump Serve</h2>
-        <p className="mb-4 leading-relaxed">
-          Combines power and deception—requires approach and jump.
-        </p>
-        <ol className="list-decimal list-inside space-y-2 leading-relaxed">
-          <li>Take 2–3 step approach to build momentum.</li>
-          <li>Toss ball 2–3 ft above reach, slightly forward.</li>
-          <li>Explosive jump off both feet, eyes locked on ball.</li>
-          <li>Swing arm over—snap for topspin or stiffen for float.</li>
-          <li>Land inside end line in ready defensive position.</li>
-        </ol>
-      </section>
+      {/* Serve Techniques */}
+      {[
+        {
+          title: "Underhand Serve",
+          description:
+            "A controlled serve ideal for beginners and precise placement.",
+          steps: [
+            "Hold the ball in your non-dominant hand, palm facing up at waist level.",
+            "Stand with feet shoulder-width apart; step forward with non-dominant foot.",
+            "Swing your dominant arm in a pendulum motion, contacting the ball with the heel of your hand or a closed fist.",
+            "Strike the lower half of the ball, brushing forward to generate lift.",
+            "Follow through with your arm upward and step forward slightly.",
+          ],
+        },
+        {
+          title: "Overhand Serve",
+          description:
+            "A powerful serve using an overhand toss—great for aggressive play.",
+          steps: [
+            "Toss the ball 1–2 feet above your hitting shoulder, slightly in front.",
+            "Keep your elbow high and arm cocked back in a “C” shape.",
+            "Step forward with opposite foot as you swing your arm over the top.",
+            "Contact the center of the ball with your palm, driving it to clear the net.",
+            "Follow through across your body and land balanced.",
+          ],
+        },
+        {
+          title: "Float Serve",
+          description:
+            "A no-spin serve that “floats” unpredictably—difficult for receivers.",
+          steps: [
+            "Use the same toss and arm path as an overhand serve.",
+            "At contact, hit the ball squarely in the center with a stiff wrist—avoid spin.",
+            "Aim for a seam to disturb airflow and enhance float.",
+            "Keep follow-through minimal to prevent imparting spin.",
+          ],
+        },
+        {
+          title: "Jump Serve",
+          description:
+            "Combines power and deception with a jump—advanced technique.",
+          steps: [
+            "Take a 2–3 step approach (e.g., left-right-left for right-handers).",
+            "Toss the ball 2–3 feet above reach, slightly forward of your hitting shoulder.",
+            "Jump explosively off both feet, eyes tracking the ball.",
+            "Swing your arm over, snapping for topspin or stiffening for a float.",
+            "Land inside the end line in a ready position.",
+          ],
+        },
+      ].map(({ title, description, steps }) => (
+        <section key={title} className="mb-12">
+          <h3 className="font-serif text-xl font-semibold mb-2">{title}</h3>
+          <p className="mb-4 text-lg">{description}</p>
+          <ol className="list-decimal list-inside space-y-2 text-lg">
+            {steps.map((step, i) => (
+              <li key={i}>{step}</li>
+            ))}
+          </ol>
+        </section>
+      ))}
     </div>
   );
 }
