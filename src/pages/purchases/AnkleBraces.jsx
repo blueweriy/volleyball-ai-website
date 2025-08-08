@@ -1,15 +1,40 @@
-// src/pages/purchases/AnkleBraces.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const items = [
+  {
+    name: 'McDavid Ankle Brace',
+    desc: 'Dual-strap figure-8 design for maximum support.',
+    url: 'https://example.com/mcdavid-ankle'
+  },
+  {
+    name: 'ASO Ankle Stabilizer',
+    desc: 'Popular lace-up brace for moderate sprains.',
+    url: 'https://example.com/aso-stabilizer'
+  },
+  {
+    name: 'Shock Doctor Ultra Wrap',
+    desc: 'Wraparound with adjustable tension straps.',
+    url: 'https://example.com/shockdoctor-wrap'
+  }
+];
+
 export default function AnkleBraces() {
   return (
-    <div className="p-8 max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">Ankle Braces</h1>
-      <p className="mb-6">
-        Support and stability to prevent sprains during play.
-      </p>
-      <Link to="/purchases" className="text-blue-600 underline">
+    <div className="py-16 px-6 max-w-3xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6">Ankle Braces</h1>
+      <ul className="space-y-6">
+        {items.map((it) => (
+          <li key={it.name} className="bg-gray-50 p-4 rounded shadow-sm">     
+            <h2 className="text-xl font-semibold">{it.name}</h2>
+            <p className="mt-1 text-gray-700">{it.desc}</p>
+            <a href={it.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-blue-600 underline">
+              View on Store →
+            </a>
+          </li>
+        ))}
+      </ul>
+      <Link to="/purchases" className="mt-8 inline-block text-blue-600 underline">
         ← Back to Purchases
       </Link>
     </div>
