@@ -1,7 +1,8 @@
+// src/App.jsx
 import React from 'react';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 
-// Minimal Home page
+// Minimal pages
 function Home() {
   return (
     <div style={{ padding: '2rem' }}>
@@ -11,12 +12,20 @@ function Home() {
   );
 }
 
-// Minimal Workout page to test a second route
 function Workout() {
   return (
     <div style={{ padding: '2rem' }}>
       <h1>Workout</h1>
       <p>Your workout content goes here.</p>
+    </div>
+  );
+}
+
+function Purchases() {
+  return (
+    <div style={{ padding: '2rem' }}>
+      <h1>Purchases</h1>
+      <p>Recommended gear and equipment.</p>
     </div>
   );
 }
@@ -29,8 +38,11 @@ export default function App() {
         <Link to="/" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>
           Home
         </Link>
-        <Link to="/workout" style={{ color: '#374151', textDecoration: 'none' }}>
+        <Link to="/workout" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>
           Workout
+        </Link>
+        <Link to="/purchases" style={{ color: '#374151', textDecoration: 'none' }}>
+          Purchases
         </Link>
       </header>
 
@@ -38,6 +50,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/workout" element={<Workout />} />
+        <Route path="/purchases" element={<Purchases />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
