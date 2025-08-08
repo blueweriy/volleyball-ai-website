@@ -1,4 +1,3 @@
-// src/pages/Analysis.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -7,10 +6,11 @@ export default function Analysis() {
     <div className="bg-white text-gray-900 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto text-center">
 
-        {/* Title & Badge */}
-        <div className="relative inline-block mb-8">
-          <h1 className="text-4xl font-extrabold">Video Analysis</h1>
-          <span className="absolute -top-2 -right-8 bg-yellow-300 text-yellow-800 text-xs uppercase font-bold px-2 py-1 rounded">
+        {/* Title */}
+        <h1 className="text-4xl font-extrabold mb-4">Video Analysis</h1>
+        {/* Badge below title */}
+        <div className="inline-block mb-8">
+          <span className="bg-yellow-300 text-yellow-800 text-sm uppercase font-bold px-3 py-1 rounded">
             Coming Soon
           </span>
         </div>
@@ -32,7 +32,7 @@ export default function Analysis() {
           <div className="p-6 bg-gray-50 rounded-lg shadow">
             <h3 className="text-xl font-semibold mb-2">Technique Breakdown</h3>
             <p className="text-gray-700">
-              Frame-by-frame analysis of your form to highlight improvement areas.
+              Frame-by-frame analysis highlighting improvement areas.
             </p>
           </div>
           <div className="p-6 bg-gray-50 rounded-lg shadow">
