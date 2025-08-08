@@ -1,19 +1,9 @@
-/* src/index.css */
-
-/* Tailwind directives, if you’re using Tailwind: */
+/* Tailwind base/components/utilities (if using Tailwind) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Or, if you’re not using Tailwind, just pure CSS: */
-/*
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, sans-serif;
-}
-*/
-
+/* Global resets */
 body {
   margin: 0;
   padding: 0;
@@ -22,10 +12,7 @@ body {
   color: #1f2937;
 }
 
-/* Global link reset */
 a {
   text-decoration: none;
   color: inherit;
 }
-
-/* Any other global styles below */
