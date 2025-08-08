@@ -23,10 +23,18 @@ export default function Stamina() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Program Structure</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
-          <li><strong>Frequency:</strong> 3 sessions per week, alternating interval days with circuit days.</li>
-          <li><strong>Duration:</strong> 30–45 minutes per session.</li>
-          <li><strong>Warm-Up:</strong> 5–10 minutes of light jog, dynamic leg and arm swings, hip openers.</li>
-          <li><strong>Cool-Down:</strong> 5–10 minutes of static stretching to aid recovery.</li>
+          <li>
+            <strong>Frequency:</strong> 3 sessions per week, alternating interval days with circuit days.
+          </li>
+          <li>
+            <strong>Duration:</strong> 30–45 minutes per session.
+          </li>
+          <li>
+            <strong>Warm-Up:</strong> 5–10 minutes of light jog, dynamic leg and arm swings, hip openers.
+          </li>
+          <li>
+            <strong>Cool-Down:</strong> 5–10 minutes of static stretching to aid recovery.
+          </li>
         </ul>
       </section>
 
@@ -40,24 +48,24 @@ export default function Stamina() {
               <li><strong>Work:</strong> Sprint end line to end line (20–25m).</li>
               <li><strong>Rest:</strong> Walk or light jog back (90 seconds).</li>
               <li><strong>Rounds:</strong> 8–10.</li>
-              <li><em>Benefit:</em> Mimics the repeated sprint demands of chasing down balls across the court.</li>
+              <li><em>Benefit: Builds repeated sprint ability for court coverage.</em></li>
             </ul>
           </li>
           <li>
             <h3 className="font-semibold">Burpee Intervals</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
-              <li><strong>Work:</strong> 20 seconds of continuous burpees (full push-up + jump).</li>
+              <li><strong>Work:</strong> 20 seconds continuous burpees (full push-up + jump).</li>
               <li><strong>Rest:</strong> 40 seconds standing rest.</li>
               <li><strong>Rounds:</strong> 6–8.</li>
-              <li><em>Benefit:</em> Combines upper‐body, core, and lower‐body endurance under fatigue.</li>
+              <li><em>Benefit: Enhances full-body endurance under fatigue.</em></li>
             </ul>
           </li>
           <li>
             <h3 className="font-semibold">Shuttle Run Ladder</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
-              <li><strong>Distances:</strong> 5m, 10m, 15m, 20m and back, performing each back-to-back.</li>
+              <li><strong>Distances:</strong> 5m, 10m, 15m, 20m and back sequentially.</li>
               <li><strong>Rest:</strong> 30 seconds between ladders.</li>
-              <li><em>Benefit:</em> Trains change-of-direction endurance and aerobic recovery.</li>
+              <li><em>Benefit: Trains directional endurance and aerobic recovery.</em></li>
             </ul>
           </li>
         </ol>
@@ -70,36 +78,36 @@ export default function Stamina() {
           <li>
             <h3 className="font-semibold">200m Shuttle Run</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
-              <li>Sprint 10m and back repeatedly until 200m is covered.</li>
-              <li><em>Benefit:</em> Builds sustained sprint capacity and leg muscle endurance.</em></li>
+              <li>Sprint 10m and back repeatedly until 200m covered.</li>
+              <li><em>Benefit: Builds sustained sprint capacity and leg endurance.</em></li>
             </ul>
           </li>
           <li>
             <h3 className="font-semibold">Air Squats</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
-              <li>Perform 20 controlled bodyweight squats at steady pace.</li>
-              <li><em>Benefit:</em> Trains muscular endurance in quads and glutes under continuous load.</em></li>
+              <li>Perform 20 controlled bodyweight squats at a steady pace.</li>
+              <li><em>Benefit: Trains quads and glutes for continuous load endurance.</em></li>
             </ul>
           </li>
           <li>
             <h3 className="font-semibold">Push-Ups</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
-              <li>Do 15–20 reps at controlled tempo (2s down, 1s up).</li>
-              <li><em>Benefit:</em> Enhances upper-body endurance for consistent arm swings and digs.</li>
+              <li>Do 15–20 reps with 2s descent, 1s ascent tempo.</li>
+              <li><em>Benefit: Enhances upper-body endurance for long matches.</em></li>
             </ul>
           </li>
           <li>
             <h3 className="font-semibold">Plank Hold</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
-              <li>Hold full plank for 45 seconds, keeping body straight.</li>
-              <li><em>Benefit:</em> Builds core endurance for stable posture under fatigue.</li>
+              <li>Hold full plank for 45 seconds, maintaining straight line.</li>
+              <li><em>Benefit: Builds core endurance for stability under fatigue.</em></li>
             </ul>
           </li>
           <li>
             <h3 className="font-semibold">Jumping Jacks</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
-              <li>Perform 30 controlled reps, full range arms and legs.</li>
-              <li><em>Benefit:</em> Keeps heart rate elevated while mobilizing shoulders and hips.</li>
+              <li>Perform 30 controlled reps, full arm/leg range.</li>
+              <li><em>Benefit: Keeps HR elevated while mobilizing shoulders and hips.</em></li>
             </ul>
           </li>
           <li>
@@ -112,10 +120,10 @@ export default function Stamina() {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4">Cool-Down & Mobility</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
-          <li><strong>Hamstring Stretch:</strong> Seated one-leg reach, hold 30s each side.</li>
-          <li><strong>Quad Stretch:</strong> Standing quad pull, hold 30s each side.</li>
-          <li><strong>Calf Stretch:</strong> Wall lean calf stretch, hold 30s each side.</li>
-          <li><strong>Shoulder Mobility:</strong> Door frame pec stretch, hold 30s each arm.</li>
+          <li><strong>Hamstring Stretch:</strong> Seated one-leg reach, hold 30s each.</li>
+          <li><strong>Quad Stretch:</strong> Standing quad pull, hold 30s each.</li>
+          <li><strong>Calf Stretch:</strong> Wall lean calf stretch, hold 30s each.</li>
+          <li><strong>Shoulder Mobility:</strong> Door frame pec stretch, hold 30s each side.</li>
         </ul>
       </section>
 
@@ -123,9 +131,9 @@ export default function Stamina() {
       <section>
         <h2 className="text-2xl font-semibold mb-4">Final Execution Tips</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
-          <li>Maintain consistent pacing throughout intervals—avoid quick burnout.</li>
-          <li>Use a stopwatch or app to track work/rest times precisely.</li>
-          <li>Hydrate before, during, and after sessions to optimize endurance.</li>
+          <li>Maintain consistent pacing to avoid early burnout.</li>
+          <li>Use a timer to ensure precise work/rest intervals.</li>
+          <li>Hydrate throughout and refuel post-session.</li>
         </ul>
       </section>
     </div>
