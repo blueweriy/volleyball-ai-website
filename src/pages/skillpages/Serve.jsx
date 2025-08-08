@@ -4,133 +4,69 @@ import React from "react";
 export default function Serve() {
   return (
     <div className="bg-white text-gray-900 py-16 px-8 md:px-16 lg:px-32 max-w-4xl mx-auto leading-relaxed">
-      {/* Enable smooth scrolling */}
-      <style>{`html { scroll-behavior: smooth; }`}</style>
-
-      {/* Page Title */}
-      <h1 className="font-serif text-4xl md:text-5xl font-bold mb-8 text-center">
-        Serving: Rules & Techniques
+      <h1 className="font-serif text-4xl font-bold mb-8 text-center">
+        Serving: Rules, Technique & Tips
       </h1>
 
-      {/* Official Serving Rules */}
+      {/* Official Rules */}
       <section className="mb-12">
-        <h2 className="font-serif text-2xl font-semibold mb-4">
-          Official Serving Rules
-        </h2>
-        <ul className="list-disc list-inside space-y-3 text-lg">
-          <li>
-            <strong>Service Zone:</strong> Serve from behind the end line,
-            inside sidelines.
-          </li>
-          <li>
-            <strong>Foot Fault:</strong> Do not step on or over the end line
-            until after contact.
-          </li>
-          <li>
-            <strong>Clean Hit:</strong> Must strike the ball—no catching or
-            throwing.
-          </li>
-          <li>
-            <strong>In Bounds:</strong> Ball must clear the net and land inside
-            opponent’s court (line counts).
-          </li>
-          <li>
-            <strong>Rotation Order:</strong> Serve in correct rotation—out-of-turn
-            is a fault.
-          </li>
+        <h2 className="text-2xl font-semibold mb-4">Official Serving Rules</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li><strong>Service Zone:</strong> Must serve from behind the end line, within sidelines.</li>
+          <li><strong>Foot Fault:</strong> No stepping on/over end line until after contact.</li>
+          <li><strong>Clean Hit:</strong> Must strike the ball—no catching or throwing.</li>
+          <li><strong>In Bounds:</strong> Ball must clear net and land inside opponent’s court (line counts).</li>
+          <li><strong>Rotation:</strong> Serve in correct rotation—out-of-turn is a fault.</li>
         </ul>
       </section>
 
-      {/* Serve Setup Diagram */}
+      {/* Technique Breakdown */}
       <section className="mb-12">
-        <h2 className="font-serif text-2xl font-semibold mb-4">
-          Serve Setup Diagram
-        </h2>
-        <img
-          src="/serve_setup.png"
-          alt="Serve stance and toss diagram"
-          className="w-full rounded-lg shadow-md mb-4"
-        />
-        <p className="text-center text-gray-600 italic text-sm">
-          Figure: Proper stance, toss point, and contact area.
-        </p>
+        <h2 className="text-2xl font-semibold mb-4">Technique Breakdown</h2>
+        <ol className="list-decimal list-inside space-y-2 text-lg">
+          <li><strong>Grip & Stance:</strong> Ball in non-dominant hand at waist; feet shoulder-width, non-dominant foot forward.</li>
+          <li><strong>Toss:</strong> For overhand: toss 1–2ft above shoulder, slightly forward. For underhand: hold ball low.</li>
+          <li><strong>Swing:</strong> Underhand: pendulum swing contacting lower half. Overhand: arm cocked back, snap wrist at contact.</li>
+          <li><strong>Contact Point:</strong> Center of ball for power; bottom half for lift.</li>
+          <li><strong>Follow-Through:</strong> Continue arm path naturally; step into court for balance.</li>
+        </ol>
       </section>
 
-      {/* Video Tutorial */}
+      {/* Positioning & Timing */}
       <section className="mb-12">
-        <h2 className="font-serif text-2xl font-semibold mb-4">
-          Watch & Learn
-        </h2>
-        <div className="aspect-w-16 aspect-h-9 mb-4">
-          <iframe
-            src="https://www.youtube.com/embed/Oppb6Qf3voU"
-            title="Volleyball Serving Tutorial"
-            allowFullScreen
-            className="w-full h-full rounded-lg shadow-md"
-          />
-        </div>
-        <p className="text-center text-gray-600 italic text-sm">
-          Source: Volleyball Serving Tutorial by AllThingsVolleyball
-        </p>
+        <h2 className="text-2xl font-semibold mb-4">Positioning & Timing</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li>Stand 1–2m behind end line for enough swing depth.</li>
+          <li>Time toss to match swing speed—consistent height is key.</li>
+          <li>Watch server’s foot placement in practice to avoid foot faults.</li>
+        </ul>
       </section>
 
-      {/* Serve Techniques */}
-      {[
-        {
-          title: "Underhand Serve",
-          description: "Ideal for beginners or precise ball placement.",
-          steps: [
-            "Hold the ball in non-dominant hand at waist height, palm facing up.",
-            "Stand with feet shoulder-width apart; non-dominant foot forward.",
-            "Swing dominant arm in a pendulum motion; contact ball with heel of hand.",
-            "Strike lower half of ball, brushing forward to generate lift.",
-            "Follow-through arm upward and step forward slightly.",
-          ],
-        },
-        {
-          title: "Overhand Serve",
-          description: "Power serve with overhand toss and wrist snap.",
-          steps: [
-            "Toss ball 1–2 ft above hitting shoulder, slightly forward.",
-            "Cock elbow high, hand shaped in a “C” behind head.",
-            "Step forward with opposite foot as you swing arm over top.",
-            "Contact center of ball with palm, driving through net.",
-            "Follow-through across body; land balanced.",
-          ],
-        },
-        {
-          title: "Float Serve",
-          description: "No-spin serve that “floats” unpredictably.",
-          steps: [
-            "Use overhand toss and arm path.",
-            "Contact ball squarely in center with stiff wrist—no spin.",
-            "Aim for a seam to disturb airflow and enhance float.",
-            "Keep follow-through minimal to prevent spin.",
-          ],
-        },
-        {
-          title: "Jump Serve",
-          description:
-            "High-powered serve combining jump with topspin or float.",
-          steps: [
-            "Use a 2–3 step approach to build momentum.",
-            "Toss ball 2–3 ft above reach, slightly forward.",
-            "Jump explosively; eyes locked on ball.",
-            "Swing arm over top; snap for topspin or stiffen for float.",
-            "Land inside end line ready to defend.",
-          ],
-        },
-      ].map(({ title, description, steps }) => (
-        <section key={title} className="mb-12">
-          <h3 className="font-serif text-xl font-semibold mb-2">{title}</h3>
-          <p className="mb-4 text-lg">{description}</p>
-          <ol className="list-decimal list-inside space-y-2 text-lg">
-            {steps.map((step, i) => (
-              <li key={i}>{step}</li>
-            ))}
-          </ol>
-        </section>
-      ))}
+      {/* Call-Outs */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Serve Call-Outs</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li><strong>“Watch Toss!”</strong> – Eyes on the ball’s release point.</li>
+          <li><strong>“Server!”</strong> – Alert teammates you’re about to serve.</li>
+        </ul>
+      </section>
+
+      {/* Resources */}
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Resources</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li>
+            <a href="https://youtu.be/qZr_7Cnlb_c" target="_blank" className="text-blue-600 hover:underline">
+              Underhand & Overhand Serve Basics
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/MWVdZ3M6B0I" target="_blank" className="text-blue-600 hover:underline">
+              Jump Serve Tutorial
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 }
