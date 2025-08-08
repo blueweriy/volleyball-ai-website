@@ -33,52 +33,61 @@ import Cones         from './pages/purchases/Cones';
 
 export default function App() {
   return (
-    <div>
+    <div className="min-h-screen bg-white text-gray-900">
       {/* Header/Nav */}
-      <header style={{ background: '#f3f4f6', padding: '1rem 2rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-        <Link to="/"         style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Home</Link>
-        <Link to="/rules"    style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Rules</Link>
-        <Link to="/callouts" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Callouts</Link>
-        <Link to="/skills"   style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Skills</Link>
-        <Link to="/analysis" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Analysis</Link>
-        <Link to="/workout"  style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Workout</Link>
-        <Link to="/purchases" style={{ color: '#374151', textDecoration: 'none' }}>Purchases</Link>
+      <header
+        className="bg-gray-100 shadow"
+        style={{ padding: '1rem 2rem' }}
+      >
+        <div className="max-w-6xl mx-auto flex flex-wrap space-x-6">
+          <Link to="/"         className="text-gray-700 hover:text-gray-900">Home</Link>
+          <Link to="/rules"    className="text-gray-700 hover:text-gray-900">Rules</Link>
+          <Link to="/callouts" className="text-gray-700 hover:text-gray-900">Callouts</Link>
+          <Link to="/skills"   className="text-gray-700 hover:text-gray-900">Skills</Link>
+          <Link to="/analysis" className="text-gray-700 hover:text-gray-900">Analysis</Link>
+          <Link to="/workout"  className="text-gray-700 hover:text-gray-900">Workout</Link>
+          <Link to="/purchases" className="text-gray-700 hover:text-gray-900">Purchases</Link>
+        </div>
       </header>
 
-      {/* Routing */}
-      <Routes>
-        {/* Main pages */}
-        <Route path="/"          element={<Home />} />
-        <Route path="/rules"     element={<Rules />} />
-        <Route path="/callouts"  element={<Callouts />} />
-        <Route path="/skills"    element={<Skills />} />
-        <Route path="/analysis"  element={<Analysis />} />
-        <Route path="/workout"   element={<Workout />} />
-        <Route path="/purchases" element={<Purchases />} />
+      {/* Push content below header and add side padding */}
+      <main className="pt-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <Routes>
+            {/* Main pages */}
+            <Route path="/"          element={<Home />} />
+            <Route path="/rules"     element={<Rules />} />
+            <Route path="/callouts"  element={<Callouts />} />
+            <Route path="/skills"    element={<Skills />} />
+            <Route path="/analysis"  element={<Analysis />} />
+            <Route path="/workout"   element={<Workout />} />
+            <Route path="/purchases" element={<Purchases />} />
 
-        {/* Workout sub-routes */}
-        <Route path="/workout/plyometrics" element={<Plyometrics />} />
-        <Route path="/workout/strength"     element={<Strength />} />
-        <Route path="/workout/stamina"      element={<Stamina />} />
-        <Route path="/workout/injury"       element={<Injury />} />
+            {/* Workout sub-routes */}
+            <Route path="/workout/plyometrics" element={<Plyometrics />} />
+            <Route path="/workout/strength"     element={<Strength />} />
+            <Route path="/workout/stamina"      element={<Stamina />} />
+            <Route path="/workout/injury"       element={<Injury />} />
 
-        {/* Purchases sub-routes */}
-        <Route path="/purchases/nets/budget"   element={<NetsBudget />} />
-        <Route path="/purchases/nets/standard" element={<NetsStandard />} />
-        <Route path="/purchases/nets/premium"  element={<NetsPremium />} />
-        <Route path="/purchases/shoes/budget"   element={<ShoesBudget />} />
-        <Route path="/purchases/shoes/standard" element={<ShoesStandard />} />
-        <Route path="/purchases/shoes/premium"  element={<ShoesPremium />} />
-        <Route path="/purchases/balls/budget"   element={<BallsBudget />} />
-        <Route path="/purchases/balls/standard" element={<BallsStandard />} />
-        <Route path="/purchases/balls/premium"  element={<BallsPremium />} />
-        <Route path="/purchases/accessories/knee-pads"   element={<KneePads />} />
-        <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
-        <Route path="/purchases/accessories/cones"        element={<Cones />} />
+            {/* Purchases sub-routes */}
+            <Route path="/purchases/nets/budget"   element={<NetsBudget />} />
+            <Route path="/purchases/nets/standard" element={<NetsStandard />} />
+            <Route path="/purchases/nets/premium"  element={<NetsPremium />} />
+            <Route path="/purchases/shoes/budget"   element={<ShoesBudget />} />
+            <Route path="/purchases/shoes/standard" element={<ShoesStandard />} />
+            <Route path="/purchases/shoes/premium"  element={<ShoesPremium />} />
+            <Route path="/purchases/balls/budget"   element={<BallsBudget />} />
+            <Route path="/purchases/balls/standard" element={<BallsStandard />} />
+            <Route path="/purchases/balls/premium"  element={<BallsPremium />} />
+            <Route path="/purchases/accessories/knee-pads"   element={<KneePads />} />
+            <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
+            <Route path="/purchases/accessories/cones"        element={<Cones />} />
 
-        {/* Fallback */}
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+            {/* Fallback */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </div>
+      </main>
     </div>
   );
 }
