@@ -35,22 +35,50 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
 
-      {/* Nav bar */}
-      <header className="bg-gray-100 py-4 shadow">
+      {/* Nav Bar */}
+      <header className="bg-gray-100 shadow">
         <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ul className="flex justify-center space-x-8">
-            <li><Link to="/"         className="text-gray-700 hover:text-gray-900">Home</Link></li>
-            <li><Link to="/rules"    className="text-gray-700 hover:text-gray-900">Rules</Link></li>
-            <li><Link to="/callouts" className="text-gray-700 hover:text-gray-900">Callouts</Link></li>
-            <li><Link to="/skills"   className="text-gray-700 hover:text-gray-900">Skills</Link></li>
-            <li><Link to="/analysis" className="text-gray-700 hover:text-gray-900">Analysis</Link></li>
-            <li><Link to="/workout"  className="text-gray-700 hover:text-gray-900">Workout</Link></li>
-            <li><Link to="/purchases" className="text-gray-700 hover:text-gray-900">Purchases</Link></li>
+          <ul className="flex justify-center space-x-8 py-4">
+            <li>
+              <Link to="/" className="text-gray-700 hover:text-gray-900">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/rules" className="text-gray-700 hover:text-gray-900">
+                Rules
+              </Link>
+            </li>
+            <li>
+              <Link to="/callouts" className="text-gray-700 hover:text-gray-900">
+                Callouts
+              </Link>
+            </li>
+            <li>
+              <Link to="/skills" className="text-gray-700 hover:text-gray-900">
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link to="/analysis" className="text-gray-700 hover:text-gray-900">
+                Analysis
+              </Link>
+            </li>
+            <li>
+              <Link to="/workout" className="text-gray-700 hover:text-gray-900">
+                Workout
+              </Link>
+            </li>
+            <li>
+              <Link to="/purchases" className="text-gray-700 hover:text-gray-900">
+                Purchases
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
 
-      {/* Main content (pushed below nav) */}
+      {/* Main Content */}
       <main className="pt-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <Routes>
@@ -63,13 +91,13 @@ export default function App() {
             <Route path="/workout"   element={<Workout />} />
             <Route path="/purchases" element={<Purchases />} />
 
-            {/* Workout details */}
+            {/* Workout */}
             <Route path="/workout/plyometrics" element={<Plyometrics />} />
             <Route path="/workout/strength"     element={<Strength />} />
             <Route path="/workout/stamina"      element={<Stamina />} />
             <Route path="/workout/injury"       element={<Injury />} />
 
-            {/* Purchases details */}
+            {/* Purchases */}
             <Route path="/purchases/nets/budget"   element={<NetsBudget />} />
             <Route path="/purchases/nets/standard" element={<NetsStandard />} />
             <Route path="/purchases/nets/premium"  element={<NetsPremium />} />
@@ -86,7 +114,7 @@ export default function App() {
             <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
             <Route path="/purchases/accessories/cones"        element={<Cones />} />
 
-            {/* Redirect unknown paths */}
+            {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
