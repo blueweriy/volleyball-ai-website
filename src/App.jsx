@@ -2,18 +2,18 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
-// top-level pages
-import Home from './pages/Home';
-import Workout from './pages/Workout';
+// Top-level pages
+import Home      from './pages/Home';
+import Workout   from './pages/Workout';
 import Purchases from './pages/Purchases';
 
-// workout pages
+// Workout detail pages
 import Plyometrics from './pages/workout/Plyometrics';
-import Strength     from './pages/workout/Strength';
-import Stamina      from './pages/workout/Stamina';
-import Injury       from './pages/workout/Injury';
+import Strength    from './pages/workout/Strength';
+import Stamina     from './pages/workout/Stamina';
+import Injury      from './pages/workout/Injury';
 
-// purchase detail pages
+// Purchases detail pages
 import NetsBudget    from './pages/purchases/NetsBudget';
 import NetsStandard  from './pages/purchases/NetsStandard';
 import NetsPremium   from './pages/purchases/NetsPremium';
@@ -27,43 +27,44 @@ import KneePads      from './pages/purchases/KneePads';
 import AnkleBraces   from './pages/purchases/AnkleBraces';
 import Cones         from './pages/purchases/Cones';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* main */}
+        {/* Main routes */}
         <Route path="/" element={<Home />} />
         <Route path="/workout" element={<Workout />} />
         <Route path="/purchases" element={<Purchases />} />
 
-        {/* workout sub-routes */}
+        {/* Workout sub-routes */}
         <Route path="/workout/plyometrics" element={<Plyometrics />} />
         <Route path="/workout/strength"     element={<Strength />} />
         <Route path="/workout/stamina"      element={<Stamina />} />
         <Route path="/workout/injury"       element={<Injury />} />
 
-        {/* purchases sub-routes */}
+        {/* Purchases sub-routes: Nets */}
         <Route path="/purchases/nets/budget"   element={<NetsBudget />} />
         <Route path="/purchases/nets/standard" element={<NetsStandard />} />
         <Route path="/purchases/nets/premium"  element={<NetsPremium />} />
 
+        {/* Purchases sub-routes: Shoes */}
         <Route path="/purchases/shoes/budget"   element={<ShoesBudget />} />
         <Route path="/purchases/shoes/standard" element={<ShoesStandard />} />
         <Route path="/purchases/shoes/premium"  element={<ShoesPremium />} />
 
+        {/* Purchases sub-routes: Balls */}
         <Route path="/purchases/balls/budget"   element={<BallsBudget />} />
         <Route path="/purchases/balls/standard" element={<BallsStandard />} />
         <Route path="/purchases/balls/premium"  element={<BallsPremium />} />
 
+        {/* Purchases sub-routes: Accessories */}
         <Route path="/purchases/accessories/knee-pads"   element={<KneePads />} />
         <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
         <Route path="/purchases/accessories/cones"        element={<Cones />} />
 
-        {/* fallback */}
+        {/* Fallback: redirect unknown routes back to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;
