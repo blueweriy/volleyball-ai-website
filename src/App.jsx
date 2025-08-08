@@ -32,7 +32,7 @@ import Cones         from './pages/purchases/Cones';
 export default function App() {
   return (
     <BrowserRouter>
-      {/* Persistent top nav */}
+      {/* Persistent header with your preferred styling */}
       <header className="bg-gray-100 py-4 shadow">
         <div className="max-w-6xl mx-auto px-6 flex space-x-8">
           <Link to="/"         className="text-gray-700 hover:text-gray-900">Home</Link>
@@ -43,6 +43,7 @@ export default function App() {
         </div>
       </header>
 
+      {/* Main content area */}
       <Routes>
         {/* Main pages */}
         <Route path="/"         element={<Home />} />
@@ -77,7 +78,7 @@ export default function App() {
         <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
         <Route path="/purchases/accessories/cones"        element={<Cones />} />
 
-        {/* Fallback: redirect any unknown path back to Home */}
+        {/* Fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
