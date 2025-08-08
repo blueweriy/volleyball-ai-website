@@ -8,6 +8,8 @@ import Rules     from './pages/Rules';
 import Callouts  from './pages/Callouts';
 import Workout   from './pages/Workout';
 import Purchases from './pages/Purchases';
+import Skills    from './pages/Skills';
+import Analysis  from './pages/Analysis';
 
 // Workout detail pages
 import Plyometrics from './pages/workout/Plyometrics';
@@ -34,30 +36,24 @@ export default function App() {
     <div>
       {/* Header/Nav */}
       <header style={{ background: '#f3f4f6', padding: '1rem 2rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-        <Link to="/" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>
-          Home
-        </Link>
-        <Link to="/rules" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>
-          Rules
-        </Link>
-        <Link to="/callouts" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>
-          Callouts
-        </Link>
-        <Link to="/workout" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>
-          Workout
-        </Link>
-        <Link to="/purchases" style={{ color: '#374151', textDecoration: 'none' }}>
-          Purchases
-        </Link>
+        <Link to="/"         style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Home</Link>
+        <Link to="/rules"    style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Rules</Link>
+        <Link to="/callouts" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Callouts</Link>
+        <Link to="/skills"   style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Skills</Link>
+        <Link to="/analysis" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Analysis</Link>
+        <Link to="/workout"  style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>Workout</Link>
+        <Link to="/purchases" style={{ color: '#374151', textDecoration: 'none' }}>Purchases</Link>
       </header>
 
       {/* Routing */}
       <Routes>
         {/* Main pages */}
-        <Route path="/"         element={<Home />} />
-        <Route path="/rules"    element={<Rules />} />
-        <Route path="/callouts" element={<Callouts />} />
-        <Route path="/workout"  element={<Workout />} />
+        <Route path="/"          element={<Home />} />
+        <Route path="/rules"     element={<Rules />} />
+        <Route path="/callouts"  element={<Callouts />} />
+        <Route path="/skills"    element={<Skills />} />
+        <Route path="/analysis"  element={<Analysis />} />
+        <Route path="/workout"   element={<Workout />} />
         <Route path="/purchases" element={<Purchases />} />
 
         {/* Workout sub-routes */}
@@ -66,22 +62,16 @@ export default function App() {
         <Route path="/workout/stamina"      element={<Stamina />} />
         <Route path="/workout/injury"       element={<Injury />} />
 
-        {/* Purchases sub-routes: Nets */}
+        {/* Purchases sub-routes */}
         <Route path="/purchases/nets/budget"   element={<NetsBudget />} />
         <Route path="/purchases/nets/standard" element={<NetsStandard />} />
         <Route path="/purchases/nets/premium"  element={<NetsPremium />} />
-
-        {/* Purchases sub-routes: Shoes */}
         <Route path="/purchases/shoes/budget"   element={<ShoesBudget />} />
         <Route path="/purchases/shoes/standard" element={<ShoesStandard />} />
         <Route path="/purchases/shoes/premium"  element={<ShoesPremium />} />
-
-        {/* Purchases sub-routes: Balls */}
         <Route path="/purchases/balls/budget"   element={<BallsBudget />} />
         <Route path="/purchases/balls/standard" element={<BallsStandard />} />
         <Route path="/purchases/balls/premium"  element={<BallsPremium />} />
-
-        {/* Purchases sub-routes: Accessories */}
         <Route path="/purchases/accessories/knee-pads"   element={<KneePads />} />
         <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
         <Route path="/purchases/accessories/cones"        element={<Cones />} />
