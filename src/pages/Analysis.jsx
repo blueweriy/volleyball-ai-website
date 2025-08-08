@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 export default function Analysis() {
   return (
     <div className="bg-white text-gray-900 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto text-center">
 
         {/* Title & Badge */}
-        <div className="flex items-center justify-center mb-8 space-x-4">
+        <div className="relative inline-block mb-8">
           <h1 className="text-4xl font-extrabold">Video Analysis</h1>
-          <span className="bg-yellow-300 text-yellow-800 text-sm uppercase font-bold px-2 py-1 rounded">
+          <span className="absolute -top-2 -right-8 bg-yellow-300 text-yellow-800 text-xs uppercase font-bold px-2 py-1 rounded">
             Coming Soon
           </span>
         </div>
 
         {/* Description */}
-        <p className="text-center text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
           Our AI-driven video breakdown will help you dissect every serve, spike, and block—
           analyzing angles, speed, and form to level up your game.
         </p>
@@ -44,14 +44,12 @@ export default function Analysis() {
         </div>
 
         {/* Back CTA */}
-        <div className="text-center">
-          <Link
-            to="/"
-            className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
-          >
-            Back to Home
-          </Link>
-        </div>
+        <Link
+          to="/"
+          className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
+        >
+          Back to Home
+        </Link>
       </div>
     </div>
   );
