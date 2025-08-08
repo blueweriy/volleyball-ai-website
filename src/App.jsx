@@ -6,10 +6,10 @@ import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import Home      from './pages/Home';
 import Rules     from './pages/Rules';
 import Callouts  from './pages/Callouts';
-import Workout   from './pages/Workout';
-import Purchases from './pages/Purchases';
 import Skills    from './pages/Skills';
 import Analysis  from './pages/Analysis';
+import Workout   from './pages/Workout';
+import Purchases from './pages/Purchases';
 
 // Workout detail pages
 import Plyometrics from './pages/workout/Plyometrics';
@@ -34,27 +34,27 @@ import Cones         from './pages/purchases/Cones';
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* Header/Nav */}
-      <header
-        className="bg-gray-100 shadow"
-        style={{ padding: '1rem 2rem' }}
-      >
-        <div className="max-w-6xl mx-auto flex flex-wrap space-x-6">
-          <Link to="/"         className="text-gray-700 hover:text-gray-900">Home</Link>
-          <Link to="/rules"    className="text-gray-700 hover:text-gray-900">Rules</Link>
-          <Link to="/callouts" className="text-gray-700 hover:text-gray-900">Callouts</Link>
-          <Link to="/skills"   className="text-gray-700 hover:text-gray-900">Skills</Link>
-          <Link to="/analysis" className="text-gray-700 hover:text-gray-900">Analysis</Link>
-          <Link to="/workout"  className="text-gray-700 hover:text-gray-900">Workout</Link>
-          <Link to="/purchases" className="text-gray-700 hover:text-gray-900">Purchases</Link>
-        </div>
+
+      {/* Nav bar */}
+      <header className="bg-gray-100 py-4 shadow">
+        <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ul className="flex justify-center space-x-8">
+            <li><Link to="/"         className="text-gray-700 hover:text-gray-900">Home</Link></li>
+            <li><Link to="/rules"    className="text-gray-700 hover:text-gray-900">Rules</Link></li>
+            <li><Link to="/callouts" className="text-gray-700 hover:text-gray-900">Callouts</Link></li>
+            <li><Link to="/skills"   className="text-gray-700 hover:text-gray-900">Skills</Link></li>
+            <li><Link to="/analysis" className="text-gray-700 hover:text-gray-900">Analysis</Link></li>
+            <li><Link to="/workout"  className="text-gray-700 hover:text-gray-900">Workout</Link></li>
+            <li><Link to="/purchases" className="text-gray-700 hover:text-gray-900">Purchases</Link></li>
+          </ul>
+        </nav>
       </header>
 
-      {/* Push content below header and add side padding */}
-      <main className="pt-16 px-4 sm:px-6 lg:px-8">
+      {/* Main content (pushed below nav) */}
+      <main className="pt-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <Routes>
-            {/* Main pages */}
+            {/* Top-level */}
             <Route path="/"          element={<Home />} />
             <Route path="/rules"     element={<Rules />} />
             <Route path="/callouts"  element={<Callouts />} />
@@ -63,27 +63,30 @@ export default function App() {
             <Route path="/workout"   element={<Workout />} />
             <Route path="/purchases" element={<Purchases />} />
 
-            {/* Workout sub-routes */}
+            {/* Workout details */}
             <Route path="/workout/plyometrics" element={<Plyometrics />} />
             <Route path="/workout/strength"     element={<Strength />} />
             <Route path="/workout/stamina"      element={<Stamina />} />
             <Route path="/workout/injury"       element={<Injury />} />
 
-            {/* Purchases sub-routes */}
+            {/* Purchases details */}
             <Route path="/purchases/nets/budget"   element={<NetsBudget />} />
             <Route path="/purchases/nets/standard" element={<NetsStandard />} />
             <Route path="/purchases/nets/premium"  element={<NetsPremium />} />
+
             <Route path="/purchases/shoes/budget"   element={<ShoesBudget />} />
             <Route path="/purchases/shoes/standard" element={<ShoesStandard />} />
             <Route path="/purchases/shoes/premium"  element={<ShoesPremium />} />
+
             <Route path="/purchases/balls/budget"   element={<BallsBudget />} />
             <Route path="/purchases/balls/standard" element={<BallsStandard />} />
             <Route path="/purchases/balls/premium"  element={<BallsPremium />} />
+
             <Route path="/purchases/accessories/knee-pads"   element={<KneePads />} />
             <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
             <Route path="/purchases/accessories/cones"        element={<Cones />} />
 
-            {/* Fallback */}
+            {/* Redirect unknown paths */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
