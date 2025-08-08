@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 
 export default function Analysis() {
   return (
-    <div className="bg-white text-gray-900 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto text-center">
+    <div className="bg-white text-gray-900 min-h-screen">
+      {/* center & pad everything */}
+      <div className="pt-16 py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
 
         {/* Title & Badge */}
         <div className="relative inline-block mb-8">
@@ -23,24 +24,19 @@ export default function Analysis() {
 
         {/* Teaser Features */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="p-6 bg-gray-50 rounded-lg shadow">
-            <h3 className="text-xl font-semibold mb-2">Trajectory Tracking</h3>
-            <p className="text-gray-700">
-              Visualize ball flight paths and predict landing zones.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow">
-            <h3 className="text-xl font-semibold mb-2">Technique Breakdown</h3>
-            <p className="text-gray-700">
-              Frame-by-frame analysis of your form to highlight improvement areas.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg shadow">
-            <h3 className="text-xl font-semibold mb-2">Performance Insights</h3>
-            <p className="text-gray-700">
-              Auto-generated metrics on speed, reaction time, and consistency.
-            </p>
-          </div>
+          {['Trajectory Tracking', 'Technique Breakdown', 'Performance Insights'].map((title) => (
+            <div key={title} className="p-6 bg-gray-50 rounded-lg shadow">
+              <h3 className="text-xl font-semibold mb-2">{title}</h3>
+              <p className="text-gray-700">
+                {/* simple placeholder text */}
+                {title === 'Trajectory Tracking'
+                  ? 'Visualize ball flight paths and predict landing zones.'
+                  : title === 'Technique Breakdown'
+                  ? 'Frame-by-frame analysis of your form to highlight improvement areas.'
+                  : 'Auto-generated metrics on speed, reaction time, and consistency.'}
+              </p>
+            </div>
+          ))}
         </div>
 
         {/* Back CTA */}
