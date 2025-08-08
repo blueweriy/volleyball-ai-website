@@ -16,7 +16,7 @@ export default function Workout() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <Link
           to="/workout/plyometrics"
-          className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow"
+          className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow no-underline"
         >
           <h2 className="text-2xl font-semibold mb-2 text-gray-900">
             Plyometrics
@@ -31,7 +31,7 @@ export default function Workout() {
 
         <Link
           to="/workout/strength"
-          className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow"
+          className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow no-underline"
         >
           <h2 className="text-2xl font-semibold mb-2 text-gray-900">
             Strength
@@ -46,7 +46,7 @@ export default function Workout() {
 
         <Link
           to="/workout/stamina"
-          className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow"
+          className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow no-underline"
         >
           <h2 className="text-2xl font-semibold mb-2 text-gray-900">
             Stamina
@@ -61,7 +61,7 @@ export default function Workout() {
 
         <Link
           to="/workout/injury"
-          className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow"
+          className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow no-underline"
         >
           <h2 className="text-2xl font-semibold mb-2 text-gray-900">
             Injury Prevention
@@ -69,7 +69,7 @@ export default function Workout() {
           <p className="text-gray-900 leading-relaxed">
             Mobility, stability, and care protocols to stay healthy and recover.
           </p>
-          <span className="mt-4 inline-block text-gray-900 font-medium">
+          <span className="mt-4 inline-block text-blue-600 underline font-medium">
             Learn More →
           </span>
         </Link>
