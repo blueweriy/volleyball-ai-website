@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 
 export default function Analysis() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
+    <div className="bg-white text-gray-900 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto text-center">
 
         {/* Title & Badge */}
         <div className="relative inline-block mb-8">
-          <h1 className="text-4xl font-extrabold mb-2">Video Analysis</h1>
-          <span className="absolute -top-3 -right-10 bg-yellow-300 text-yellow-800 text-xs uppercase font-bold px-2 py-1 rounded">
+          <h1 className="text-4xl font-extrabold">Video Analysis</h1>
+          <span className="absolute -top-2 -right-8 bg-yellow-300 text-yellow-800 text-xs uppercase font-bold px-2 py-1 rounded">
             Coming Soon
           </span>
         </div>
 
         {/* Description */}
-        <p className="text-lg text-gray-700 mb-12">
+        <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
           Our AI-driven video breakdown will help you dissect every serve, spike, and block—
           analyzing angles, speed, and form to level up your game.
         </p>
@@ -43,7 +43,7 @@ export default function Analysis() {
           </div>
         </div>
 
-        {/* Call to Action */}
+        {/* Back CTA */}
         <Link
           to="/"
           className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
