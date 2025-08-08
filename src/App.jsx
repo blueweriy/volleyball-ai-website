@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from 'react';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 
@@ -12,21 +11,33 @@ function Home() {
   );
 }
 
+// Minimal Workout page to test a second route
+function Workout() {
+  return (
+    <div style={{ padding: '2rem' }}>
+      <h1>Workout</h1>
+      <p>Your workout content goes here.</p>
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <div>
       {/* Header/Nav */}
-      <header className="bg-gray-100 py-4 shadow">
-        <div className="max-w-6xl mx-auto px-6 flex space-x-8">
-          <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
-          {/* We'll add more links/routes after this test */}
-        </div>
+      <header style={{ background: '#f3f4f6', padding: '1rem 2rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+        <Link to="/" style={{ marginRight: '1.5rem', color: '#374151', textDecoration: 'none' }}>
+          Home
+        </Link>
+        <Link to="/workout" style={{ color: '#374151', textDecoration: 'none' }}>
+          Workout
+        </Link>
       </header>
 
-      {/* Routes */}
+      {/* Routing */}
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Catch-all to Home for now */}
+        <Route path="/workout" element={<Workout />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
