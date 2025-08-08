@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom';
 
@@ -32,7 +31,6 @@ import Cones         from './pages/purchases/Cones';
 export default function App() {
   return (
     <BrowserRouter>
-      {/* Persistent header with your preferred styling */}
       <header className="bg-gray-100 py-4 shadow">
         <div className="max-w-6xl mx-auto px-6 flex space-x-8">
           <Link to="/"         className="text-gray-700 hover:text-gray-900">Home</Link>
@@ -43,42 +41,34 @@ export default function App() {
         </div>
       </header>
 
-      {/* Main content area */}
       <Routes>
-        {/* Main pages */}
-        <Route path="/"         element={<Home />} />
-        <Route path="/rules"    element={<Rules />} />
-        <Route path="/callouts" element={<Callouts />} />
-        <Route path="/workout"  element={<Workout />} />
+        <Route path="/"          element={<Home />} />
+        <Route path="/rules"     element={<Rules />} />
+        <Route path="/callouts"  element={<Callouts />} />
+        <Route path="/workout"   element={<Workout />} />
         <Route path="/purchases" element={<Purchases />} />
 
-        {/* Workout sub-routes */}
         <Route path="/workout/plyometrics" element={<Plyometrics />} />
-        <Route path="/workout/strength"    element={<Strength />} />
-        <Route path="/workout/stamina"     element={<Stamina />} />
-        <Route path="/workout/injury"      element={<Injury />} />
+        <Route path="/workout/strength"     element={<Strength />} />
+        <Route path="/workout/stamina"      element={<Stamina />} />
+        <Route path="/workout/injury"       element={<Injury />} />
 
-        {/* Purchases sub-routes: Nets */}
         <Route path="/purchases/nets/budget"   element={<NetsBudget />} />
         <Route path="/purchases/nets/standard" element={<NetsStandard />} />
         <Route path="/purchases/nets/premium"  element={<NetsPremium />} />
 
-        {/* Purchases sub-routes: Shoes */}
         <Route path="/purchases/shoes/budget"   element={<ShoesBudget />} />
         <Route path="/purchases/shoes/standard" element={<ShoesStandard />} />
         <Route path="/purchases/shoes/premium"  element={<ShoesPremium />} />
 
-        {/* Purchases sub-routes: Balls */}
         <Route path="/purchases/balls/budget"   element={<BallsBudget />} />
         <Route path="/purchases/balls/standard" element={<BallsStandard />} />
         <Route path="/purchases/balls/premium"  element={<BallsPremium />} />
 
-        {/* Purchases sub-routes: Accessories */}
         <Route path="/purchases/accessories/knee-pads"   element={<KneePads />} />
         <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
         <Route path="/purchases/accessories/cones"        element={<Cones />} />
 
-        {/* Fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
