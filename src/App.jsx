@@ -1,8 +1,8 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom';
 
-// Top-level pages
+// Pages
 import Home      from './pages/Home';
 import Rules     from './pages/Rules';
 import Callouts  from './pages/Callouts';
@@ -29,24 +29,35 @@ import KneePads      from './pages/purchases/KneePads';
 import AnkleBraces   from './pages/purchases/AnkleBraces';
 import Cones         from './pages/purchases/Cones';
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
+      {/* Persistent Nav at top of every page */}
+      <header className="bg-gray-100 py-4">
+        <div className="max-w-5xl mx-auto px-4 flex space-x-6">
+          <Link to="/"         className="text-gray-700 hover:text-gray-900">Home</Link>
+          <Link to="/rules"    className="text-gray-700 hover:text-gray-900">Rules</Link>
+          <Link to="/callouts" className="text-gray-700 hover:text-gray-900">Callouts</Link>
+          <Link to="/workout"  className="text-gray-700 hover:text-gray-900">Workout</Link>
+          <Link to="/purchases" className="text-gray-700 hover:text-gray-900">Purchases</Link>
+        </div>
+      </header>
+
       <Routes>
-        {/* Main pages */}
-        <Route path="/"                element={<Home />} />
-        <Route path="/rules"           element={<Rules />} />
-        <Route path="/callouts"        element={<Callouts />} />
-        <Route path="/workout"         element={<Workout />} />
-        <Route path="/purchases"       element={<Purchases />} />
+        {/* Main */}
+        <Route path="/" element={<Home />} />
+        <Route path="/rules"    element={<Rules />} />
+        <Route path="/callouts" element={<Callouts />} />
+        <Route path="/workout"  element={<Workout />} />
+        <Route path="/purchases" element={<Purchases />} />
 
-        {/* Workout detail routes */}
+        {/* Workout sub-routes */}
         <Route path="/workout/plyometrics" element={<Plyometrics />} />
-        <Route path="/workout/strength"     element={<Strength />} />
-        <Route path="/workout/stamina"      element={<Stamina />} />
-        <Route path="/workout/injury"       element={<Injury />} />
+        <Route path="/workout/strength"    element={<Strength />} />
+        <Route path="/workout/stamina"     element={<Stamina />} />
+        <Route path="/workout/injury"      element={<Injury />} />
 
-        {/* Purchases detail routes */}
+        {/* Purchases sub-routes */}
         <Route path="/purchases/nets/budget"   element={<NetsBudget />} />
         <Route path="/purchases/nets/standard" element={<NetsStandard />} />
         <Route path="/purchases/nets/premium"  element={<NetsPremium />} />
@@ -63,9 +74,11 @@ export default function App() {
         <Route path="/purchases/accessories/ankle-braces" element={<AnkleBraces />} />
         <Route path="/purchases/accessories/cones"        element={<Cones />} />
 
-        {/* Catch-all */}
+        {/* Fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
 }
+
+export default App;
