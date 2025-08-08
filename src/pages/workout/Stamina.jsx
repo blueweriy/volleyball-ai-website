@@ -57,7 +57,7 @@ export default function Stamina() {
             <ul className="list-disc list-inside ml-6 space-y-1">
               <li><strong>Distances:</strong> 5m, 10m, 15m, 20m and back, performing each back-to-back.</li>
               <li><strong>Rest:</strong> 30 seconds between ladders.</li>
-              <li><em>Benefit:</em> Trains change-of-direction endurance and aerobic recovery.</em></li>
+              <li><em>Benefit:</em> Trains change-of-direction endurance and aerobic recovery.</li>
             </ul>
           </li>
         </ol>
@@ -85,21 +85,21 @@ export default function Stamina() {
             <h3 className="font-semibold">Push-Ups</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
               <li>Do 15–20 reps at controlled tempo (2s down, 1s up).</li>
-              <li><em>Benefit:</em> Enhances upper-body endurance for consistent arm swings and digs.</em></li>
+              <li><em>Benefit:</em> Enhances upper-body endurance for consistent arm swings and digs.</li>
             </ul>
           </li>
           <li>
             <h3 className="font-semibold">Plank Hold</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
               <li>Hold full plank for 45 seconds, keeping body straight.</li>
-              <li><em>Benefit:</em> Builds core endurance for stable posture under fatigue.</em></li>
+              <li><em>Benefit:</em> Builds core endurance for stable posture under fatigue.</li>
             </ul>
           </li>
           <li>
             <h3 className="font-semibold">Jumping Jacks</h3>
             <ul className="list-disc list-inside ml-6 space-y-1">
               <li>Perform 30 controlled reps, full range arms and legs.</li>
-              <li><em>Benefit:</em> Keeps heart rate elevated while mobilizing shoulders and hips.</em></li>
+              <li><em>Benefit:</em> Keeps heart rate elevated while mobilizing shoulders and hips.</li>
             </ul>
           </li>
           <li>
