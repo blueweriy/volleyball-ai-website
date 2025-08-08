@@ -5,41 +5,66 @@ export default function Receive() {
   return (
     <div className="bg-white text-gray-900 py-16 px-8 md:px-16 lg:px-32 max-w-4xl mx-auto leading-relaxed">
       <h1 className="font-serif text-4xl font-bold mb-8 text-center">
-        Receiving (Serve Receive)
+        Receiving: Rules, Technique & Call-Outs
       </h1>
 
+      {/* Official Rules */}
       <section className="mb-12">
-        <h2 className="font-serif text-2xl font-semibold mb-4">Serve Receive Rules</h2>
-        <ul className="list-disc list-inside space-y-3 text-lg">
-          <li><strong>Legal Contact:</strong> Ball must rebound cleanly—no lift or carry.</li>
-          <li><strong>Lines:</strong> You may step on but not completely over any boundary line.</li>
-          <li><strong>Formation:</strong> Communication (“Mine!”) prevents collisions.</li>
+        <h2 className="text-2xl font-semibold mb-4">Serve Receive Rules</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li><strong>Legal Contact:</strong> Must rebound cleanly—no lift/carry.</li>
+          <li><strong>Boundary:</strong> Can step on but not over sideline/endline.</li>
+          <li><strong>Teamwork:</strong> Call “Mine!” to avoid collisions.</li>
         </ul>
       </section>
 
+      {/* Technique */}
       <section className="mb-12">
-        <h2 className="font-serif text-2xl font-semibold mb-4">Watch & Learn</h2>
-        <div className="aspect-w-16 aspect-h-9 mb-4">
-          <iframe
-            src="https://www.youtube.com/embed/RWQ_j0Scm_M"
-            title="Volleyball Passing Tutorial"
-            allowFullScreen
-            className="w-full h-full rounded-lg shadow-md"
-          />
-        </div>
-        <p className="text-center text-gray-600 italic text-sm">
-          Source: Volleyball Passing Drills
-        </p>
+        <h2 className="text-2xl font-semibold mb-4">Technique Breakdown</h2>
+        <ol className="list-decimal list-inside space-y-2 text-lg">
+          <li><strong>Platform:</strong> Arms straight, thumbs together, angle toward target.</li>
+          <li><strong>Stance:</strong> Feet staggered, knees bent, weight forward.</li>
+          <li><strong>Move:</strong> Step to the ball—don’t reach with arms.</li>
+          <li><strong>Contact:</strong> Absorb with legs, keep platform firm.</li>
+          <li><strong>Recovery:</strong> Return to base quickly after pass.</li>
+        </ol>
       </section>
 
+      {/* Positioning & Timing */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Positioning & Timing</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li>Angle platform to setter’s position—face your pass forward.</li>
+          <li>Watch server’s toss height and spin for early read.</li>
+        </ul>
+      </section>
+
+      {/* Call-Outs */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Receive Call-Outs</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li><strong>“Mine!”</strong> – I’ll receive.</li>
+          <li><strong>“Yours!”</strong> – Defer to other.</li>
+          <li><strong>“Up!”</strong> – Ready under the ball.</li>
+          <li><strong>“Left/Right!”</strong> – Adjust platform angle.</li>
+        </ul>
+      </section>
+
+      {/* Resources */}
       <section>
-        <h3 className="font-serif text-xl font-semibold mb-2">Key Techniques</h3>
-        <ol className="list-decimal list-inside space-y-2 text-lg">
-          <li>Form a solid platform—elbows locked, thumbs together.</li>
-          <li>Move feet to the ball; do not reach with arms alone.</li>
-          <li>Communicate loudly to call your ball first.</li>
-          <li>Angle platform toward setter for an easy second contact.</li>
-        </ol>
+        <h2 className="text-2xl font-semibold mb-4">Resources</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
+          <li>
+            <a href="https://youtu.be/RWQ_j0Scm_M" target="_blank" className="text-blue-600 hover:underline">
+              Volleyball Passing Drills
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/OBrzyCWVYVg" target="_blank" className="text-blue-600 hover:underline">
+              Advanced Passing Techniques
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
   );
