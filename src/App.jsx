@@ -35,11 +35,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Header/Nav */}
-      <header
-        className="bg-gray-100 shadow"
-        style={{ padding: '1rem 2rem' }}
-      >
-        <div className="max-w-6xl mx-auto flex flex-wrap space-x-6">
+      <header className="bg-gray-100 shadow" style={{ padding: '1rem 2rem' }}>
+        <div className="max-w-6xl mx-auto flex justify-center space-x-8">
           <Link to="/"         className="text-gray-700 hover:text-gray-900">Home</Link>
           <Link to="/rules"    className="text-gray-700 hover:text-gray-900">Rules</Link>
           <Link to="/callouts" className="text-gray-700 hover:text-gray-900">Callouts</Link>
@@ -50,7 +47,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* Push content below header and add side padding */}
+      {/* Main content */}
       <main className="pt-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <Routes>
