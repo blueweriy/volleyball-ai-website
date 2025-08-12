@@ -1,29 +1,6 @@
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  // Styles
-  const headerStyle = {
-    backgroundColor: "#e5e7eb", // Tailwind's gray-200
-    borderBottom: "1px solid #d1d5db", // gray-300
-  };
-  const navStyle = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "4rem",
-  };
-  const linkStyle = {
-    margin: "0 1.5rem", // even spacing
-    fontSize: "1.25rem",
-    fontWeight: 600,
-    color: "#374151", // gray-700
-    textDecoration: "none",
-    transition: "color 0.2s ease",
-  };
-  const linkHoverStyle = {
-    color: "#111827", // gray-900
-  };
-
   const items = [
     ["VAC", "/"],
     ["Rules", "/rules"],
@@ -35,23 +12,23 @@ export default function Navbar() {
   ];
 
   return (
-    <header style={headerStyle}>
-      <nav style={navStyle}>
-        {items.map(([label, to]) => (
-          <Link
-            key={to}
-            to={to}
-            style={linkStyle}
-            onMouseEnter={(e) =>
-              Object.assign(e.target.style, linkHoverStyle)
-            }
-            onMouseLeave={(e) =>
-              Object.assign(e.target.style, linkStyle)
-            }
-          >
-            {label}
-          </Link>
-        ))}
+    <header className="bg-gray-200 border-b border-gray-300">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ul
+          className="flex justify-center items-center gap-10 py-4"
+          style={{ listStyle: "none", margin: 0, padding: 0 }}
+        >
+          {items.map(([label, to]) => (
+            <li key={to}>
+              <Link
+                to={to}
+                className="text-gray-700 hover:text-gray-900 font-semibold text-lg"
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );
