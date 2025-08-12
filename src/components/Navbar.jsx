@@ -12,17 +12,17 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="bg-gray-200 border-b border-gray-300">
+    <header className="bg-gray-200 border-b border-gray-300 w-full">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <ul
-          className="flex justify-center items-center gap-10 py-4"
+          className="flex justify-center items-center gap-14 py-5"
           style={{ listStyle: "none", margin: 0, padding: 0 }}
         >
           {items.map(([label, to]) => (
             <li key={to}>
               <Link
                 to={to}
-                className="text-gray-700 hover:text-gray-900 font-semibold text-lg"
+                className="text-gray-700 hover:text-gray-900 font-bold text-xl"
               >
                 {label}
               </Link>
