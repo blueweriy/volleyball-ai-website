@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import Rules from "./pages/Rules";
 import Callouts from "./pages/Callouts";
 import Skills from "./pages/Skills";
-import Serves from "./pages/Serves"; // new serves page
 import Analysis from "./pages/Analysis";
 import Workout from "./pages/Workout";
 import Purchases from "./pages/Purchases";
@@ -28,7 +27,6 @@ export default function App() {
             <li><Link to="/rules"     className="text-gray-700 hover:text-gray-900">Rules</Link></li>
             <li><Link to="/callouts"  className="text-gray-700 hover:text-gray-900">Callouts</Link></li>
             <li><Link to="/skills"    className="text-gray-700 hover:text-gray-900">Skills</Link></li>
-            <li><Link to="/skills/serves" className="text-gray-700 hover:text-gray-900">Serves</Link></li>
             <li><Link to="/analysis"  className="text-gray-700 hover:text-gray-900">Analysis</Link></li>
             <li><Link to="/workout"   className="text-gray-700 hover:text-gray-900">Workout</Link></li>
             <li><Link to="/purchases" className="text-gray-700 hover:text-gray-900">Purchases</Link></li>
@@ -43,7 +41,6 @@ export default function App() {
           <Route path="/rules" element={<Rules />} />
           <Route path="/callouts" element={<Callouts />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/skills/serves" element={<Serves />} />
           <Route path="/analysis" element={<Analysis />} />
           <Route path="/workout" element={<Workout />} />
           <Route path="/purchases" element={<Purchases />} />
