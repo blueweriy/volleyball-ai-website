@@ -1,5 +1,7 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // ⬅️ no Link here
+
+import Navbar from "./components/Navbar.jsx";      // ⬅️ use your Navbar
 
 import Home from "./pages/Home.jsx";
 import Rules from "./pages/Rules.jsx";
@@ -21,20 +23,8 @@ function NotFound() { return <div className="py-8">Not found</div>; }
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* Nav Bar */}
-      <header className="bg-gray-100 shadow">
-        <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ul className="flex justify-center space-x-8 py-4" style={{ listStyle: "none", margin: 0, padding: 0 }}>
-            <li><Link to="/"          className="text-gray-700 hover:text-gray-900">Home</Link></li>
-            <li><Link to="/rules"     className="text-gray-700 hover:text-gray-900">Rules</Link></li>
-            <li><Link to="/callouts"  className="text-gray-700 hover:text-gray-900">Callouts</Link></li>
-            <li><Link to="/skills"    className="text-gray-700 hover:text-gray-900">Skills</Link></li>
-            <li><Link to="/analysis"  className="text-gray-700 hover:text-gray-900">Analysis</Link></li>
-            <li><Link to="/workout"   className="text-gray-700 hover:text-gray-900">Workout</Link></li>
-            <li><Link to="/purchases" className="text-gray-700 hover:text-gray-900">Purchases</Link></li>
-          </ul>
-        </nav>
-      </header>
+      {/* ✅ Use the shared Navbar component */}
+      <Navbar />
 
       {/* Main */}
       <main className="pt-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
@@ -57,7 +47,7 @@ export default function App() {
             <Route path="block" element={<Block />} />
           </Route>
 
-          {/* Direct routes too (safety net if Outlet/links change) */}
+          {/* Direct routes too (safety net) */}
           <Route path="/skills/serve" element={<Serve />} />
           <Route path="/skills/dig" element={<Dig />} />
           <Route path="/skills/receive" element={<Receive />} />
