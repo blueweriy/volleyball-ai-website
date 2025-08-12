@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  // Inline styles
+  // Styles
   const headerStyle = {
-    backgroundColor: "#fff",
-    borderBottom: "1px solid #e5e7eb",
-    // position: "sticky",   ← removed
-    // top: 0,               ← removed
-    // zIndex: 50,           ← removed
+    backgroundColor: "#e5e7eb", // Tailwind's gray-200
+    borderBottom: "1px solid #d1d5db", // gray-300
   };
   const navStyle = {
     display: "flex",
@@ -16,14 +13,17 @@ export default function Navbar() {
     height: "4rem",
   };
   const linkStyle = {
-    margin: "0 2rem",
-    fontSize: "1.5rem",
-    fontWeight: 700,
-    color: "#000",
+    margin: "0 1.5rem", // even spacing
+    fontSize: "1.25rem",
+    fontWeight: 600,
+    color: "#374151", // gray-700
     textDecoration: "none",
+    transition: "color 0.2s ease",
+  };
+  const linkHoverStyle = {
+    color: "#111827", // gray-900
   };
 
-  // Final ordered list
   const items = [
     ["VAC", "/"],
     ["Rules", "/rules"],
@@ -38,7 +38,17 @@ export default function Navbar() {
     <header style={headerStyle}>
       <nav style={navStyle}>
         {items.map(([label, to]) => (
-          <Link key={to} to={to} style={linkStyle}>
+          <Link
+            key={to}
+            to={to}
+            style={linkStyle}
+            onMouseEnter={(e) =>
+              Object.assign(e.target.style, linkHoverStyle)
+            }
+            onMouseLeave={(e) =>
+              Object.assign(e.target.style, linkStyle)
+            }
+          >
             {label}
           </Link>
         ))}
