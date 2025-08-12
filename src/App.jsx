@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 
@@ -6,7 +7,7 @@ import Home from "./pages/Home.jsx";
 import Rules from "./pages/Rules.jsx";
 import Callouts from "./pages/Callouts.jsx";
 import Analysis from "./pages/Analysis.jsx";
-import Workout from "./pages/workout/Workout.jsx";
+import Workout from "./pages/Workout.jsx";         // ✅ fixed path (no 'workout/' folder)
 import Purchases from "./pages/Purchases.jsx";
 
 // Skills (layout) + skill subpages
@@ -31,7 +32,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
 
-      {/* Nav Bar (simple absolute paths, like before) */}
+      {/* Nav Bar (simple absolute paths) */}
       <header className="bg-gray-100 shadow">
         <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <ul
@@ -61,7 +62,6 @@ export default function App() {
 
           {/* Skills section: layout + child routes */}
           <Route path="/skills" element={<Skills />}>
-            {/* default landing when visiting /skills */}
             <Route index element={<div className="text-gray-600">Choose a skill above to begin.</div>} />
             <Route path="serve" element={<Serve />} />
             <Route path="dig" element={<Dig />} />
