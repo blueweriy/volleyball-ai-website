@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Rules() {
   return (
-    <div className="bg-white text-gray-900 px-6 py-12 max-w-4xl mx-auto ml-6">
+    <div className="bg-white text-gray-900 px-6 py-12 max-w-4xl mx-auto ml-12">
       {/* Smooth scrolling */}
       <style>{`html { scroll-behavior: smooth; }`}</style>
 
@@ -89,12 +89,26 @@ export default function Rules() {
         <h2 className="text-3xl font-semibold mb-4">Rule Violations</h2>
         <div className="leading-loose mb-4">
           <ul className="list-disc list-inside space-y-2">
-            <li><strong>Double contact:</strong> A single player contacts the ball twice in succession (except on a first hard-driven serve or attack).</li>
-            <li><strong>Four hits:</strong> The team makes more than three consecutive contacts.</li>
-            <li><strong>Net touch:</strong> Any part of the player’s body or uniform touches the net while the ball is in play.</li>
-            <li><strong>Foot fault:</strong> The server steps on or over the end line before contacting the ball.</li>
-            <li><strong>Back‐row attack:</strong> A back‐row player jumps and contacts the ball above the net from in front of the attack line.</li>
-            <li><strong>Lift/Catch:</strong> The ball comes to rest momentarily in the hands.</li>
+            <li>
+              <strong>Double contact:</strong> A single player contacts the ball twice in succession
+              (except on a first hard-driven serve or attack).
+            </li>
+            <li>
+              <strong>Four hits:</strong> The team makes more than three consecutive contacts.
+            </li>
+            <li>
+              <strong>Net touch:</strong> Any part of the player’s body or uniform touches the net while the ball is in play.
+            </li>
+            <li>
+              <strong>Foot fault:</strong> The server steps on or over the end line before contacting the ball.
+            </li>
+            <li>
+              <strong>Back‐row attack:</strong> A back‐row player jumps and contacts the ball above the net
+              from in front of the attack line.
+            </li>
+            <li>
+              <strong>Lift/Catch:</strong> The ball comes to rest momentarily in the hands.  
+            </li>
           </ul>
         </div>
       </section>
@@ -122,10 +136,18 @@ export default function Rules() {
             Volleyball has several variations played worldwide, each with unique rules and team sizes.
           </p>
           <ul className="list-disc list-inside space-y-2 mt-4">
-            <li><strong>Indoor (6 vs. 6):</strong> Standard format on a hard court with specialized positions.</li>
-            <li><strong>Beach (2 vs. 2):</strong> Smaller court on sand; fewer players increases all‐round skill demands.</li>
-            <li><strong>Sitting Volleyball:</strong> Paralympic discipline; players remain seated and the net is lower.</li>
-            <li><strong>Mini Volleyball:</strong> Youth version on a smaller court, lower net, fewer players.</li>
+            <li>
+              <strong>Indoor (6 vs. 6):</strong> Standard format on a hard court with specialized positions.
+            </li>
+            <li>
+              <strong>Beach (2 vs. 2):</strong> Smaller court on sand; fewer players increases all‐round skill demands.
+            </li>
+            <li>
+              <strong>Sitting Volleyball:</strong> Paralympic discipline; players remain seated and the net is lower.
+            </li>
+            <li>
+              <strong>Mini Volleyball:</strong> Youth version on a smaller court, lower net, fewer players.
+            </li>
           </ul>
         </div>
       </section>
