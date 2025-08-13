@@ -39,35 +39,37 @@ const gearData = [
 
 export default function Purchases() {
   return (
-    <div className="bg-white text-gray-900 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-serif font-bold mb-6 text-center">
-          Recommended Purchases
-        </h1>
-        <p className="text-lg text-gray-700 mb-10 text-center">
-          Gear up with top-rated equipment—categorized and ranked to suit every budget and performance level.
-        </p>
+    <div style={{ paddingLeft: "3rem", paddingRight: "3rem" }}>
+      <div className="bg-white text-gray-900 py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-4xl font-serif font-bold mb-6 text-center">
+            Recommended Purchases
+          </h1>
+          <p className="text-lg text-gray-700 mb-10 text-center">
+            Gear up with top-rated equipment—categorized and ranked to suit every budget and performance level.
+          </p>
 
-        {gearData.map(section => (
-          <section key={section.category} className="mb-12">
-            <h2 className="text-2xl font-bold mb-4">{section.category}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {section.items.map(item => (
-                <Link
-                  key={item.to}
-                  to={item.to}
-                  className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow no-underline"
-                >
-                  <h3 className="text-xl font-semibold mb-2">{item.label}</h3>
-                  <p className="text-gray-700 leading-relaxed">{item.desc}</p>
-                  <span className="mt-4 inline-block text-blue-600 underline font-medium">
-                    View {item.label} →
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </section>
-        ))}
+          {gearData.map(section => (
+            <section key={section.category} className="mb-12">
+              <h2 className="text-2xl font-bold mb-4">{section.category}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {section.items.map(item => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow no-underline"
+                  >
+                    <h3 className="text-xl font-semibold mb-2">{item.label}</h3>
+                    <p className="text-gray-700 leading-relaxed">{item.desc}</p>
+                    <span className="mt-4 inline-block text-blue-600 underline font-medium">
+                      View {item.label} →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
     </div>
   );
