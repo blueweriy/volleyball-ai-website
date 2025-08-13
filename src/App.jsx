@@ -1,7 +1,8 @@
+// src/App.jsx
 import React from "react";
-import { Routes, Route } from "react-router-dom"; // ⬅️ no Link here
+import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar.jsx";      // ⬅️ use your Navbar
+import Navbar from "./components/Navbar.jsx";
 
 import Home from "./pages/Home.jsx";
 import Rules from "./pages/Rules.jsx";
@@ -23,10 +24,9 @@ function NotFound() { return <div className="py-8">Not found</div>; }
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* ✅ Use the shared Navbar component */}
+      {/* ✅ Only this navbar is used */}
       <Navbar />
 
-      {/* Main */}
       <main className="pt-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,7 +36,6 @@ export default function App() {
           <Route path="/workout" element={<Workout />} />
           <Route path="/purchases" element={<Purchases />} />
 
-          {/* Skills layout + nested children */}
           <Route path="/skills" element={<Skills />}>
             <Route index element={<div className="text-gray-600">Choose a skill above to begin.</div>} />
             <Route path="serve" element={<Serve />} />
@@ -47,7 +46,7 @@ export default function App() {
             <Route path="block" element={<Block />} />
           </Route>
 
-          {/* Direct routes too (safety net) */}
+          {/* Safety net direct routes */}
           <Route path="/skills/serve" element={<Serve />} />
           <Route path="/skills/dig" element={<Dig />} />
           <Route path="/skills/receive" element={<Receive />} />
