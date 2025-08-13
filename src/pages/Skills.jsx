@@ -1,44 +1,86 @@
 // src/pages/Skills.jsx
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Skills() {
-  const tabBase =
-    "flex flex-col items-center px-4 py-3 rounded-lg transition text-sm sm:text-base w-32 text-center";
-  const off = "text-gray-700 hover:bg-gray-200";
-  const on = "bg-white shadow border";
-
   const skills = [
-    { path: "serve", label: "Serve", desc: "Start the play with control" },
-    { path: "dig", label: "Dig", desc: "Defend against a spike" },
-    { path: "receive", label: "Receive", desc: "Handle the opponent's serve" },
-    { path: "set", label: "Set", desc: "Assist for the spike" },
-    { path: "spike", label: "Spike", desc: "Attack with power" },
-    { path: "block", label: "Block", desc: "Stop the ball at the net" },
+    {
+      path: "serve",
+      label: "Serve",
+      desc:
+        "Start each rally with accuracy and intent. Learn float, topspin, and jump-serve mechanics, toss, and target zones.",
+      cta: "Open →",
+    },
+    {
+      path: "receive",
+      label: "Receive",
+      desc:
+        "Handle the opponent’s serve cleanly. Platform angles, footwork, seam calls, and calming first-touch routines.",
+      cta: "Open →",
+    },
+    {
+      path: "set",
+      label: "Set",
+      desc:
+        "Deliver hittable balls consistently. Hand shape, release timing, footwork patterns, and tempo (1, 2, Go, Hut).",
+      cta: "Open →",
+    },
+    {
+      path: "spike",
+      label: "Spike",
+      desc:
+        "Convert sets into points. Approach rhythm (left-right-left), arm swing, contact height, and tool/roll options.",
+      cta: "Open →",
+    },
+    {
+      path: "dig",
+      label: "Dig",
+      desc:
+        "Keep attacks off the floor. Read hitters, move early, control rebounds, and transition quickly to offense.",
+      cta: "Open →",
+    },
+    {
+      path: "block",
+      label: "Block",
+      desc:
+        "Disrupt the attack at the net. Eye work, hand positioning over the tape, sealing seams, and timing the jump.",
+      cta: "Open →",
+    },
   ];
 
   return (
-    <section className="space-y-6">
-      <h1 className="text-2xl font-semibold">Skills</h1>
+    <div style={{ paddingLeft: "3rem", paddingRight: "3rem" }}>
+      <div className="bg-white text-gray-900 py-16 px-8 lg:px-20 max-w-4xl mx-auto">
+        <h1 className="text-4xl font-serif font-bold mb-4 text-center">
+          Volleyball Skills
+        </h1>
+        <p className="text-lg text-gray-700 mb-10 text-center">
+          Pick a skill to learn the key mechanics, coaching cues, and drills.
+        </p>
 
-      {/* Skills sub-nav with more spacing */}
-      <nav className="flex flex-wrap gap-6 rounded-xl border p-4 bg-gray-100 justify-start sm:justify-center">
-        {skills.map((skill) => (
-          <NavLink
-            key={skill.path}
-            to={skill.path}
-            className={({ isActive }) =>
-              `${tabBase} ${isActive ? on : off}`
-            }
-          >
-            <span className="font-medium">{skill.label}</span>
-            <span className="mt-1 text-xs text-gray-500">{skill.desc}</span>
-          </NavLink>
-        ))}
-      </nav>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {skills.map((s) => (
+            <Link
+              key={s.path}
+              to={s.path} // relative to /skills
+              className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow no-underline"
+            >
+              <h2 className="text-2xl font-semibold mb-2 text-gray-900">
+                {s.label}
+              </h2>
+              <p className="text-gray-800 leading-relaxed">{s.desc}</p>
+              <span className="mt-4 inline-block text-gray-900 font-medium">
+                {s.cta}
+              </span>
+            </Link>
+          ))}
+        </div>
 
-      {/* Child page content */}
-      <Outlet />
-    </section>
+        {/* Selected skill renders below the grid */}
+        <div className="mt-12">
+          <Outlet />
+        </div>
+      </div>
+    </div>
   );
 }
