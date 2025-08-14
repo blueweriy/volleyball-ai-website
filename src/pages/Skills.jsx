@@ -1,49 +1,49 @@
 // src/pages/Skills.jsx
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Skills() {
   const skills = [
     {
-      path: "serve",
+      path: "/skills/serve",
       label: "Serve",
       desc:
-        "Start each rally with accuracy and intent. Learn float, topspin, and jump-serve mechanics, toss, and target zones.",
+        "Start each rally with accuracy and intent. Float, topspin, jump-serve, toss control, and target zones.",
       cta: "Open →",
     },
     {
-      path: "receive",
+      path: "/skills/receive",
       label: "Receive",
       desc:
-        "Handle the opponent’s serve cleanly. Platform angles, footwork, seam calls, and calming first-touch routines.",
+        "Handle the opponent’s serve cleanly. Platform angles, footwork, seam calls, and first-touch routines.",
       cta: "Open →",
     },
     {
-      path: "set",
+      path: "/skills/set",
       label: "Set",
       desc:
         "Deliver hittable balls consistently. Hand shape, release timing, footwork patterns, and tempo (1, 2, Go, Hut).",
       cta: "Open →",
     },
     {
-      path: "spike",
+      path: "/skills/spike",
       label: "Spike",
       desc:
         "Convert sets into points. Approach rhythm (left-right-left), arm swing, contact height, and tool/roll options.",
       cta: "Open →",
     },
     {
-      path: "dig",
+      path: "/skills/dig",
       label: "Dig",
       desc:
-        "Keep attacks off the floor. Read hitters, move early, control rebounds, and transition quickly to offense.",
+        "Keep attacks off the floor. Read hitters, move early, control rebounds, and transition to offense.",
       cta: "Open →",
     },
     {
-      path: "block",
+      path: "/skills/block",
       label: "Block",
       desc:
-        "Disrupt the attack at the net. Eye work, hand positioning over the tape, sealing seams, and timing the jump.",
+        "Disrupt the attack at the net. Eye work, hand positioning over the tape, sealing seams, and timing.",
       cta: "Open →",
     },
   ];
@@ -62,7 +62,7 @@ export default function Skills() {
           {skills.map((s) => (
             <Link
               key={s.path}
-              to={s.path} // relative to /skills
+              to={s.path}  // absolute path -> loads a separate page
               className="block bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg transition-shadow no-underline"
             >
               <h2 className="text-2xl font-semibold mb-2 text-gray-900">
@@ -74,11 +74,6 @@ export default function Skills() {
               </span>
             </Link>
           ))}
-        </div>
-
-        {/* Selected skill renders below the grid */}
-        <div className="mt-12">
-          <Outlet />
         </div>
       </div>
     </div>
