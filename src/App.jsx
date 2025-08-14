@@ -11,8 +11,8 @@ import Analysis from "./pages/Analysis.jsx";
 import Workout from "./pages/Workout.jsx";
 import Purchases from "./pages/Purchases.jsx";
 
-import Skills from "./pages/Skills.jsx";
-import Serve from "./pages/skillpages/Serve.jsx";
+import Skills from "./pages/Skills.jsx";               // index grid page
+import Serve from "./pages/skillpages/Serve.jsx";       // individual pages
 import Dig from "./pages/skillpages/Dig.jsx";
 import Receive from "./pages/skillpages/Receive.jsx";
 import Set from "./pages/skillpages/Set.jsx";
@@ -24,7 +24,6 @@ function NotFound() { return <div className="py-8">Not found</div>; }
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      {/* ✅ Only this navbar is used */}
       <Navbar />
 
       <main className="pt-6 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
@@ -36,17 +35,8 @@ export default function App() {
           <Route path="/workout" element={<Workout />} />
           <Route path="/purchases" element={<Purchases />} />
 
-          <Route path="/skills" element={<Skills />}>
-            <Route index element={<div className="text-gray-600">Choose a skill above to begin.</div>} />
-            <Route path="serve" element={<Serve />} />
-            <Route path="dig" element={<Dig />} />
-            <Route path="receive" element={<Receive />} />
-            <Route path="set" element={<Set />} />
-            <Route path="spike" element={<Spike />} />
-            <Route path="block" element={<Block />} />
-          </Route>
-
-          {/* Safety net direct routes */}
+          {/* Skills: index page + separate full pages */}
+          <Route path="/skills" element={<Skills />} />
           <Route path="/skills/serve" element={<Serve />} />
           <Route path="/skills/dig" element={<Dig />} />
           <Route path="/skills/receive" element={<Receive />} />
