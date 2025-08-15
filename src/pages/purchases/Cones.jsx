@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'Champion Plastic Training Cones (10-pack)',
+    name: 'FGBNM Training Cones',
     desc: 'Bright, stackable cones for agility drills.',
-    url: 'https://example.com/champion-cones'
+    url: 'https://www.amazon.com/FGBNM-Training-Football-Basketball-Equipment/dp/B0CPLCVK6N/ref=zg_bs_g_3394981_d_sccl_1/143-1074064-2764467?th=1'
   },
   {
-    name: 'Nike Hexagon Agility Cones (6-pack)',
+    name: 'GHB Agility Cones',
     desc: 'Low-profile, hex-shaped for stability on turf.',
-    url: 'https://example.com/nike-hex-cones'
+    url: 'https://www.amazon.com/GHB-Training-Football-Basketball-Equipment/dp/B0CLNGGXBC/ref=zg_bs_g_3394981_d_sccl_4/143-1074064-2764467?th=1'
   },
   {
-    name: 'SKLZ Speed Training Cones (20-pack)',
+    name: 'ProMidas Speed Training Cones (24-pack)',
     desc: 'Versatile set for footwork, marking boundaries.',
-    url: 'https://example.com/sklz-speed'
+    url: 'https://www.amazon.com/Soccer-Cones-Training-Basketball-Avalaible/dp/B0C2LZYXXT/ref=zg_bs_g_3394981_d_sccl_5/143-1074064-2764467?th=1'
   }
 ];
 
