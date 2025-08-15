@@ -21,11 +21,20 @@ import Set from "./pages/skillpages/Set.jsx";
 import Spike from "./pages/skillpages/Spike.jsx";
 import Block from "./pages/skillpages/Block.jsx";
 
-// ✅ Workout detail pages (match your real paths exactly)
+// Workout detail pages (standalone) — match your real paths (src/pages/workout/*)
 import Plyometrics from "./pages/workout/Plyometrics.jsx";
 import Strength from "./pages/workout/Strength.jsx";
 import Stamina from "./pages/workout/Stamina.jsx";
 import Injury from "./pages/workout/Injury.jsx";
+
+// Purchases category pages (src/pages/purchases/*)
+import Nets from "./pages/purchases/Nets.jsx";
+import Shoes from "./pages/purchases/Shoes.jsx";
+import Balls from "./pages/purchases/Balls.jsx";
+import Accessories from "./pages/purchases/Accessories.jsx";
+
+// Optional: if you add deeper detail pages later, import them here
+// e.g. import NetsBudget from "./pages/purchases/nets/Budget.jsx";
 
 function NotFound() {
   return <div className="py-8 px-6">Not found</div>;
@@ -60,6 +69,20 @@ export default function App() {
           <Route path="/workout/strength" element={<Strength />} />
           <Route path="/workout/stamina" element={<Stamina />} />
           <Route path="/workout/injury" element={<Injury />} />
+
+          {/* Purchases categories */}
+          <Route path="/purchases/nets" element={<Nets />} />
+          <Route path="/purchases/shoes" element={<Shoes />} />
+          <Route path="/purchases/balls" element={<Balls />} />
+          <Route path="/purchases/accessories" element={<Accessories />} />
+
+          {/* Example future deep routes (uncomment when you add files) */}
+          {/*
+          <Route path="/purchases/nets/budget" element={<NetsBudget />} />
+          <Route path="/purchases/nets/standard" element={<NetsStandard />} />
+          <Route path="/purchases/nets/premium" element={<NetsPremium />} />
+          // ...same idea for shoes/balls/accessories
+          */}
 
           {/* 404 */}
           <Route path="*" element={<NotFound />} />
