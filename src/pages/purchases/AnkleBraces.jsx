@@ -6,17 +6,17 @@ const items = [
   {
     name: "McDavid Ankle Brace",
     desc: "Dual-strap figure-8 design for maximum support.",
-    url: "https://example.com/mcdavid-ankle"
+    url: "https://www.amazon.com/stores/McDavidSports/page/BFA06D42-940D-405F-8585-A0E4CF9C15C9"
   },
   {
     name: "ASO Ankle Stabilizer",
     desc: "Popular lace-up brace for moderate sprains.",
-    url: "https://example.com/aso-stabilizer"
+    url: "https://www.amazon.com/Med-Spec-ASO-Ankle-Stabilizer/dp/B00XP3YB6I"
   },
   {
     name: "Shock Doctor Ultra Wrap",
     desc: "Wraparound with adjustable tension straps.",
-    url: "https://example.com/shockdoctor-wrap"
+    url: "https://www.amazon.com/Shock-Doctor-Adult-Ultra-Support/dp/B0B1QCTM3N"
   }
 ];
 
