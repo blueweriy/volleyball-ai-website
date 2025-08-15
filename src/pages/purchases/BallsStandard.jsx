@@ -25,6 +25,7 @@ export default function BallsStandard() {
     <div style={{ paddingLeft: '3rem', paddingRight: '3rem' }}>
       <div className="py-16 px-6 max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">Standard Volleyballs</h1>
+
         <ul className="space-y-6">
           {items.map((it) => (
             <li key={it.name} className="bg-gray-50 p-4 rounded shadow-sm">
@@ -41,6 +42,7 @@ export default function BallsStandard() {
             </li>
           ))}
         </ul>
+
         <Link to="/purchases" className="mt-8 inline-block text-blue-600 underline">
           ← Back to Purchases
         </Link>
