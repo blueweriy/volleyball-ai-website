@@ -3,7 +3,10 @@ import React from "react";
 
 export default function Plyometrics() {
   return (
-    <div className="bg-white text-gray-900 py-16 px-10 lg:px-32 max-w-4xl mx-auto leading-relaxed">
+    <div
+      className="bg-white text-gray-900 py-16 leading-relaxed"
+      style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
+    >
       {/* Page Title */}
       <h1 className="font-serif text-4xl font-bold mb-8 text-center">
         Plyometrics Program
