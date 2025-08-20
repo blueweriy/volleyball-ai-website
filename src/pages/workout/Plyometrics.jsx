@@ -3,14 +3,14 @@ import React from "react";
 
 export default function Plyometrics() {
   return (
-    <div className="bg-white text-gray-900 py-20 px-8 lg:px-24 max-w-5xl mx-auto leading-relaxed space-y-16">
+    <div className="bg-white text-gray-900 py-16 px-10 lg:px-32 max-w-4xl mx-auto leading-relaxed">
       {/* Page Title */}
-      <h1 className="font-serif text-5xl font-bold text-center">
+      <h1 className="font-serif text-4xl font-bold mb-8 text-center">
         Plyometrics Program
       </h1>
 
       {/* Introduction */}
-      <section className="space-y-6">
+      <section className="mb-12">
         <p className="text-lg text-gray-700">
           Plyometric training focuses on explosive movements that stretch your
           muscles (the eccentric phase) immediately followed by a rapid contraction
@@ -21,9 +21,9 @@ export default function Plyometrics() {
       </section>
 
       {/* Program Structure */}
-      <section className="space-y-6">
-        <h2 className="text-3xl font-semibold">Program Structure</h2>
-        <ul className="list-disc list-inside space-y-3 text-lg">
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Program Structure</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
           <li>
             <strong>Frequency:</strong> 2–3 sessions per week, with at least 48 hours of rest between.
           </li>
@@ -40,9 +40,9 @@ export default function Plyometrics() {
       </section>
 
       {/* Drill 1 */}
-      <section className="space-y-6">
-        <h3 className="text-2xl font-semibold">1. Squat Jumps</h3>
-        <ol className="list-decimal list-inside space-y-3 text-lg">
+      <section className="mb-12">
+        <h3 className="text-xl font-semibold mb-3">1. Squat Jumps</h3>
+        <ol className="list-decimal list-inside space-y-2 text-lg">
           <li>
             <strong>Setup:</strong> Stand with feet hip-width apart, toes slightly pointed out.
           </li>
@@ -62,15 +62,15 @@ export default function Plyometrics() {
             land softly to minimize joint stress.
           </li>
         </ol>
-        <p className="text-gray-600 italic text-sm">
+        <p className="mt-3 text-gray-600 italic text-sm">
           <em>Benefit:</em> Develops explosive concentric strength in the quads and glutes for higher takeoffs.
         </p>
       </section>
 
       {/* Drill 2 */}
-      <section className="space-y-6">
-        <h3 className="text-2xl font-semibold">2. Box Depth Jumps</h3>
-        <ol className="list-decimal list-inside space-y-3 text-lg">
+      <section className="mb-12">
+        <h3 className="text-xl font-semibold mb-3">2. Box Depth Jumps</h3>
+        <ol className="list-decimal list-inside space-y-2 text-lg">
           <li>
             <strong>Setup:</strong> Stand on a sturdy box (~18″ height) with feet shoulder-width.
           </li>
@@ -86,16 +86,16 @@ export default function Plyometrics() {
             <strong>Landing:</strong> Same soft, bent-knee landing—reset and repeat.
           </li>
         </ol>
-        <p className="text-gray-600 italic text-sm">
+        <p className="mt-3 text-gray-600 italic text-sm">
           <em>Benefit:</em> Trains rapid transition from eccentric to concentric muscle action,
           enhancing reactive jump ability and ankle stiffness.
         </p>
       </section>
 
       {/* Drill 3 */}
-      <section className="space-y-6">
-        <h3 className="text-2xl font-semibold">3. Lateral Bounds</h3>
-        <ol className="list-decimal list-inside space-y-3 text-lg">
+      <section className="mb-12">
+        <h3 className="text-xl font-semibold mb-3">3. Lateral Bounds</h3>
+        <ol className="list-decimal list-inside space-y-2 text-lg">
           <li>
             <strong>Starting Position:</strong> Stand on one foot near a cone or marker.
           </li>
@@ -111,16 +111,16 @@ export default function Plyometrics() {
             <strong>Repetitions:</strong> Complete the prescribed reps on one side before switching.
           </li>
         </ol>
-        <p className="text-gray-600 italic text-sm">
+        <p className="mt-3 text-gray-600 italic text-sm">
           <em>Benefit:</em> Improves lateral power and stability, critical for quick side‐to‐side
           defensive movements.
         </p>
       </section>
 
       {/* Drill 4 */}
-      <section className="space-y-6">
-        <h3 className="text-2xl font-semibold">4. Tuck Jumps</h3>
-        <ol className="list-decimal list-inside space-y-3 text-lg">
+      <section className="mb-12">
+        <h3 className="text-xl font-semibold mb-3">4. Tuck Jumps</h3>
+        <ol className="list-decimal list-inside space-y-2 text-lg">
           <li>
             <strong>Setup:</strong> Stand with feet shoulder-width, arms by your sides.
           </li>
@@ -134,16 +134,16 @@ export default function Plyometrics() {
             <strong>Landing:</strong> Land softly, bend hips and knees, then reset.
           </li>
         </ol>
-        <p className="text-gray-600 italic text-sm">
+        <p className="mt-3 text-gray-600 italic text-sm">
           <em>Benefit:</em> Enhances hip flexor and core engagement, improving knee drive and
           aerial control.
         </p>
       </section>
 
       {/* Drill 5 */}
-      <section className="space-y-6">
-        <h3 className="text-2xl font-semibold">5. Single-Leg Hop</h3>
-        <ol className="list-decimal list-inside space-y-3 text-lg">
+      <section className="mb-12">
+        <h3 className="text-xl font-semibold mb-3">5. Single-Leg Hop</h3>
+        <ol className="list-decimal list-inside space-y-2 text-lg">
           <li>
             <strong>Start:</strong> Balance on one foot, slight knee bend.
           </li>
@@ -157,15 +157,15 @@ export default function Plyometrics() {
             <strong>Alternate:</strong> Switch legs after completing reps.
           </li>
         </ol>
-        <p className="text-gray-600 italic text-sm">
+        <p className="mt-3 text-gray-600 italic text-sm">
           <em>Benefit:</em> Addresses unilateral power and balance, reducing asymmetries.
         </p>
       </section>
 
       {/* Cool-Down */}
-      <section className="space-y-6">
-        <h2 className="text-3xl font-semibold">Cool-Down & Mobility</h2>
-        <ul className="list-disc list-inside space-y-3 text-lg">
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Cool-Down & Mobility</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
           <li>
             <strong>Calf Stretch:</strong> Lean against a wall, one foot back with heel down for 30s each side.
           </li>
@@ -179,9 +179,9 @@ export default function Plyometrics() {
       </section>
 
       {/* Final Tips */}
-      <section className="space-y-6">
-        <h2 className="text-3xl font-semibold">Final Execution Tips</h2>
-        <ul className="list-disc list-inside space-y-3 text-lg">
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Final Execution Tips</h2>
+        <ul className="list-disc list-inside space-y-2 text-lg">
           <li>Maintain full attention—plyometrics require focus on each rep for safety and effectiveness.</li>
           <li>If form deteriorates (e.g., knees collapse), reduce reps or rest longer.</li>
           <li>Log jump heights or distance to track progress over weeks.</li>
