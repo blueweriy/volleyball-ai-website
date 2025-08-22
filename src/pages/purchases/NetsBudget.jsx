@@ -9,14 +9,14 @@ const items = [
     url: 'https://www.amazon.com/Patiassy-Volleyball-Portable-Training-Adjustable/dp/B0CTMJTLD9'
   },
   {
-    name: 'Furypiont 12 ft Portable Volleyball Training Net',
-    desc: 'Adjustable height setup inclusive of two practice balls; consistently priced under $100.',
-    url: 'https://www.amazon.com/Furypiont-Volleyball-Bag-Outdoor-Freestanding-Adjustable/dp/B0DK3HX3TQ'
+    name: 'Zdgao Portable Volleyball Set',
+    desc: 'Full set with net, pump, boundary lines, and poles—well-reviewed and usually under $100.',
+    url: 'https://www.amazon.com/Zdgao-Outdoor-Portable-Volleyball-System/dp/B0BV7L8CCJ'
   },
   {
-    name: 'Zdgao Portable Volleyball Set',
-    desc: 'Full set with net, pump, boundary lines, and poles—typically under $100 and well-reviewed.',
-    url: 'https://www.amazon.com/Zdgao-Outdoor-Portable-Volleyball-System/dp/B0BV7L8CCJ'
+    name: 'Apex Sports 12 ft Adjustable Volleyball Net & Poles',
+    desc: 'Adjustable regulation net height, good customer ratings, currently available under $100.',
+    url: 'https://www.amazon.com/Apex-Sports-Volleyball-Poles-Adjustable/dp/B08VWCJSN1'
   }
 ];
 
@@ -30,9 +30,7 @@ export default function NetsBudget() {
 
       <ul className="space-y-6">
         {items.map((it) => (
-          <li
-            key={it.name}
-          >
+          <li key={it.name} className="p-0">
             <h2 className="text-xl font-semibold">{it.name}</h2>
             <p className="mt-1 text-gray-700">{it.desc}</p>
             <a
