@@ -1,35 +1,31 @@
-// src/pages/purchases/ShoesBudget.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const items = [
   {
-    name: 'Adidas VL Court 3.0',
-    desc: 'Stylish, cushioned sneaker-like court shoe—currently around $56 on Amazon.',
-    url: 'https://www.amazon.com/adidas-VL-Court-Sneaker-White/dp/B07X9PBT5Q'
+    name: "ASICS Men's Upcourt 5 Volleyball Shoes",
+    desc: "Budget indoor court shoe with GEL cushioning and supportive overlays — solid entry pick.",
+    url: "https://www.amazon.com/ASICS-Mens-Upcourt-5-Volleyball/dp/B0CK5CVY3W?th=1"
   },
   {
-    name: 'Mizuno Wave Tornado 5',
-    desc: 'Lightweight basic volleyball option under $100 with solid traction.',
-    url: 'https://www.amazon.com/Mizuno-Unisex-Volleyball-Shoes-White/dp/B0DSVCQDQP'
+    name: "ASICS Men's Gel-Rocket 12 Volleyball Shoes",
+    desc: "Reliable traction and cushioning; a classic budget-friendly volleyball model.",
+    url: "https://www.amazon.com/ASICS-Mens-Gel-Rocket-Volleyball-Shoes/dp/B0F9JFVD8J"
   },
   {
-    name: 'ASICS Gel-Rocket 12',
-    desc: 'Reliable cushioning and traction, typically priced under $100.',
-    url: 'https://www.amazon.com/ASICS-Gel-Rocket-12-Volleyball-Shoes/dp/B0CXZGJ38Q'
+    name: "Mizuno Women's Cyclone Speed 3 Volleyball Shoe",
+    desc: "Lightweight and stable for indoor play (youth and women’s sizing commonly under $100).",
+    url: "https://www.amazon.com/Mizuno-Womens-Cyclone-Speed-Volleyball/dp/B09KPF5XPN"
   }
 ];
-
-
 
 export default function ShoesBudget() {
   return (
     <div
       className="bg-white text-gray-900 py-16 leading-relaxed"
-      style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
+      style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
     >
-      <h1 className="text-3xl font-bold mb-6">Budget Volleyball Shoes</h1>
-
+      <h1 className="text-3xl font-bold mb-6">Budget Volleyball Shoes (Under $100)</h1>
       <ul className="space-y-6">
         {items.map((it) => (
           <li key={it.name} className="p-0">
@@ -46,7 +42,6 @@ export default function ShoesBudget() {
           </li>
         ))}
       </ul>
-
       <Link to="/purchases" className="mt-8 inline-block text-blue-600 hover:underline">
         ← Back to Purchases
       </Link>
