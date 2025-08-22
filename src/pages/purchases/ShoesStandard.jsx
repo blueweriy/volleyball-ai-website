@@ -9,14 +9,14 @@ const items = [
     url: 'https://www.amazon.com/Mizuno-Mens-Wave-Lightning-Volleyball-Shoe/dp/B07XMN46K1'
   },
   {
-    name: 'Mizuno Wave Momentum 4',
-    desc: 'Durable indoor trainer with Wave cushioning and solid heel support—great for regular use.',
-    url: 'https://www.amazon.com/Mizuno-Mens-Wave-Momentum-Volleyball/dp/B08WR6LPXM'
+    name: 'ASICS Upcourt 5',
+    desc: 'Budget-friendly indoor court shoe with GEL cushioning and solid midfoot support.',
+    url: 'https://www.amazon.com/ASICS-Upcourt-5-Sneaker-4-Eclipse/dp/B0BD87Z6JF'
   },
   {
-    name: 'Adidas CrazyFlight',
-    desc: 'Lightweight court shoe with EVA midsole and grippy rubber outsole—excellent for smart footwork.',
-    url: 'https://www.amazon.com/adidas-Crazyflight-Volleyball-Shoe-Mens/dp/B08B5JYSTW'
+    name: 'Mizuno Wave Dimension Elite',
+    desc: 'Balanced cushioning with Mizuno ENERZY and stability for regular court use.',
+    url: 'https://www.amazon.com/Mizuno-Unisex-Adult-Momentum-Elite-Volleyball/dp/B0DY8TX5T5'
   }
 ];
 
