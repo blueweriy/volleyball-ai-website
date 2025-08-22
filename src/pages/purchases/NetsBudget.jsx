@@ -3,43 +3,46 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'Spalding Competition Outdoor Volleyball Net',
-    desc: 'Regulation-size outdoor volleyball net—durable and easy to install.',
-    url: 'https://www.spalding.com/volleyball/volleyball-nets/'  // Official Spalding site listing volleyball nets :contentReference[oaicite:1]{index=1}
+    name: 'Spalding Backyard Volleyball Net (Portable Set)',
+    desc: 'Regulation-size, portable net—great for casual play and easy setup.',
+    url: 'https://www.amazon.com/spalding-volleyball-net/s?k=spalding+volleyball+net'
   },
   {
-    name: 'Park & Sun Sports Spectrum Classic Net System',
-    desc: 'Portable and adjustable net system great for grass or sand play.',
-    url: 'https://www.panelsun.com/Net-Systems/Volleyball/sport-volleyball-sets.html'  // Park & Sun Sports page on sport-level nets :contentReference[oaicite:2]{index=2}
+    name: 'Park & Sun Spectrum Classic Outdoor Volleyball Net System',
+    desc: 'High-quality, professional outdoor net with adjustable heights and boundary.',
+    url: 'https://www.dickssportinggoods.com/p/park-sun-spectrum-classic-volleyball-net-system-16pssuspctrmclsscstg/16pssuspctrmclsscstg'
   },
   {
-    name: 'Spalding/AAI Aramid Fiber 1M Net Package',
-    desc: 'High-end performance net built to regulation height for competitive play.',
-    url: 'https://www.bsnsports.com/p/spaldingaai-aramid-fiber-1m-net-package/'  // BSN Sports listing for a regulation competition net :contentReference[oaicite:3]{index=3}
+    name: 'Spalding Elite Aluminum Volleyball System',
+    desc: 'Heavy-duty, durable system that meets NCAA/NFHS standards—built to last.',
+    url: 'https://www.bsnsports.com/p/spalding-elite-aluminum-volleyball-system/'
   }
 ];
 
 export default function NetsBudget() {
   return (
-    <div className="py-16 px-6 max-w-3xl mx-auto">
+    <div
+      className="py-16 bg-white text-gray-900 leading-relaxed"
+      style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
+    >
       <h1 className="text-3xl font-bold mb-6">Budget Volleyball Nets</h1>
       <ul className="space-y-6">
         {items.map((it) => (
-          <li key={it.name} className="bg-gray-50 p-4 rounded shadow-sm">
+          <li key={it.name} className="bg-gray-50 p-6 rounded shadow-sm">
             <h2 className="text-xl font-semibold">{it.name}</h2>
             <p className="mt-1 text-gray-700">{it.desc}</p>
             <a
               href={it.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-block text-blue-600 underline"
+              className="mt-3 inline-block text-blue-600 hover:underline"
             >
               View on Store →
             </a>
           </li>
         ))}
       </ul>
-      <Link to="/purchases" className="mt-8 inline-block text-blue-600 underline">
+      <Link to="/purchases" className="mt-10 inline-block text-blue-600 hover:underline">
         ← Back to Purchases
       </Link>
     </div>
