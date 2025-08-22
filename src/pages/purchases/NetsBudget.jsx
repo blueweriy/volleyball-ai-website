@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'Spalding Backyard Net',
-    desc: 'Affordable 14x1m net, easy to set up and durable for casual games.',
-    url: 'https://example.com/spalding-backyard-net'
+    name: 'Spalding Competition Outdoor Volleyball Net',
+    desc: 'Regulation-size outdoor volleyball net—durable and easy to install.',
+    url: 'https://www.spalding.com/volleyball/volleyball-nets/'  // Official Spalding site listing volleyball nets :contentReference[oaicite:1]{index=1}
   },
   {
-    name: 'Park & Sun Multi-Use Net',
-    desc: 'Portable and adjustable height—great for grass or sand.',
-    url: 'https://example.com/park-sun-net'
+    name: 'Park & Sun Sports Spectrum Classic Net System',
+    desc: 'Portable and adjustable net system great for grass or sand play.',
+    url: 'https://www.panelsun.com/Net-Systems/Volleyball/sport-volleyball-sets.html'  // Park & Sun Sports page on sport-level nets :contentReference[oaicite:2]{index=2}
   },
   {
-    name: 'Franklin Sports Budget Net',
-    desc: 'Lightweight frame with quick-release poles, under $50.',
-    url: 'https://example.com/franklin-budget-net'
+    name: 'Spalding/AAI Aramid Fiber 1M Net Package',
+    desc: 'High-end performance net built to regulation height for competitive play.',
+    url: 'https://www.bsnsports.com/p/spaldingaai-aramid-fiber-1m-net-package/'  // BSN Sports listing for a regulation competition net :contentReference[oaicite:3]{index=3}
   }
 ];
 
