@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'Tachikara Competition 32′ Indoor/Outdoor Net',
-    desc: 'Regulation 32′ x 3′ net with PVC-coated steel cable — solid mid-range pick for school/club or backyard courts.',
-    url: 'https://www.walmart.com/ip/Tachikara-Competition-32-Indoor-Outdoor-Volleyball-Net/17460519'
+    name: 'Park & Sun Tournament Flex 1000 Volleyball Set',
+    desc: 'Portable and sturdy, typically priced around $189.99—great mid-range choice for outdoor courts.',
+    url: 'https://www.dickssportinggoods.com/p/park-sun-sports-tournament-flex-1000-volleyball-set-16pssuspctrmflx/16pssuspctrmflx'
   },
   {
-    name: 'Mikasa VBN-2 Competition Volleyball Net',
-    desc: 'Polyethylene competition mesh with steel aircraft cable; weather-treated materials.',
-    url: 'https://www.amazon.com/Mikasa-VBN-2-Competition-Volleyball-Net/dp/B00091PQPY'
+    name: 'TrainingNets® PowerNet Portable Volleyball Warm-Up Net',
+    desc: 'Freestanding frame, adjustable to regulation height, priced $129.99–$189.99 depending on width.',
+    url: 'https://www.trainingnets.com/products/powernet-freestanding-volleyball-warm-up-net'
   },
   {
-    name: 'Champion Sports VN600 Tournament Power Net (3 mm)',
-    desc: 'Official size, 3 mm knotless nylon with vinyl-coated steel top/bottom cables and side dowels.',
-    url: 'https://www.athleticstuff.com/champion-sports-vn600-tournament-power-volleyball-net/'
+    name: 'Park & Sun Sports BC-400 Professional Outdoor Net',
+    desc: 'Pro-grade regulation net with steel cable and fiberglass dowels, usually $164.99 after discount.',
+    url: 'https://www.parksun.com/Volleyball/Nets/bc-400-professional-volleyball-net.php'
   }
 ];
 
@@ -26,7 +26,7 @@ export default function NetsStandard() {
       className="bg-white text-gray-900 py-16 leading-relaxed"
       style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
     >
-      <h1 className="text-3xl font-bold mb-6">Standard Volleyball Nets</h1>
+      <h1 className="text-3xl font-bold mb-6">Standard Volleyball Nets ($130 – $200)</h1>
 
       <ul className="space-y-6">
         {items.map((it) => (
