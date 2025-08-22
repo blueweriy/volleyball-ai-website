@@ -3,7 +3,10 @@ import React from "react";
 
 export default function Set() {
   return (
-    <div className="bg-white text-gray-900 py-16 px-8 md:px-16 lg:px-32 max-w-4xl mx-auto leading-relaxed">
+    <div
+      className="bg-white text-gray-900 py-16 leading-relaxed"
+      style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
+    >
       <h1 className="font-serif text-4xl font-bold mb-8 text-center">
         Setting: Rules, Technique & Call-Outs
       </h1>
@@ -56,12 +59,22 @@ export default function Set() {
         <h2 className="text-2xl font-semibold mb-4">Resources</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
           <li>
-            <a href="https://youtu.be/MPJXohqY3g0" target="_blank" className="text-blue-600 hover:underline">
+            <a
+              href="https://youtu.be/MPJXohqY3g0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
               Perfect Your Volleyball Set
             </a>
           </li>
           <li>
-            <a href="https://youtu.be/5X5DyOxpzQ4" target="_blank" className="text-blue-600 hover:underline">
+            <a
+              href="https://youtu.be/5X5DyOxpzQ4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
               Advanced Setting Drills
             </a>
           </li>
