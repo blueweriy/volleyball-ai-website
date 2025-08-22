@@ -14,9 +14,9 @@ const items = [
     url: 'https://www.amazon.com/Zdgao-Outdoor-Portable-Volleyball-System/dp/B0BV7L8CCJ'
   },
   {
-    name: 'Apex Sports 12 ft Adjustable Volleyball Net & Poles',
-    desc: 'Adjustable regulation net height, good customer ratings, currently available under $100.',
-    url: 'https://www.amazon.com/Apex-Sports-Volleyball-Poles-Adjustable/dp/B08VWCJSN1'
+    name: 'Apex Sports 12′ Adjustable Volleyball Training Net',
+    desc: '12′ portable net with fiberglass poles and adjustable regulation height (7.4–8 ft); consistently available under $100.',
+    url: 'https://www.amazon.com/Apex-Sports-Adjustable-Volleyball-Training/dp/B0DT252Z36'
   }
 ];
 
@@ -27,7 +27,6 @@ export default function NetsBudget() {
       style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
     >
       <h1 className="text-3xl font-bold mb-6">Budget Volleyball Nets (Under $100)</h1>
-
       <ul className="space-y-6">
         {items.map((it) => (
           <li key={it.name} className="p-0">
@@ -44,7 +43,6 @@ export default function NetsBudget() {
           </li>
         ))}
       </ul>
-
       <Link to="/purchases" className="mt-8 inline-block text-blue-600 hover:underline">
         ← Back to Purchases
       </Link>
