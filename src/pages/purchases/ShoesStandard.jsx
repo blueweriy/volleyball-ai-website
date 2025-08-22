@@ -10,8 +10,8 @@ const items = [
   },
   {
     name: "ASICS Men's Upcourt 5 Volleyball Shoes",
-    desc: 'Budget-friendly court trainer featuring breathable mesh and supportive overlays, under $60.',
-    url: 'https://www.amazon.com/ASICS-1071A086-Mens-Sneaker/dp/B0CK5CVY3W'
+    desc: 'Budget court trainer with GEL cushioning—Amazon shows options from about $56.',
+    url: 'https://www.amazon.com/ASICS-Mens-Upcourt-5-Volleyball/dp/B0CK5CVY3W?th=1'
   },
   {
     name: 'Mizuno Wave Dimension Elite',
