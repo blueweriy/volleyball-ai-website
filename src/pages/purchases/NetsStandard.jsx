@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 const items = [
   {
     name: 'Park & Sun Tournament Flex 1000 Volleyball Set',
-    desc: 'Portable and sturdy, typically priced around $189.99—great mid-range choice for outdoor courts.',
-    url: 'https://www.dickssportinggoods.com/p/park-sun-sports-tournament-flex-1000-volleyball-set-16pssuspctrmflx/16pssuspctrmflx'
+    desc: 'Portable regulation net system, often around $189–$199 on Amazon.',
+    url: 'https://www.amazon.com/Park-Sun-Sports-Tournament-Flex/dp/B01N5EATBW'
   },
   {
-    name: 'TrainingNets® PowerNet Portable Volleyball Warm-Up Net',
-    desc: 'Freestanding frame, adjustable to regulation height, priced $129.99–$189.99 depending on width.',
-    url: 'https://www.trainingnets.com/products/powernet-freestanding-volleyball-warm-up-net'
+    name: 'PowerNet Portable Volleyball Practice Net',
+    desc: 'Adjustable regulation-size training net, typically $139–$159 on Amazon.',
+    url: 'https://www.amazon.com/PowerNet-Portable-Volleyball-Equipment-Scrimmage/dp/B0DY2M1HBX'
   },
   {
-    name: 'Park & Sun Sports BC-400 Professional Outdoor Net',
-    desc: 'Pro-grade regulation net with steel cable and fiberglass dowels, usually $164.99 after discount.',
-    url: 'https://www.parksun.com/Volleyball/Nets/bc-400-professional-volleyball-net.php'
+    name: 'Park & Sun BC-400 Regulation Volleyball Net',
+    desc: 'Pro-grade steel cable net; Amazon listings around $160–$180.',
+    url: 'https://www.amazon.com/Sports-Regulation-Outdoor-Professional-Volleyball/dp/B0C1Z8FY9D'
   }
 ];
 
@@ -27,7 +27,6 @@ export default function NetsStandard() {
       style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
     >
       <h1 className="text-3xl font-bold mb-6">Standard Volleyball Nets ($130 – $200)</h1>
-
       <ul className="space-y-6">
         {items.map((it) => (
           <li key={it.name} className="p-0">
@@ -39,7 +38,7 @@ export default function NetsStandard() {
               rel="noopener noreferrer"
               className="mt-2 inline-block text-blue-600 hover:underline"
             >
-              View on Store →
+              View on Amazon →
             </a>
           </li>
         ))}
