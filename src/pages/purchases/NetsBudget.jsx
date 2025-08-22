@@ -1,48 +1,51 @@
+// src/pages/purchases/NetsBudget.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'Spalding Backyard Volleyball Net (Portable Set)',
-    desc: 'Regulation-size, portable net—great for casual play and easy setup.',
-    url: 'https://www.amazon.com/spalding-volleyball-net/s?k=spalding+volleyball+net'
+    name: 'Franklin Sports Volleyball Set – Beach & Backyard',
+    desc: 'Recreational portable set with poles, net, stakes, and ball—good entry-level choice for casual play.',
+    url: 'https://www.amazon.com/Franklin-Sports-50402-Parent-Volleyball-Set/dp/B00O7EROVS'
   },
   {
-    name: 'Park & Sun Spectrum Classic Outdoor Volleyball Net System',
-    desc: 'High-quality, professional outdoor net with adjustable heights and boundary.',
-    url: 'https://www.dickssportinggoods.com/p/park-sun-spectrum-classic-volleyball-net-system-16pssuspctrmclsscstg/16pssuspctrmclsscstg'
+    name: 'EastPoint Sports Deluxe Volleyball/Badminton Combo Set',
+    desc: 'Adjustable-height net for volleyball or badminton; solid value for backyard use with quick assembly.',
+    url: 'https://www.amazon.com/EastPoint-Sports-Deluxe-Volleyball-Badminton/dp/B01FWO60HU'
   },
   {
-    name: 'Spalding Elite Aluminum Volleyball System',
-    desc: 'Heavy-duty, durable system that meets NCAA/NFHS standards—built to last.',
-    url: 'https://www.bsnsports.com/p/spalding-elite-aluminum-volleyball-system/'
+    name: 'Amazon Basics Outdoor Volleyball & Badminton Combo Set',
+    desc: 'All-in-one budget set with net, poles, ball, and carry bag—simple and affordable for family games.',
+    url: 'https://www.amazon.com/AmazonBasics-Volleyball-Badminton-Combo-Set/dp/B07GXS216T'
   }
 ];
 
 export default function NetsBudget() {
   return (
     <div
-      className="py-16 bg-white text-gray-900 leading-relaxed"
+      className="bg-white text-gray-900 py-16 leading-relaxed"
       style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
     >
       <h1 className="text-3xl font-bold mb-6">Budget Volleyball Nets</h1>
+
       <ul className="space-y-6">
         {items.map((it) => (
-          <li key={it.name} className="bg-gray-50 p-6 rounded shadow-sm">
+          <li key={it.name} className="p-0">
             <h2 className="text-xl font-semibold">{it.name}</h2>
             <p className="mt-1 text-gray-700">{it.desc}</p>
             <a
               href={it.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-block text-blue-600 hover:underline"
+              className="mt-2 inline-block text-blue-600 hover:underline"
             >
               View on Store →
             </a>
           </li>
         ))}
       </ul>
-      <Link to="/purchases" className="mt-10 inline-block text-blue-600 hover:underline">
+
+      <Link to="/purchases" className="mt-8 inline-block text-blue-600 hover:underline">
         ← Back to Purchases
       </Link>
     </div>
