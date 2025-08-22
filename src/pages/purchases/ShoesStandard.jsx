@@ -9,7 +9,7 @@ const items = [
     url: 'https://www.amazon.com/Mizuno-Mens-Wave-Lightning-Volleyball-Shoe/dp/B07XMN46K1'
   },
   {
-    name: 'ASICS Men's Upcourt 5 Volleyball Shoes',
+    name: "ASICS Men's Upcourt 5 Volleyball Shoes",
     desc: 'Budget-friendly court trainer featuring breathable mesh and supportive overlays, under $60.',
     url: 'https://www.amazon.com/ASICS-1071A086-Mens-Sneaker/dp/B0CK5CVY3W'
   },
