@@ -4,21 +4,22 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'ASICS Gel-Rocket 10 Volleyball Shoes',
-    desc: 'Popular court shoe with excellent grip and cushioning, typically under $60.',
-    url: 'https://www.amazon.com/ASICS-Gel-Rocket-Volleyball-Shoes-Velvet/dp/B09WC7N8YR'
+    name: 'Mizuno Wave Stealth Neo 2',
+    desc: 'Updated traction outsole and cushioning, often ~$130–$150.',
+    url: 'https://www.amazon.com/Mizuno-Momentum-Volleyball-Shoe-Men/dp/B07GXVRTD3'
   },
   {
-    name: 'Mizuno Cyclone Speed 3 Volleyball Shoe',
-    desc: 'Lightweight, stable, beginner-friendly indoor shoe with solid cushioning.',
-    url: 'https://www.amazon.com/Mizuno-Womens-Cyclone-Speed-Volleyball/dp/B09KPF5XPN'
+    name: 'Mizuno Wave Momentum 3',
+    desc: 'Balanced cushioning trainer, listed around $160.',
+    url: 'https://www.amazon.com/Mizuno-Unisex-Volleyball-Shoes-Momentum/dp/B0DY8TX5T5'
   },
   {
-    name: 'Under Armour Charged Commit Trainer',
-    desc: 'Cross-training court shoe with dual-density cushioning and flex grooves for stability.',
-    url: 'https://www.amazon.com/Under-Armour-Charged-Commit-Trainer/dp/B08YNPHZZQ'
+    name: 'ASICS Sky Elite FF',
+    desc: 'High-performance court shoe with FlyteFoam, around $140–$160.',
+    url: 'https://www.amazon.com/ASICS-Sky-Elite-FF-Volleyball/dp/B08CB78GN1'
   }
 ];
+
 
 export default function ShoesBudget() {
   return (
