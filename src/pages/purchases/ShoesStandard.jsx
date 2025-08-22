@@ -4,21 +4,22 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'Mizuno Wave Lightning Z6',
-    desc: 'Lightweight, responsive court shoe with excellent traction—ideal for quick movements.',
-    url: 'https://www.amazon.com/Mizuno-Mens-Wave-Lightning-Volleyball-Shoe/dp/B07XMN46K1'
+    name: 'Mizuno Wave Stealth Neo 2',
+    desc: 'Updated traction outsole and cushioning, often ~$130–$150.',
+    url: 'https://www.amazon.com/Mizuno-Momentum-Volleyball-Shoe-Men/dp/B07GXVRTD3'
   },
   {
-    name: "ASICS Men's Upcourt 5 Volleyball Shoes",
-    desc: 'Budget court trainer with GEL cushioning—Amazon shows options from about $56.',
-    url: 'https://www.amazon.com/ASICS-Mens-Upcourt-5-Volleyball/dp/B0CK5CVY3W?th=1'
+    name: 'Mizuno Wave Momentum 3',
+    desc: 'Balanced cushioning trainer, listed around $160.',
+    url: 'https://www.amazon.com/Mizuno-Unisex-Volleyball-Shoes-Momentum/dp/B0DY8TX5T5'
   },
   {
-    name: 'Mizuno Wave Dimension Elite',
-    desc: 'Balanced cushioning with Mizuno ENERZY and excellent stability for frequent court use.',
-    url: 'https://www.amazon.com/Mizuno-Unisex-Adult-Momentum-Elite-Volleyball/dp/B0DY8TX5T5'
+    name: 'ASICS Sky Elite FF',
+    desc: 'High-performance court shoe with FlyteFoam, around $140–$160.',
+    url: 'https://www.amazon.com/ASICS-Sky-Elite-FF-Volleyball/dp/B08CB78GN1'
   }
 ];
+
 
 export default function ShoesStandard() {
   return (
