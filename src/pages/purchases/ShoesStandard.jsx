@@ -1,33 +1,31 @@
-// src/pages/purchases/ShoesStandard.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const items = [
   {
-    name: 'Mizuno Wave Stealth Neo 2',
-    desc: 'Updated traction outsole and cushioning, often ~$130–$150.',
-    url: 'https://www.amazon.com/Mizuno-Momentum-Volleyball-Shoe-Men/dp/B07GXVRTD3'
+    name: "Mizuno Men's Wave Lightning Z6 Volleyball Shoe",
+    desc: "Fast, lightweight, and responsive — staple standard-tier pick.",
+    url: "https://www.amazon.com/Mizuno-Mens-Wave-Lightning-Volleyball/dp/B07XMN46K1"
   },
   {
-    name: 'Mizuno Wave Momentum 3',
-    desc: 'Balanced cushioning trainer, listed around $160.',
-    url: 'https://www.amazon.com/Mizuno-Unisex-Volleyball-Shoes-Momentum/dp/B0DY8TX5T5'
+    name: "adidas Women's Crazyflight Volleyball Shoes",
+    desc: "BOOST midsole for energy return and great grip for quick lateral moves.",
+    url: "https://www.amazon.com/adidas-Womens-Crazyflight-Volleyball-Sneakers/dp/B0D8W27L61"
   },
   {
-    name: 'ASICS Sky Elite FF',
-    desc: 'High-performance court shoe with FlyteFoam, around $140–$160.',
-    url: 'https://www.amazon.com/ASICS-Sky-Elite-FF-Volleyball/dp/B08CB78GN1'
+    name: "Mizuno Men's Wave Momentum 3 Volleyball Shoe",
+    desc: "MIZUNO ENERZY cushioning with Wave stability — comfortable for long sessions.",
+    url: "https://www.amazon.com/Mizuno-Mens-Wave-Momentum-Volleyball/dp/B0CPGXLPPG"
   }
 ];
-
 
 export default function ShoesStandard() {
   return (
     <div
       className="bg-white text-gray-900 py-16 leading-relaxed"
-      style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
+      style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
     >
-      <h1 className="text-3xl font-bold mb-6">Standard Volleyball Shoes</h1>
+      <h1 className="text-3xl font-bold mb-6">Standard Volleyball Shoes ($100–$180)</h1>
       <ul className="space-y-6">
         {items.map((it) => (
           <li key={it.name} className="p-0">
