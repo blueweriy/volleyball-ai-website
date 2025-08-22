@@ -26,7 +26,7 @@ export default function NetsPremium() {
       className="bg-white text-gray-900 py-16 leading-relaxed"
       style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
     >
-      <h1 className="text-3xl font-bold mb-6">Premium Volleyball Nets (Under $1,000)</h1>
+      <h1 className="text-3xl font-bold mb-6">Premium Volleyball Nets</h1>
       <ul className="space-y-6">
         {items.map((it) => (
           <li key={it.name} className="p-0">
