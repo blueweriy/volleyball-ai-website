@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'Tachikara Professional Volleyball Net',
-    desc: 'Regulation size indoor/outdoor net with durable twisted braided nylon cord and reinforced top cable.',
-    url: 'https://www.amazon.com/Tachikara-Competition-Volleyball-Net/dp/B0000AS7W8'
+    name: 'Tachikara Competition 32′ Indoor/Outdoor Net',
+    desc: 'Regulation 32′ x 3′ net with PVC-coated steel cable — solid mid-range pick for school/club or backyard courts.',
+    url: 'https://www.walmart.com/ip/Tachikara-Competition-32-Indoor-Outdoor-Volleyball-Net/17460519'
   },
   {
-    name: 'Mikasa Competition Volleyball Net',
-    desc: 'Heavy-duty, vinyl-coated steel cable with UV-resistant mesh; ideal for school or club competitions.',
-    url: 'https://www.amazon.com/Mikasa-VBN-2-Competition-Volleyball-Net/dp/B0007VHYXO'
+    name: 'Mikasa VBN-2 Competition Volleyball Net',
+    desc: 'Polyethylene competition mesh with steel aircraft cable; weather-treated materials.',
+    url: 'https://www.amazon.com/Mikasa-VBN-2-Competition-Volleyball-Net/dp/B00091PQPY'
   },
   {
-    name: 'Champion Sports Tournament Power Volleyball Net',
-    desc: 'Official size with rip-resistant 3 mm polyethylene mesh, reinforced vinyl headband, and side pockets.',
-    url: 'https://www.amazon.com/Champion-Sports-Tournament-Volleyball-Nylon/dp/B0007VHV3K'
+    name: 'Champion Sports VN600 Tournament Power Net (3 mm)',
+    desc: 'Official size, 3 mm knotless nylon with vinyl-coated steel top/bottom cables and side dowels.',
+    url: 'https://www.athleticstuff.com/champion-sports-vn600-tournament-power-volleyball-net/'
   }
 ];
 
@@ -24,9 +24,10 @@ export default function NetsStandard() {
   return (
     <div
       className="bg-white text-gray-900 py-16 leading-relaxed"
-      style={{ paddingLeft: "3rem", paddingRight: "3rem" }}
+      style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
     >
       <h1 className="text-3xl font-bold mb-6">Standard Volleyball Nets</h1>
+
       <ul className="space-y-6">
         {items.map((it) => (
           <li key={it.name} className="p-0">
@@ -43,6 +44,7 @@ export default function NetsStandard() {
           </li>
         ))}
       </ul>
+
       <Link to="/purchases" className="mt-8 inline-block text-blue-600 hover:underline">
         ← Back to Purchases
       </Link>
