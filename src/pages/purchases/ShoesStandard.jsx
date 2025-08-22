@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 const items = [
   {
     name: 'Mizuno Wave Lightning Z6',
-    desc: 'Lightweight, responsive court shoe with excellent traction and balance.',
+    desc: 'Lightweight, responsive court shoe with excellent traction—ideal for quick movements.',
     url: 'https://www.amazon.com/Mizuno-Mens-Wave-Lightning-Volleyball-Shoe/dp/B07XMN46K1'
   },
   {
-    name: 'ASICS Sky Elite FF 3',
-    desc: 'Mid-level volleyball shoe with FlyteFoam cushioning and stable midsole support.',
-    url: 'https://www.amazon.com/ASICS-Womens-Elite-FlyteFoam-Volleyball/dp/B0D3FND8DG?psc=1'
+    name: 'Mizuno Wave Momentum 4',
+    desc: 'Durable indoor trainer with Wave cushioning and solid heel support—great for regular use.',
+    url: 'https://www.amazon.com/Mizuno-Mens-Wave-Momentum-Volleyball/dp/B08WR6LPXM'
   },
   {
-    name: 'Nike Zoom HyperAce 2',
-    desc: 'Court-focused shoe featuring Zoom Air cushioning and durable TPU support cage.',
-    url: 'https://www.amazon.com/Nike-Womens-HyperAce-Volleyball-Shoes/dp/B07C54TH5Z'
+    name: 'Adidas CrazyFlight',
+    desc: 'Lightweight court shoe with EVA midsole and grippy rubber outsole—excellent for smart footwork.',
+    url: 'https://www.amazon.com/adidas-Crazyflight-Volleyball-Shoe-Mens/dp/B08B5JYSTW'
   }
 ];
 
