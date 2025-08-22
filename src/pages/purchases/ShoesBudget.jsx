@@ -4,21 +4,22 @@ import { Link } from 'react-router-dom';
 
 const items = [
   {
-    name: 'Mizuno Wave Stealth Neo 2',
-    desc: 'Updated traction outsole and cushioning, often ~$130–$150.',
-    url: 'https://www.amazon.com/Mizuno-Momentum-Volleyball-Shoe-Men/dp/B07GXVRTD3'
+    name: 'Adidas VL Court 3.0',
+    desc: 'Stylish, cushioned sneaker-like court shoe—currently around $56 on Amazon.',
+    url: 'https://www.amazon.com/adidas-VL-Court-Sneaker-White/dp/B07X9PBT5Q'
   },
   {
-    name: 'Mizuno Wave Momentum 3',
-    desc: 'Balanced cushioning trainer, listed around $160.',
-    url: 'https://www.amazon.com/Mizuno-Unisex-Volleyball-Shoes-Momentum/dp/B0DY8TX5T5'
+    name: 'Mizuno Wave Tornado 5',
+    desc: 'Lightweight basic volleyball option under $100 with solid traction.',
+    url: 'https://www.amazon.com/Mizuno-Unisex-Volleyball-Shoes-White/dp/B0DSVCQDQP'
   },
   {
-    name: 'ASICS Sky Elite FF',
-    desc: 'High-performance court shoe with FlyteFoam, around $140–$160.',
-    url: 'https://www.amazon.com/ASICS-Sky-Elite-FF-Volleyball/dp/B08CB78GN1'
+    name: 'ASICS Gel-Rocket 12',
+    desc: 'Reliable cushioning and traction, typically priced under $100.',
+    url: 'https://www.amazon.com/ASICS-Gel-Rocket-12-Volleyball-Shoes/dp/B0CXZGJ38Q'
   }
 ];
+
 
 
 export default function ShoesBudget() {
