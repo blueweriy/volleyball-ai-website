@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom';
 const items = [
   {
     name: 'Patiassy Portable Volleyball Net Set (14 ft)',
-    desc: 'Freestanding/travel set, under $100, adjustable height—great for casual outdoor use.',
+    desc: 'Freestanding/travel set with adjustable height and carry bag—solid value under $100.',
     url: 'https://www.amazon.com/Patiassy-Volleyball-Portable-Training-Adjustable/dp/B0CTMJTLD9'
   },
   {
     name: 'Furypiont 12 ft Portable Volleyball Training Net',
-    desc: 'Adjustable 6 ft/7.4 ft/8 ft height options, includes 2 balls—typically under $100.',
+    desc: 'Adjustable height setup inclusive of two practice balls; consistently priced under $100.',
     url: 'https://www.amazon.com/Furypiont-Volleyball-Bag-Outdoor-Freestanding-Adjustable/dp/B0DK3HX3TQ'
   },
   {
-    name: 'Warmounts 18 ft Freestanding Volleyball Net',
-    desc: 'Larger set with adjustable height, quick setup—comes in under $100 on select deals.',
-    url: 'https://www.amazon.com/Warmounts-Freestanding-Volleyball-Adjustable-Equipment/dp/B0DZWTXL7T'
+    name: 'Zdgao Portable Volleyball Set',
+    desc: 'Full set with net, pump, boundary lines, and poles—typically under $100 and well-reviewed.',
+    url: 'https://www.amazon.com/Zdgao-Outdoor-Portable-Volleyball-System/dp/B0BV7L8CCJ'
   }
 ];
 
@@ -30,7 +30,9 @@ export default function NetsBudget() {
 
       <ul className="space-y-6">
         {items.map((it) => (
-          <li key={it.name} className="p-0">
+          <li
+            key={it.name}
+          >
             <h2 className="text-xl font-semibold">{it.name}</h2>
             <p className="mt-1 text-gray-700">{it.desc}</p>
             <a
