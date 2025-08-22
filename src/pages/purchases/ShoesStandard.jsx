@@ -9,13 +9,13 @@ const items = [
     url: 'https://www.amazon.com/Mizuno-Mens-Wave-Lightning-Volleyball-Shoe/dp/B07XMN46K1'
   },
   {
-    name: 'ASICS Upcourt 5',
-    desc: 'Budget-friendly indoor court shoe with GEL cushioning and solid midfoot support.',
-    url: 'https://www.amazon.com/ASICS-Upcourt-5-Sneaker-4-Eclipse/dp/B0BD87Z6JF'
+    name: 'ASICS Men's Upcourt 5 Volleyball Shoes',
+    desc: 'Budget-friendly court trainer featuring breathable mesh and supportive overlays, under $60.',
+    url: 'https://www.amazon.com/ASICS-1071A086-Mens-Sneaker/dp/B0CK5CVY3W'
   },
   {
     name: 'Mizuno Wave Dimension Elite',
-    desc: 'Balanced cushioning with Mizuno ENERZY and stability for regular court use.',
+    desc: 'Balanced cushioning with Mizuno ENERZY and excellent stability for frequent court use.',
     url: 'https://www.amazon.com/Mizuno-Unisex-Adult-Momentum-Elite-Volleyball/dp/B0DY8TX5T5'
   }
 ];
